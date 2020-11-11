@@ -27,7 +27,7 @@ print_bit() {
 }
 
 INTERVAL=1
-INTERFACES="enp2s0f2"
+INTERFACES=`ip link | grep 'state UP' | cut -d ':' -f 2 | cut -c 2-`
 
 declare -A bytes
 

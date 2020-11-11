@@ -93,18 +93,18 @@
 font:
   normal:
     # Default: monospace
-    family: DejaVuSansMono Nerd Font
+    family: CaskaydiaCove Nerd Font
     style: Regular
-  bold:
-    family: DejaVuSansMono Nerd Font
-    style: Bold
-  italic:
-    family: DejaVuSansMono Nerd Font
-    style: Italic
-  bold_italic:
-    family: DejaVuSansMono Nerd Font
-    style: Bold Italic
-  size: 16.0
+  # bold:
+  #   family: DejaVuSansMono Nerd Font
+  #   style: Bold
+  # italic:
+  #   family: DejaVuSansMono Nerd Font
+  #   style: Italic
+  # bold_italic:
+  #   family: DejaVuSansMono Nerd Font
+  #   style: Bold Italic
+  size: 17.0
 
 
 # Colors (Nord)

@@ -229,7 +229,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp2s0f2
+interface = enp3s0
 interval = 3.0
 
 format-connected-prefix = "🌐 "
