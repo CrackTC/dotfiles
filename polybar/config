@@ -30,11 +30,11 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 27
+height = 26
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
-fixed-center = false
+radius = 0
+; fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -42,38 +42,31 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 4
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 0
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
-font-0 = "wqt-zenhei:pixelsize=10;0"
-font-1 = "twemoji:scale=7;1"
-font-2 = "Droid Sans:size=9:weight=bold;2"
-font-3 = "Weather Icons:size=10;3"
+font-0 = "wqt-zenhei:pixelsize=11;0"
+font-1 = "twemoji:scale=6;1"
+font-2 = "Droid Sans:size=10:weight=bold;2"
+font-3 = "Weather Icons:size=11;3"
 
 modules-left = i3 wlan cpu memory system-usb-udev network-traffic openweathermap-fullfeatured
 modules-center = xwindow player-mpris-simple
-modules-right = filesystem xbacklight alsa battery temperature date powermenu
+modules-right = filesystem xbacklight alsa battery date powermenu
 
 tray-position = right
-tray-padding = 2
-;tray-background = #0063ff
+tray-padding = 0
 
-;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -85,6 +78,7 @@ label = %title%
 label-maxlen = 20
 label-empty = Empty
 label-empty-foreground = #707880
+
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
@@ -100,7 +94,7 @@ label-indicator-background = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
-interval = 10
+interval = 20
 fixed-values = true
 
 mount-0 = /
@@ -156,12 +150,12 @@ ramp-4 = 🌑
 
 [module/cpu]
 type = internal/cpu
-interval = 1
+interval = 2
 format = <ramp-coreload>
 format-prefix = "💻 "
 format-prefix-foreground = ${colors.foreground-alt}
 
-ramp-coreload-spacing = 1
+ramp-coreload-spacing = 0
 ramp-coreload-0 = ▁
 ramp-coreload-1 = ▂
 ramp-coreload-2 = ▃
@@ -173,7 +167,7 @@ ramp-coreload-7 = █
 
 [module/memory]
 type = internal/memory
-interval = 2
+interval = 10
 format-prefix = "💾 "
 format-prefix-foreground = ${colors.foreground-alt}
 format = <bar-used>
@@ -350,9 +344,9 @@ label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = ♻️
-menu-0-0-exec = alacritty -e sudo reboot
+menu-0-0-exec = alacritty -e reboot
 menu-0-1 = 🔥
-menu-0-1-exec = alacritty -e sudo poweroff
+menu-0-1-exec = alacritty -e shutdown 0
 
 [module/system-usb-udev]
 type = custom/script

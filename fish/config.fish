@@ -1,3 +1,4 @@
+# vim:ft=sh
 export EDITOR=nvim
 alias vim nvim
 set fish_greeting 'Talk is cheap. Show me the code.'
