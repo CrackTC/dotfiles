@@ -32,8 +32,8 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+shift+r exec --no-startup-id alacritty -e ranger
 bindsym $mod+Shift+q kill
 bindsym $mod+c exec --no-startup-id chromium
-bindsym $mod+d exec --no-startup-id rofi -show run -theme config
-bindsym $mod+q exec --no-startup-id rofi -show drun -theme config
+bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+q exec --no-startup-id rofi -show drun
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
