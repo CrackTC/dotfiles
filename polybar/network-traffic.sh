@@ -2,11 +2,11 @@
 
 print_bytes() {
     if [ "$1" -eq 0 ] || [ "$1" -lt 1000 ]; then
-        bytes="0 K"
+        bytes="0 KB/s"
     elif [ "$1" -lt 1000000 ]; then
-        bytes="$(echo "scale=0;$1/1000" | bc -l ) K"
+        bytes="$(echo "scale=0;$1/1000" | bc -l ) KB/s"
     else
-        bytes="$(echo "scale=1;$1/1000000" | bc -l ) M"
+        bytes="$(echo "scale=1;$1/1000000" | bc -l ) MB/s"
     fi
 
     echo "$bytes"
