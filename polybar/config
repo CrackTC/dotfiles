@@ -22,8 +22,8 @@ background = #cc222222
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
+foreground-alt = #ffb52a
+primary = #555
 secondary = #e60053
 alert = #bd2c40
 
@@ -58,7 +58,7 @@ font-3 = "Weather Icons:size=11;3"
 
 modules-left = i3 wlan cpu memory system-usb-udev network-traffic
 modules-center = xwindow player-mpris-simple
-modules-right = filesystem xbacklight alsa battery date powermenu
+modules-right = filesystem xbacklight alsa battery date
 
 tray-position = right
 tray-padding = 0
@@ -323,25 +323,6 @@ ramp-0 = ❄️
 ramp-1 = 🧊
 ramp-2 = 🌡️
 ramp-foreground = ${colors.foreground-alt}
-
-[module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-
-label-open = 🔌
-label-open-foreground = ${colors.secondary}
-label-close =  ✖️
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = ♻️
-menu-0-0-exec = alacritty -e reboot
-menu-0-1 = 🔥
-menu-0-1-exec = alacritty -e shutdown 0
 
 [module/system-usb-udev]
 type = custom/script
