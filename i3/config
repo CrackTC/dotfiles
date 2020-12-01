@@ -12,7 +12,6 @@ hide_edge_borders both
 
 gaps inner 6
 
-exec_always xmodmap ~/.xmodmap
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id polybar example
@@ -20,6 +19,7 @@ exec --no-startup-id fcitx
 exec --no-startup-id compton -b
 exec --no-startup-id variety
 exec --no-startup-id nohup /usr/lib/gsd-xsettings > /dev/null 2>&1 &
+exec --no-startup-id sleep 1;xmodmap ~/.xmodmap
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
