@@ -93,7 +93,7 @@
 font:
   normal:
     # Default: monospace
-    family: CaskaydiaCove Nerd Font
+    family: CaskaydiaCove Nerd Font Mono
     style: Regular
   # bold:
   #   family: DejaVuSansMono Nerd Font
