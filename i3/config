@@ -29,8 +29,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 floating_modifier $mod
 
-bindsym $mod+Return exec --no-startup-id st
-bindsym $mod+shift+r exec --no-startup-id st ranger
+bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+shift+r exec --no-startup-id kitty ranger
 bindsym $mod+Shift+q kill
 bindsym $mod+c exec --no-startup-id chromium
 bindsym $mod+d exec --no-startup-id rofi -show run
