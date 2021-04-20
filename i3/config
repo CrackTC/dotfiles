@@ -32,7 +32,7 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+shift+r exec --no-startup-id kitty ranger
 bindsym $mod+Shift+q kill
-bindsym $mod+c exec --no-startup-id chromium
+bindsym $mod+c exec --no-startup-id microsoft-edge-dev
 bindsym $mod+d exec --no-startup-id rofi -show run
 bindsym $mod+q exec --no-startup-id rofi -show drun
 bindsym Print exec --no-startup-id deepin-screenshot
