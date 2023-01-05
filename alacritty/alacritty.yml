@@ -12,7 +12,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+# window:
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -89,22 +89,28 @@
   # Scrolling distance multiplier.
   #multiplier: 3
 
+window:
+  opacity: 0.80
+  padding:
+    x: 10
+    y: 10
+
 # Font configuration
 font:
   normal:
     # Default: monospace
-    family: CaskaydiaCove Nerd Font Mono
-    style: Regular
-  # bold:
-  #   family: DejaVuSansMono Nerd Font
-  #   style: Bold
-  # italic:
-  #   family: DejaVuSansMono Nerd Font
-  #   style: Italic
-  # bold_italic:
-  #   family: DejaVuSansMono Nerd Font
-  #   style: Bold Italic
-  size: 14.0
+    family: Sauce Code Pro Nerd Font
+    style: Medium
+  bold:
+    family: Sauce Code Pro Nerd Font
+    style: Bold
+  italic:
+    family: Sauce Code Pro Nerd Font
+    style: Italic
+  bold_italic:
+    family: Sauce Code Pro Nerd Font
+    style: Bold Italic
+  size: 16.0
 
 
 # Colors (Nord)
@@ -308,7 +314,6 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.80
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
