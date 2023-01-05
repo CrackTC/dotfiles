@@ -1,1 +1,3 @@
 *.pyc
+neovim/tmp
+neovim/plugged
