@@ -2,3 +2,4 @@
 neovim/tmp
 neovim/plugged
 fcitx5/pinyin/user.history*
+*.pyo
