@@ -119,5 +119,8 @@ Plug 'easymotion/vim-easymotion'
 
 Plug 'pechorin/any-jump.vim'
 
+" fish syntax highlighting
+Plug 'nickeb96/fish.vim'
+
 call plug#end()
 
