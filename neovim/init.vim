@@ -668,7 +668,7 @@ let g:VM_maps['Find Subword Under'] = 'n'
 " === Vim-Illuminate
 " ===
 let g:Illuminate_delay          = 250
-highlight illuminatedWord cterm = undercurl gui = undercurl
+highlight IlluminatedWordText cterm = undercurl gui = undercurl
 
 " ===
 " === Vim-Rooter
