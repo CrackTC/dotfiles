@@ -18,7 +18,7 @@ endif
 " ===
 let t_ut=''
 set clipboard+=unnamedplus
-set mouse=a
+set mouse=
 set fileencodings=ucs-bom,utf-8,default,gbk,latin1
 
 " ===
