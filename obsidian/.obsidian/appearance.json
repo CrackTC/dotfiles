@@ -1,0 +1,11 @@
+{
+  "theme": "moonstone",
+  "translucency": false,
+  "textFontFamily": "MiSans",
+  "interfaceFontFamily": "MiSans",
+  "monospaceFontFamily": "Source Code Variable",
+  "baseFontSize": 22,
+  "accentColor": "",
+  "cssTheme": "Minimal",
+  "nativeMenus": true
+}

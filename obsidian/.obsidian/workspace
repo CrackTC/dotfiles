@@ -1,0 +1,79 @@
+{
+  "main": {
+    "id": "87856f10837b1fd0",
+    "type": "split",
+    "children": [
+      {
+        "id": "140f2efe97f818be",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "矩阵的幂运算技巧.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8a2420bfec40e015",
+    "type": "split",
+    "children": [
+      {
+        "id": "64f2ac380141853f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f327adb60510bd03",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "46cf3bddd022a6f4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ba2decbca6383859",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 820,
+    "collapsed": true
+  },
+  "active": "140f2efe97f818be",
+  "lastOpenFiles": [
+    "程序设计基础/顺序程序设计/语句/表达式.md",
+    "程序设计基础/顺序程序设计/语句/运算分量.md",
+    "飞行学习/正常内容/飞行仪表.md",
+    "程序设计基础/顺序程序设计/语句/语句概论.md",
+    "程序设计基础/顺序程序设计/数据/变量.md",
+    "程序设计基础/顺序程序设计/数据/字面常量.md",
+    "程序设计基础/顺序程序设计/数据/字符转义符.md",
+    "程序设计基础/顺序程序设计/数据/数据概述.md",
+    "程序设计基础/顺序程序设计/数据/常量.md",
+    "程序设计基础/顺序程序设计/数据/常量标识符.md"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:大一上/线性代数",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:大一上/微积分",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "path:大一上/程序设计基础",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "path:大一上/计算机系统导论",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "path:大一上/通用学术英语",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "path:CTF/WriteUp",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -2.1,
+  "nodeSizeMultiplier": 2.27777777777778,
+  "lineSizeMultiplier": 1.18888888888889,
+  "collapse-forces": false,
+  "centerStrength": 0.322916666666667,
+  "repelStrength": 9.16666666666667,
+  "linkStrength": 0.465277777777778,
+  "linkDistance": 250,
+  "scale": 0.23284161800843683,
+  "close": false
+}
