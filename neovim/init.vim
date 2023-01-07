@@ -686,13 +686,13 @@ noremap <c-y> :NR<CR>
 " ===
 " === Calendar
 " ===
-noremap \\ :Calendar -view=clock -position=here<CR>
+" noremap \\ :Calendar -view=clock -position=here<CR>
 
-let g:calendar_google_calendar      = 1
-let g:calendar_google_task          = 1
-let g:calendar_google_api_key       = 'AIzaSyA6fAU5C1r5rMsiwxb7-CPNWm_M8gZpsIo'
-let g:calendar_google_client_id     = '168755098063-lbht3c3im6vlltj9p5k18sochlsa9gps.apps.googleusercontent.com'
-let g:calendar_google_client_secret = 'VPADRlMUXumXP762fLG_Kgfv'
+" let g:calendar_google_calendar      = 1
+" let g:calendar_google_task          = 1
+" let g:calendar_google_api_key       = 'AIzaSyA6fAU5C1r5rMsiwxb7-CPNWm_M8gZpsIo'
+" let g:calendar_google_client_id     = '168755098063-lbht3c3im6vlltj9p5k18sochlsa9gps.apps.googleusercontent.com'
+" let g:calendar_google_client_secret = 'VPADRlMUXumXP762fLG_Kgfv'
 
 " ===
 " === Vim-Easymotion
