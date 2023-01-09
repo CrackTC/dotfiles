@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "76b987dfaf941dc6",
+        "id": "72c89cd546c9fc7b",
         "type": "tabs",
         "children": [
           {
-            "id": "c110b4e98a85a5fd",
+            "id": "c621037dd9e2e6f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/Web/PHP/Functions/addslashes触发字符串逃逸.md",
+                "file": "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/伴随矩阵的性质.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "4b2f1ce245a0a702",
+            "id": "5c8144ab8f844f9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/Web/Python/unicodedata.numeric绕过.md",
+                "file": "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/方阵可逆的充分必要条件.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -72,8 +72,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -93,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Web/PHP/Functions/addslashes触发字符串逃逸.md",
+                "file": "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/方阵可逆的充分必要条件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,17 +127,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "46cf3bddd022a6f4",
+  "active": "5c8144ab8f844f9f",
   "lastOpenFiles": [
-    "CTF/Web/Misc/unicode 数学字母数字符号的利用.md",
-    "CTF/Web/PHP/伪协议/php filter伪协议.md",
-    "CTF/Web/PHP/RCE/无字母数字RCE.md",
-    "CTF/Web/Misc/jsfuck.md",
-    "CTF/Web/SQL/单引号过滤绕过.md",
-    "CTF/Web/Misc/常见的编码.md",
-    "CTF/WriteUp/22-11-21/[WUSTCTF2020]朴实无华.md",
-    "CTF/WriteUp/23-01-02/[watevrCTF-2019]Cookie Store.md",
-    "CTF/WriteUp/22-12-19/[MRCTF2020]套娃.md",
-    "CTF/WriteUp/22-11-14/[BSidesCF 2020]Had a bad day.md"
+    "大一上/线性代数/2 方阵的行列式/2.2 方阵行列式的性质/运算规律.md",
+    "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/伴随矩阵的性质.md",
+    "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/方阵可逆的充分必要条件.md",
+    "大一上/线性代数/2 方阵的行列式/2.1 n阶行列式的定义/2.1.2 n阶行列式的计算/行列式的值.md",
+    "大一上/线性代数/2 方阵的行列式/2.2 方阵行列式的性质/转置不变性.md",
+    "大一上/线性代数/2 方阵的行列式/2.2 方阵行列式的性质/行列式加倍.md",
+    "大一上/线性代数/3 可逆矩阵/3.1 可逆矩阵的定义与性质/3.1.2 可逆矩阵的性质/乘积可逆性不变.md",
+    "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/伴随矩阵.md",
+    "CTF/Web/PHP/Functions/addslashes触发字符串逃逸.md",
+    "CTF/Web/Python/unicodedata.numeric绕过.md"
   ]
 }
