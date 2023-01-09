@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "9a26099a4be8cf60",
+        "id": "76b987dfaf941dc6",
         "type": "tabs",
         "children": [
           {
-            "id": "4992dd2b4f39681b",
+            "id": "c110b4e98a85a5fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-01-02/[红明谷CTF 2021]write_shell.md",
+                "file": "CTF/Web/PHP/Functions/addslashes触发字符串逃逸.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b2f1ce245a0a702",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF/Web/Python/unicodedata.numeric绕过.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -58,7 +72,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -78,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-01-02/[红明谷CTF 2021]write_shell.md",
+                "file": "CTF/Web/PHP/Functions/addslashes触发字符串逃逸.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +128,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4992dd2b4f39681b",
+  "active": "46cf3bddd022a6f4",
   "lastOpenFiles": [
+    "CTF/Web/Misc/unicode 数学字母数字符号的利用.md",
+    "CTF/Web/PHP/伪协议/php filter伪协议.md",
+    "CTF/Web/PHP/RCE/无字母数字RCE.md",
+    "CTF/Web/Misc/jsfuck.md",
+    "CTF/Web/SQL/单引号过滤绕过.md",
+    "CTF/Web/Misc/常见的编码.md",
+    "CTF/WriteUp/22-11-21/[WUSTCTF2020]朴实无华.md",
     "CTF/WriteUp/23-01-02/[watevrCTF-2019]Cookie Store.md",
-    "CTF/WriteUp/23-01-02/[RCTF2015]EasySQL.md",
-    "CTF/WriteUp/23-01-02/[HGAME2023]Guess Who I Am.md",
-    "CTF/WriteUp/23-01-02/[HGAME2023]Classic Childhood Game.md",
-    "CTF/WriteUp/23-01-02/[CISCN2019 华北赛区 Day1 Web5]CyberPunk.md",
-    "CTF/WriteUp/23-01-02/未命名.md",
-    "CTF/WriteUp/23-01-02/[网鼎杯 2020 白虎组]PicDown.md",
-    "CTF/WriteUp/23-01-02/[红明谷CTF 2021]write_shell.md",
-    "CTF/Web/PHP/文件上传/基本文件上传.md",
-    "CTF/WriteUp/23-01-02/img/Pasted image 20230106141654.png"
+    "CTF/WriteUp/22-12-19/[MRCTF2020]套娃.md",
+    "CTF/WriteUp/22-11-14/[BSidesCF 2020]Had a bad day.md"
   ]
 }
