@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "72c89cd546c9fc7b",
+        "id": "7865b2f13ceb6ee1",
         "type": "tabs",
         "children": [
           {
-            "id": "c621037dd9e2e6f9",
+            "id": "f160261135048363",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/伴随矩阵的性质.md",
+                "file": "academic/G1T1/calculus/1_prerequisite_knowledge/1.2_function/1.2.2_map&function/1.2.2.2_definition_of_function/domain.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,20 +21,33 @@
             }
           },
           {
-            "id": "5c8144ab8f844f9f",
+            "id": "a67b9d0976d45e4f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/方阵可逆的充分必要条件.md",
+                "file": "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.2_properties_of_square_matrix_determinant/transpose_invariance.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "abb656208551775f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/subform_of_determinant.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -76,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 738.5124015808105
   },
   "right": {
     "id": "ba2decbca6383859",
@@ -92,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/方阵可逆的充分必要条件.md",
+                "file": "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/subform_of_determinant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,17 +140,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5c8144ab8f844f9f",
+  "active": "abb656208551775f",
   "lastOpenFiles": [
-    "大一上/线性代数/2 方阵的行列式/2.2 方阵行列式的性质/运算规律.md",
-    "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/伴随矩阵的性质.md",
-    "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/方阵可逆的充分必要条件.md",
-    "大一上/线性代数/2 方阵的行列式/2.1 n阶行列式的定义/2.1.2 n阶行列式的计算/行列式的值.md",
-    "大一上/线性代数/2 方阵的行列式/2.2 方阵行列式的性质/转置不变性.md",
-    "大一上/线性代数/2 方阵的行列式/2.2 方阵行列式的性质/行列式加倍.md",
-    "大一上/线性代数/3 可逆矩阵/3.1 可逆矩阵的定义与性质/3.1.2 可逆矩阵的性质/乘积可逆性不变.md",
-    "大一上/线性代数/3 可逆矩阵/3.2 方阵可逆的充要条件与逆矩阵计算/伴随矩阵.md",
-    "CTF/Web/PHP/Functions/addslashes触发字符串逃逸.md",
-    "CTF/Web/Python/unicodedata.numeric绕过.md"
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/adding_edge_method.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/speed_up_computation_using_laplace_theorem.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.1 行列式元素的余子式和代数余子式.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/subform_of_determinant.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/minor&cofactor_of_subform.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/main_subform_of_determinant.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/laplace_theorem.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/vandermonde_determinant.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/theorem_of_determinant_expansion_by_row(column).md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/prerequisite_knowledge.md"
   ]
 }
