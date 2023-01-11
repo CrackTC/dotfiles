@@ -4,50 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "7865b2f13ceb6ee1",
+        "id": "88bea2a2456e4a4f",
         "type": "tabs",
         "children": [
           {
-            "id": "f160261135048363",
+            "id": "ba719ca91f3aed67",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academic/G1T1/calculus/1_prerequisite_knowledge/1.2_function/1.2.2_map&function/1.2.2.2_definition_of_function/domain.md",
+                "file": "CTF/Web/HTTP/HTML审查.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "a67b9d0976d45e4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.2_properties_of_square_matrix_determinant/transpose_invariance.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abb656208551775f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/subform_of_determinant.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -76,8 +49,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": true,
+                "query": "file:requisite",
+                "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
@@ -105,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/subform_of_determinant.md",
+                "file": "CTF/Web/HTTP/HTML审查.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "abb656208551775f",
+  "active": "f327adb60510bd03",
   "lastOpenFiles": [
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/adding_edge_method.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/speed_up_computation_using_laplace_theorem.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.1 行列式元素的余子式和代数余子式.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/subform_of_determinant.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/minor&cofactor_of_subform.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/main_subform_of_determinant.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.3_laplace_theorem/laplace_theorem.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/vandermonde_determinant.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/theorem_of_determinant_expansion_by_row(column).md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/prerequisite_knowledge.md"
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/properties_of_adjoint_matrix.md",
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/necessary&sufficient_conds_of_invertibility.md",
+    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/important_inference.md",
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/adjoint_matrix.md",
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/uniqueness_of_inverse_matrix.md",
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/symmetry_inverse_matrix.md",
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/invertibility_remains_in_transpose.md",
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/invertibility_remains_in_number_multiplication.md",
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/invertibility_remains_in_multiplication.md",
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/discussion_on_elimination_of_matrix_multiplication.md"
   ]
 }
