@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "88bea2a2456e4a4f",
+        "id": "af61494d4126459b",
         "type": "tabs",
         "children": [
           {
-            "id": "ba719ca91f3aed67",
+            "id": "843be133c2ff9ddc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/Web/HTTP/HTML审查.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -49,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:requisite",
+                "query": "jwt",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -62,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 738.5124015808105
+    "width": 380.50418853759766
   },
   "right": {
     "id": "ba2decbca6383859",
@@ -78,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Web/HTTP/HTML审查.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +107,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f327adb60510bd03",
+  "active": "843be133c2ff9ddc",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-01-09/[HFCTF2020]EasyLogin.md",
+    "CTF/Web/Node.js/jwt.verify利用.md",
+    "CTF/Web/Misc/JSON Web Token（JWT）.md",
+    "CTF/WriteUp/23-01-09/[CISCN2019 总决赛 Day2 Web1]Easyweb.md",
+    "CTF/Web/HTTP/HTML审查.md",
     "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/properties_of_adjoint_matrix.md",
     "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/necessary&sufficient_conds_of_invertibility.md",
     "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/important_inference.md",
     "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/adjoint_matrix.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/uniqueness_of_inverse_matrix.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/symmetry_inverse_matrix.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/invertibility_remains_in_transpose.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/invertibility_remains_in_number_multiplication.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/invertibility_remains_in_multiplication.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/discussion_on_elimination_of_matrix_multiplication.md"
+    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/uniqueness_of_inverse_matrix.md"
   ]
 }
