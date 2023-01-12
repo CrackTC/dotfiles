@@ -175,7 +175,7 @@ cnoremap <C-n> <RIGHT>
 " === Markdown Settings
 " ===
 source ~/.config/nvim/vimfiles/markdown.vim
-autocmd BufRead,BufNewFile *.md setlocal spell
+" autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal nowrap
 
 " ===
