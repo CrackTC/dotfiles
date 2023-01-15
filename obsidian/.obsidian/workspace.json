@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "af61494d4126459b",
+        "id": "f5237d7f8c978cbd",
         "type": "tabs",
         "children": [
           {
-            "id": "843be133c2ff9ddc",
+            "id": "7721ce65ed71980b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-01-09/[HITCON 2017]SSRFme.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -57,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 380.50418853759766
+    "width": 543.5041885375977
   },
   "right": {
     "id": "ba2decbca6383859",
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CTF/WriteUp/23-01-09/[HITCON 2017]SSRFme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "843be133c2ff9ddc",
+  "active": "7721ce65ed71980b",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-01-09/[HGAME2023]v2board.md",
+    "CTF/WriteUp/23-01-09/[HGAME2023]Git Leakage.md",
     "CTF/WriteUp/23-01-09/[HFCTF2020]EasyLogin.md",
-    "CTF/Web/Node.js/jwt.verify利用.md",
-    "CTF/Web/Misc/JSON Web Token（JWT）.md",
+    "CTF/WriteUp/23-01-09/[GYCTF2020]Ezsqli.md",
     "CTF/WriteUp/23-01-09/[CISCN2019 总决赛 Day2 Web1]Easyweb.md",
-    "CTF/Web/HTTP/HTML审查.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/properties_of_adjoint_matrix.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/necessary&sufficient_conds_of_invertibility.md",
-    "academic/G1T1/linear_algebra/2_determinant_of_square_matrix/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/important_inference.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.2_necessary_and_sufficient_conds_of_invertibility&inverse_matrix_calculation/adjoint_matrix.md",
-    "academic/G1T1/linear_algebra/3_invertible_matrix/3.1_definition&properties_of_invertible_matrix/3.1.2_properties_of_invertible_matrix/uniqueness_of_inverse_matrix.md"
+    "CTF/WriteUp/23-01-09/[b01lers2020]Welcome to Earth.md",
+    "CTF/Web/SQL/爆库、爆表、爆字段.md",
+    "CTF/Web/SQL/未知字段名下查询.md",
+    "CTF/Web/SQL/布尔盲注.md",
+    "CTF/WriteUp/23-01-09/img/Pasted image 20230115083110.png"
   ]
 }
