@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount smb at boot
+
+[Mount]
+What=//193.111.30.158/vps-smb
+Where=/home/chen/smb
+Options=x-systemd.automount,credentials=/etc/samba/credentials/vps-smb,iocharset=utf8,uid=1000,gid=1000,sec=ntlmssp,rw
+Type=cifs
+TimeoutSec=30
+ForceUnmount=true
+
+[Install]
+WantedBy=multi-user.target
