@@ -35,7 +35,7 @@ set autoindent
 set list
 set listchars=tab:\|\ ,trail:▫
 set scrolloff=4
-set wrap
+set nowrap
 " set linebreak " Reserve Whole Word While Wrapping
 set timeoutlen=500
 set textwidth=0
