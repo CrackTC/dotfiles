@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "2677785f5a221df0",
+        "id": "1da121e28d2ea772",
         "type": "tabs",
         "children": [
           {
-            "id": "b50f0a7a726f64d3",
+            "id": "8eaec858a8e54464",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-01-09/[HGAME2023]v2board.md",
+                "file": "CTF/WriteUp/23-01-16/[NPUCTF2020]ezinclude（学习）.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "95c9afe5700fef06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF/Web/PHP/php7部分版本的崩溃bug.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ants",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-01-09/[HGAME2023]v2board.md",
+                "file": "CTF/Web/PHP/php7部分版本的崩溃bug.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +127,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b50f0a7a726f64d3",
+  "active": "95c9afe5700fef06",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-01-16/[NPUCTF2020]ezinclude（学习）.md",
+    "CTF/WriteUp/23-01-16/[NCTF2019]SQLi.md",
+    "CTF/WriteUp/22-12-19/[极客大挑战 2019]RCE ME.md",
+    "CTF/WriteUp/23-01-16/img/Pasted image 20230121102852.png",
+    "CTF/WriteUp/23-01-16/img/Pasted image 20230121102812.png",
+    "CTF/WriteUp/23-01-16/[SWPUCTF 2018]SimplePHP.md",
+    "CTF/WriteUp/23-01-09/[HGAME2023]v2board.md",
     "CTF/Web/SQL/布尔盲注.md",
     "CTF/Web/Misc/%00绕过.md",
-    "CTF/Web/SQL/查询结果伪造.md",
-    "CTF/Web/SQL/单引号过滤绕过.md",
-    "CTF/WriteUp/23-01-16/[NCTF2019]SQLi.md",
-    "etl/abema.tv 视频下载.md",
-    "etl/解决php的readonly filesystem问题.md",
-    "etl/真有人能心胸开阔 不计得失吗？怎么做到？.md",
-    "etl/Leet-speak.md",
-    "CTF/WriteUp/23-01-16/[网鼎杯 2018]Comment.md"
+    "CTF/Web/SQL/查询结果伪造.md"
   ]
 }
