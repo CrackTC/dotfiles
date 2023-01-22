@@ -4,6 +4,8 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 
+# /etc/environment
+
 # fcitx5
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
