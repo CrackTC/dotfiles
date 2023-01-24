@@ -287,6 +287,10 @@ function! CompileRun()
 		set splitbelow
 		:split
 		:terminal dotnet run
+    elseif &filetype == "php"
+        set splitbelow
+        :split
+        :terminal php %
 	endif
 endfunction
 
