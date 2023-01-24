@@ -4,37 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "cbdb665e395aa6d0",
+        "id": "50c1b94cb1bccc09",
         "type": "tabs",
         "children": [
           {
-            "id": "79b560f12e0b0919",
+            "id": "fd5d97b424d501a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/WriteUp/23-01-16/[SWPUCTF 2018]SimplePHP.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "304d6918edf0c205",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/WriteUp/23-01-23/[网鼎杯2018]Unfinish.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-01-23/[网鼎杯2018]Unfinish.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,8 +107,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "304d6918edf0c205",
+  "active": "fd5d97b424d501a0",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-01-23/[SUCTF 2019]EasyWeb.md",
+    "CTF/WriteUp/23-01-23/[网鼎杯2018]Unfinish.md",
     "CTF/WriteUp/23-01-16/[SWPUCTF 2018]SimplePHP.md",
     "CTF/WriteUp/23-01-16/[RootersCTF2019]I_<3_Flask.md",
     "CTF/WriteUp/23-01-16/[NPUCTF2020]ezinclude（学习）.md",
@@ -136,8 +118,6 @@
     "CTF/WriteUp/23-01-16/[HarekazeCTF2019]encode_and_encode.md",
     "CTF/WriteUp/23-01-16/[GYCTF2020]EasyThinking.md",
     "CTF/WriteUp/23-01-16/[网鼎杯 2018]Comment.md",
-    "CTF/Web/PHP/php7部分版本的崩溃bug.md",
-    "CTF/Web/Vulnerabilities/thinkphp.md",
-    "CTF/WriteUp/22-12-19/[极客大挑战 2019]RCE ME.md"
+    "CTF/Web/PHP/php7部分版本的崩溃bug.md"
   ]
 }
