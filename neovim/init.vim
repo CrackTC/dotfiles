@@ -402,21 +402,21 @@ nnoremap <silent> <LEADER>gi :CocList gitignore<CR>
 " ===
 " === Omnisharp
 " ===
-let g:Omnisharp_typeLookupInPreview = 1
-let g:omnicomplete_fetch_full_documentation = 1
-let g:OmniSharp_server_use_net6 = 1
-let g:Omnisharp_highlight_types = 2
+" let g:Omnisharp_typeLookupInPreview = 1
+" let g:omnicomplete_fetch_full_documentation = 1
+" let g:OmniSharp_server_use_net6 = 1
+" let g:Omnisharp_highlight_types = 2
 
-autocmd FileType cs nnoremap <buffer> <LEADER>m :OmniSharpCodeFormat<CR>
-autocmd FileType cs nnoremap <buffer> <LEADER>dc :OmniSharpDocumentation<CR>
-autocmd FileType cs nnoremap <buffer> gd :OmniSharpPreviewDefinition<CR>
-autocmd FileType cs nnoremap <buffer> gr :OmniSharpFindUsages<CR>
-autocmd FileType cs nnoremap <buffer> <LEADER>a :OmniSharpGetCodeActions<CR><C-\><C-n>:resize +5<CR>i
-autocmd FileType cs nnoremap <buffer> <LEADER>rn :OmniSharpRename<CR><C-N>:res +5<CR>
-autocmd FileType cs setlocal tabstop=4
-autocmd FileType cs setlocal shiftwidth=4
+" autocmd FileType cs nnoremap <buffer> <LEADER>m :OmniSharpCodeFormat<CR>
+" autocmd FileType cs nnoremap <buffer> <LEADER>dc :OmniSharpDocumentation<CR>
+" autocmd FileType cs nnoremap <buffer> gd :OmniSharpPreviewDefinition<CR>
+" autocmd FileType cs nnoremap <buffer> gr :OmniSharpFindUsages<CR>
+" autocmd FileType cs nnoremap <buffer> <LEADER>a :OmniSharpGetCodeActions<CR><C-\><C-n>:resize +5<CR>i
+" autocmd FileType cs nnoremap <buffer> <LEADER>rn :OmniSharpRename<CR><C-N>:res +5<CR>
+" autocmd FileType cs setlocal tabstop=4
+" autocmd FileType cs setlocal shiftwidth=4
 
-sign define OmniSharpCodeActions text=💡
+" sign define OmniSharpCodeActions text=💡
 
 " augroup OSCountCodeActions
 " 	autocmd!
@@ -434,13 +434,13 @@ sign define OmniSharpCodeActions text=💡
 " 	call OmniSharp#actions#codeactions#Count(opts)
 " endfunction
 
-function! s:CBReturnCount(count) abort
-	if a:count
-		let l = getpos('.')[1]
-		let f = expand('%:p')
-		execute ':sign place 99 line='.l.' name=OmniSharpCodeActions file='.f
-	endif
-endfunction
+" function! s:CBReturnCount(count) abort
+" 	if a:count
+" 		let l = getpos('.')[1]
+" 		let f = expand('%:p')
+" 		execute ':sign place 99 line='.l.' name=OmniSharpCodeActions file='.f
+" 	endif
+" endfunction
 
 " ===
 " === ALE

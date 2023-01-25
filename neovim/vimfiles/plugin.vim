@@ -49,7 +49,7 @@ Plug 'dkarter/bullets.vim', { 'for': ['text', 'markdown', 'vim-plug', 'gitcommit
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'liuchengxu/vista.vim', {'on': 'Vista'}
 
-Plug 'OmniSharp/omnisharp-vim', {'for' :['cs', 'vim-plug']}
+" Plug 'OmniSharp/omnisharp-vim', {'for' :['cs', 'vim-plug']}
 
 " ===
 " Plug 'dense-analysis/ale', {'for' :['cs', 'vim-plug']}
