@@ -4,6 +4,7 @@ index.php.swp
 www.zip
 robot.txt
 robots.txt
+secret
 .git
 phpmyadmin
 source
@@ -7647,7 +7648,6 @@ searchreplacedb2.php
 searchreplacedb2cli.php
 searchresults.%EXT%
 searchresults.html
-secret
 Secret/
 secret/
 secretadmin
