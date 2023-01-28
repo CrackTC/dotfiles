@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e314c57b32ac96a7",
+        "id": "ba36aff6ac56325d",
         "type": "tabs",
         "children": [
           {
-            "id": "b0106a404ef09fc6",
+            "id": "bb7203b61eb55b1e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/WriteUp/23-01-23/[HGAME2023]Ping To The Host.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -49,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "url_for",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -62,7 +57,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.50418853759766
+    "width": 325.5
   },
   "right": {
     "id": "ba2decbca6383859",
@@ -78,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-01-23/[HGAME2023]Ping To The Host.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +107,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b0106a404ef09fc6",
+  "active": "bb7203b61eb55b1e",
   "lastOpenFiles": [
-    "CTF/WriteUp/23-01-23/[CISCN2019 华东南赛区]Double Secret.md",
-    "CTF/WriteUp/23-01-23/[HGAME2023]Ping To The Host.md",
+    "CTF/WriteUp/23-01-23/[网鼎杯 2020 半决赛]AliceWebsite.md",
+    "CTF/WriteUp/23-01-23/[BJDCTF2020]EzPHP（学习）.md",
+    "CTF/Web/PHP/Functions/create_function注入.md",
+    "CTF/Web/PHP/RCE/数学函数RCE.md",
+    "CTF/WriteUp/22-11-28/[CISCN 2019 初赛]Love Math.md",
+    "CTF/Web/PHP/特殊变量.md",
+    "CTF/WriteUp/23-01-23/img/Pasted image 20230128123734.png",
+    "CTF/Web/PHP/Functions/preg_replace正则表达式执行.md",
     "CTF/WriteUp/23-01-23/[SUCTF 2019]EasyWeb.md",
-    "CTF/WriteUp/22-12-19/[GYCTF2020]FlaskApp.md",
-    "CTF/WriteUp/23-01-23/[网鼎杯2018]Unfinish.md",
-    "CTF/WriteUp/23-01-16/[SWPUCTF 2018]SimplePHP.md",
-    "CTF/WriteUp/23-01-16/[RootersCTF2019]I_<3_Flask.md",
-    "CTF/WriteUp/23-01-16/[NPUCTF2020]ezinclude（学习）.md",
-    "CTF/WriteUp/23-01-16/[NCTF2019]SQLi.md",
-    "CTF/WriteUp/23-01-16/[HarekazeCTF2019]encode_and_encode.md"
+    "CTF/WriteUp/23-01-23/[HGAME2023]Ping To The Host.md"
   ]
 }
