@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "ba36aff6ac56325d",
+        "id": "a272956b1c94c5d9",
         "type": "tabs",
         "children": [
           {
-            "id": "bb7203b61eb55b1e",
+            "id": "c427987c2bf2093b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-01-30/[HGAME2023]Show Me Your Beauty.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CTF/WriteUp/23-01-30/[HGAME2023]Show Me Your Beauty.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +113,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bb7203b61eb55b1e",
+  "active": "f327adb60510bd03",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-01-30/[HGAME2023]Become A Member.md",
     "CTF/WriteUp/23-01-23/[网鼎杯 2020 半决赛]AliceWebsite.md",
     "CTF/WriteUp/23-01-23/[BJDCTF2020]EzPHP（学习）.md",
     "CTF/Web/PHP/Functions/create_function注入.md",
@@ -117,7 +124,6 @@
     "CTF/Web/PHP/特殊变量.md",
     "CTF/WriteUp/23-01-23/img/Pasted image 20230128123734.png",
     "CTF/Web/PHP/Functions/preg_replace正则表达式执行.md",
-    "CTF/WriteUp/23-01-23/[SUCTF 2019]EasyWeb.md",
-    "CTF/WriteUp/23-01-23/[HGAME2023]Ping To The Host.md"
+    "CTF/WriteUp/23-01-23/[SUCTF 2019]EasyWeb.md"
   ]
 }
