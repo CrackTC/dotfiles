@@ -3,4 +3,8 @@ sudo pacman -S --noconfirm alacritty
 
 path="$(cd "$(dirname $0)";cd ..;pwd)"
 
-ln -snf $path/alacritty ~/.config/alacritty
+mkdir -p ~/backup
+rm -rf ~/backup/alacritty
+mv ~/.config/alacritty ~/backup/alacritty
+
+ln -s $path/alacritty ~/.config/alacritty
