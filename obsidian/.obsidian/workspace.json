@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a272956b1c94c5d9",
+        "id": "8fc494bf2eabeca7",
         "type": "tabs",
         "children": [
           {
-            "id": "c427987c2bf2093b",
+            "id": "cde68f33958c6ae0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/WriteUp/23-01-30/[HGAME2023]Show Me Your Beauty.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -78,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-01-30/[HGAME2023]Show Me Your Beauty.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +107,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f327adb60510bd03",
+  "active": "cde68f33958c6ae0",
   "lastOpenFiles": [
-    "CTF/WriteUp/23-01-30/[HGAME2023]Become A Member.md",
-    "CTF/WriteUp/23-01-23/[网鼎杯 2020 半决赛]AliceWebsite.md",
-    "CTF/WriteUp/23-01-23/[BJDCTF2020]EzPHP（学习）.md",
-    "CTF/Web/PHP/Functions/create_function注入.md",
-    "CTF/Web/PHP/RCE/数学函数RCE.md",
-    "CTF/WriteUp/22-11-28/[CISCN 2019 初赛]Love Math.md",
-    "CTF/Web/PHP/特殊变量.md",
-    "CTF/WriteUp/23-01-23/img/Pasted image 20230128123734.png",
-    "CTF/Web/PHP/Functions/preg_replace正则表达式执行.md",
-    "CTF/WriteUp/23-01-23/[SUCTF 2019]EasyWeb.md"
+    "CTF/WriteUp/23-01-30/[HGAME2023]Search Commodity.md",
+    "CTF/Web/SQL/爆库、爆表、爆字段.md",
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230131100922.png",
+    "CTF/WriteUp/23-01-30/[HGAME2023]Show Me Your Beauty.md",
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230131100704.png",
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230201090026.png",
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230201090050.png",
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230201091534.png",
+    "CTF/WriteUp/23-01-30/[N1CTF Juinor 2023]orrs.md",
+    "CTF/WriteUp/23-01-30/[HGAME2023]Become A Member.md"
   ]
 }
