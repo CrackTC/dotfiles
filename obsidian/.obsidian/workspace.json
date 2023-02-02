@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "8fc494bf2eabeca7",
+        "id": "c765f13912abc350",
         "type": "tabs",
         "children": [
           {
-            "id": "cde68f33958c6ae0",
+            "id": "46a74b1d6e768f6a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cde68f33958c6ae0",
+  "active": "46a74b1d6e768f6a",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+    "CTF/WriteUp/23-01-23/[HGAME2023]Ping To The Host.md",
+    "dict.ja.md",
+    "academic/G1T1/linear_algebra/2_determinant/2.2_properties_of_determinant/row_additivity.md",
+    "academic/G1T1/linear_algebra/2_determinant/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/theorem_of_determinant_expansion_by_row(column).md",
+    "academic/G1T1/linear_algebra/2_determinant/2.3_expansion_theorem&determinant_calculation/2.3.1_minor&cofactor_of_determinant_element.md",
+    "dict.en.md",
     "CTF/WriteUp/23-01-30/[HGAME2023]Search Commodity.md",
     "CTF/Web/SQL/爆库、爆表、爆字段.md",
-    "CTF/WriteUp/23-01-30/img/Pasted image 20230131100922.png",
-    "CTF/WriteUp/23-01-30/[HGAME2023]Show Me Your Beauty.md",
-    "CTF/WriteUp/23-01-30/img/Pasted image 20230131100704.png",
-    "CTF/WriteUp/23-01-30/img/Pasted image 20230201090026.png",
-    "CTF/WriteUp/23-01-30/img/Pasted image 20230201090050.png",
-    "CTF/WriteUp/23-01-30/img/Pasted image 20230201091534.png",
-    "CTF/WriteUp/23-01-30/[N1CTF Juinor 2023]orrs.md",
-    "CTF/WriteUp/23-01-30/[HGAME2023]Become A Member.md"
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230131100922.png"
   ]
 }
