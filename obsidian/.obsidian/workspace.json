@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c765f13912abc350",
+        "id": "3f6eb239ba801f58",
         "type": "tabs",
         "children": [
           {
-            "id": "46a74b1d6e768f6a",
+            "id": "1dbef26486dc5094",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+                "file": "CTF/Web/Node.js/vm2沙箱逃逸.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+                "file": "CTF/Web/Node.js/vm2沙箱逃逸.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "46a74b1d6e768f6a",
+  "active": "1dbef26486dc5094",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-01-30/[HFCTF2020]JustEscape.md",
+    "CTF/Web/Node.js/vm2沙箱逃逸.md",
     "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
-    "CTF/WriteUp/23-01-23/[HGAME2023]Ping To The Host.md",
-    "dict.ja.md",
-    "academic/G1T1/linear_algebra/2_determinant/2.2_properties_of_determinant/row_additivity.md",
-    "academic/G1T1/linear_algebra/2_determinant/2.3_expansion_theorem&determinant_calculation/2.3.2_theorem_of_determinant_expansion_by_row(column)/theorem_of_determinant_expansion_by_row(column).md",
-    "academic/G1T1/linear_algebra/2_determinant/2.3_expansion_theorem&determinant_calculation/2.3.1_minor&cofactor_of_determinant_element.md",
-    "dict.en.md",
+    "CTF/Web/Node.js/ejs代码执行.md",
+    "CTF/Web/Node.js/prototype污染.md",
+    "CTF/Web/HTTP/Headers/User-Agent.md",
     "CTF/WriteUp/23-01-30/[HGAME2023]Search Commodity.md",
-    "CTF/Web/SQL/爆库、爆表、爆字段.md",
-    "CTF/WriteUp/23-01-30/img/Pasted image 20230131100922.png"
+    "CTF/WriteUp/23-01-30/[HGAME2023]Become A Member.md",
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230203095307.png",
+    "CTF/Web/Linux/反弹shell.md"
   ]
 }
