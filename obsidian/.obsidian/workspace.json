@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3f6eb239ba801f58",
+        "id": "851d7482f4886ddd",
         "type": "tabs",
         "children": [
           {
-            "id": "1dbef26486dc5094",
+            "id": "97f08670acde2f35",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/Web/Node.js/vm2沙箱逃逸.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -78,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Web/Node.js/vm2沙箱逃逸.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +107,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1dbef26486dc5094",
+  "active": "f327adb60510bd03",
   "lastOpenFiles": [
-    "CTF/WriteUp/23-01-30/[HFCTF2020]JustEscape.md",
-    "CTF/Web/Node.js/vm2沙箱逃逸.md",
+    "CTF/WriteUp/23-01-30/[XHLJ2023]扭转乾坤.md",
     "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+    "CTF/Web/Node.js/vm2沙箱逃逸.md",
+    "CTF/WriteUp/23-01-30/[HFCTF2020]JustEscape.md",
     "CTF/Web/Node.js/ejs代码执行.md",
     "CTF/Web/Node.js/prototype污染.md",
     "CTF/Web/HTTP/Headers/User-Agent.md",
     "CTF/WriteUp/23-01-30/[HGAME2023]Search Commodity.md",
     "CTF/WriteUp/23-01-30/[HGAME2023]Become A Member.md",
-    "CTF/WriteUp/23-01-30/img/Pasted image 20230203095307.png",
-    "CTF/Web/Linux/反弹shell.md"
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230203095307.png"
   ]
 }
