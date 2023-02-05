@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "851d7482f4886ddd",
+        "id": "794de6423a223b30",
         "type": "tabs",
         "children": [
           {
-            "id": "97f08670acde2f35",
+            "id": "06d0034a16d53449",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f327adb60510bd03",
+  "active": "06d0034a16d53449",
   "lastOpenFiles": [
     "CTF/WriteUp/23-01-30/[XHLJ2023]扭转乾坤.md",
-    "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
-    "CTF/Web/Node.js/vm2沙箱逃逸.md",
-    "CTF/WriteUp/23-01-30/[HFCTF2020]JustEscape.md",
-    "CTF/Web/Node.js/ejs代码执行.md",
-    "CTF/Web/Node.js/prototype污染.md",
-    "CTF/Web/HTTP/Headers/User-Agent.md",
+    "CTF/WriteUp/23-01-30/[HGAME2023]Tell Me.md",
+    "CTF/WriteUp/23-01-30/[HGAME2023]Show Me Your Beauty.md",
     "CTF/WriteUp/23-01-30/[HGAME2023]Search Commodity.md",
     "CTF/WriteUp/23-01-30/[HGAME2023]Become A Member.md",
-    "CTF/WriteUp/23-01-30/img/Pasted image 20230203095307.png"
+    "CTF/WriteUp/23-01-30/[HFCTF2020]JustEscape.md",
+    "CTF/WriteUp/23-02-05/[HGAME2023]Shared Diary.md",
+    "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230131091204.png",
+    "CTF/WriteUp/23-01-30/img/Pasted image 20230205091041.png"
   ]
 }
