@@ -4,7 +4,7 @@ include ~/.config/i3/startup.conf
 include ~/.config/i3/resize.conf
 
 for_window [title="wemeetapp"] floating enable
-for_window [title=".*"] border pixel 0
+for_window [class=".*"] border pixel 0
 default_border pixel 0
 
 gaps inner 5
