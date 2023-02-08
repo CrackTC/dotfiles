@@ -10,3 +10,5 @@ export PATH="$PATH:/home/chen/.local/bin"
 export PATH="$PATH:/home/chen/.dotnet/tools"
 
 export GOPATH="/home/chen/proj/go"
+
+alias ssh="TERM=xterm-256color /bin/ssh"
