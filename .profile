@@ -8,3 +8,5 @@ export XDG_CONFIG_DIR="/home/chen/.config"
 export PATH="$PATH:/home/chen/.local/bin"
 
 export PATH="$PATH:/home/chen/.dotnet/tools"
+
+export GOPATH="/home/chen/proj/go"
