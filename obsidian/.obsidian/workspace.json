@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a39e836dd26b7167",
+            "id": "541a14775268c152",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
+                "file": "CTF/WriteUp/23-02-06/[HGAME2023]Login To Get My Gift.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
+                "file": "CTF/WriteUp/23-02-06/[HGAME2023]Login To Get My Gift.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a39e836dd26b7167",
+  "active": "541a14775268c152",
   "lastOpenFiles": [
+    "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
+    "CTF/WriteUp/23-02-06/[HGAME2023]Login To Get My Gift.md",
+    "CTF/Web/SQL/爆库、爆表、爆字段.md",
     "CTF/WriteUp/23-02-06/[HGAME2023]Gopher Shop.md",
     "CTF/WriteUp/23-02-06/[HGAME2023]Shared Diary.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/2-tech/tech.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/1-theorem/laplace_theorem.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/0-pre/main_subform.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/0-pre/remain_and_alremain.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/0-pre/subform.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/4-spec/vandermonde_det.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/3-tech/add_edge_method.md"
+    "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/0-pre/subform.md"
   ]
 }
