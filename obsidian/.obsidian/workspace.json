@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ef4aa15e424b38d7",
+        "id": "9ac873d75e1c77d9",
         "type": "tabs",
         "children": [
           {
-            "id": "4733b44096481551",
+            "id": "a39e836dd26b7167",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": false,
                 "source": false
               }
@@ -113,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4733b44096481551",
+  "active": "a39e836dd26b7167",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-02-06/[HGAME2023]Gopher Shop.md",
+    "CTF/WriteUp/23-02-06/[HGAME2023]Shared Diary.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/2-tech/tech.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/1-theorem/laplace_theorem.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/0-pre/main_subform.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/0-pre/remain_and_alremain.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/0-pre/subform.md",
     "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/4-spec/vandermonde_det.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/3-tech/add_edge_method.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/2-inference/important_inference.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/1-theorem/theorem.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/0-pre/1-theorem/pre.md"
+    "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/3-tech/add_edge_method.md"
   ]
 }
