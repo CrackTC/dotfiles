@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "42545fd61aeaa388",
+        "id": "b8ed5a205ea47241",
         "type": "tabs",
         "children": [
           {
-            "id": "5ef437af94bf0fa6",
+            "id": "2191148034d25276",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -113,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5ef437af94bf0fa6",
+  "active": "f327adb60510bd03",
   "lastOpenFiles": [
-    "CTF/WriteUp/23-02-06/October 2019 Twice SQL Injection.md",
-    "CTF/Web/SQL/二次注入.md",
-    "CTF/WriteUp/23-02-06/[HGAME2023]Login To Get My Gift.md",
-    "CTF/WriteUp/23-02-06/img/Pasted image 20230209100007.png",
+    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/1-ele_mat/ele_eliminate_mat.md",
+    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/rel.md",
     "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
-    "CTF/Web/SQL/爆库、爆表、爆字段.md",
-    "CTF/WriteUp/23-02-06/[HGAME2023]Gopher Shop.md",
-    "CTF/WriteUp/23-02-06/[HGAME2023]Shared Diary.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/2-tech/tech.md",
-    "academic/G1T1/linear_algebra/1-det/2-calc/1-laplace_theorem/1-theorem/laplace_theorem.md"
+    "academic/G1T1/linear_algebra/2-inv_mat/0-def/singular_matrix.md",
+    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/0-ele_trans/2-res/std_mat.md",
+    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/0-ele_trans/2-res/row_simplest_mat.md",
+    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/0-ele_trans/2-res/row_echelon_mat.md",
+    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/0-ele_trans/0-def/ele_trans.md",
+    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/1-ele_mat/ele_mat.md",
+    "CTF/WriteUp/23-02-06/October 2019 Twice SQL Injection.md"
   ]
 }
