@@ -152,5 +152,6 @@
     "ds-pinyin-lsp.max_suggest": 50,
     "ds-pinyin-lsp.match_as_same_as_input": false,
     "ds-pinyin-lsp.match_long_input": true,
-    "ds-pinyin-lsp.status_bar_flag": "拼"
+    "ds-pinyin-lsp.status_bar_flag": "拼",
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd"
 }
