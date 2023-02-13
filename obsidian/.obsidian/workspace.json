@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b8ed5a205ea47241",
+        "id": "ae7a842bcc4ea409",
         "type": "tabs",
         "children": [
           {
-            "id": "2191148034d25276",
+            "id": "7ac5310d8f97c76b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -58,7 +53,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -78,7 +74,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
+                "file": "CTF/WriteUp/22-11-21/[WUSTCTF2020]朴实无华.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +109,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f327adb60510bd03",
+  "active": "46cf3bddd022a6f4",
   "lastOpenFiles": [
-    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/1-ele_mat/ele_eliminate_mat.md",
-    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/rel.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/0-def/invertible_matrix.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/0-def/singular_matrix.md",
-    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/0-ele_trans/2-res/std_mat.md",
-    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/0-ele_trans/2-res/row_simplest_mat.md",
-    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/0-ele_trans/2-res/row_echelon_mat.md",
-    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/0-ele_trans/0-def/ele_trans.md",
-    "academic/G1T1/linear_algebra/0-mat/4-ele_trans/1-ele_mat/ele_mat.md",
-    "CTF/WriteUp/23-02-06/October 2019 Twice SQL Injection.md"
+    "CTF/WriteUp/22-11-14/[GXYCTF2019]禁止套娃.md",
+    "CTF/WriteUp/22-11-21/[GWCTF 2019]我有一个数据库.md",
+    "CTF/WriteUp/22-11-21/[BJDCTF2020]Mark loves cat.md",
+    "CTF/WriteUp/22-12-10/[BJDCTF2020]EasySearch.md",
+    "CTF/WriteUp/22-12-19/[0CTF 2016]piapiapia.md",
+    "CTF/WriteUp/23-02-13/[MRCTF2020]Ezaudit.md",
+    "CTF/WriteUp/22-12-26/[GWCTF 2019]枯燥的抽奖.md",
+    "CTF/WriteUp/23-02-06/October 2019 Twice SQL Injection.md",
+    "CTF/WriteUp/23-02-06/[WMCTF2020]Make PHP Great Again.md",
+    "CTF/WriteUp/23-02-06/[HGAME2023]Shared Diary.md"
   ]
 }
