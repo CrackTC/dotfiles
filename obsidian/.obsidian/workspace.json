@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "ae7a842bcc4ea409",
+        "id": "7743d6add99dc767",
         "type": "tabs",
         "children": [
           {
-            "id": "7ac5310d8f97c76b",
+            "id": "09f587dcd3b21368",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-02-13/[CSAWQual 2019]Web_Unagi.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -53,8 +58,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -74,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/22-11-21/[WUSTCTF2020]朴实无华.md",
+                "file": "CTF/WriteUp/23-02-13/[CSAWQual 2019]Web_Unagi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,17 +113,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "46cf3bddd022a6f4",
+  "active": "09f587dcd3b21368",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-02-13/[CSAWQual 2019]Web_Unagi.md",
+    "CTF/WriteUp/23-02-13/[MRCTF2020]Ezaudit.md",
+    "CTF/WriteUp/23-02-13/img/Pasted image 20230215154544.png",
+    "CTF/WriteUp/23-02-13/img/Pasted image 20230215154558 1.png",
+    "CTF/WriteUp/23-02-13/img/Pasted image 20230215154558.png",
+    "CTF/WriteUp/23-02-13/[极客大挑战 2020]Roamphp1-Welcome.md",
     "CTF/WriteUp/22-11-14/[GXYCTF2019]禁止套娃.md",
     "CTF/WriteUp/22-11-21/[GWCTF 2019]我有一个数据库.md",
     "CTF/WriteUp/22-11-21/[BJDCTF2020]Mark loves cat.md",
-    "CTF/WriteUp/22-12-10/[BJDCTF2020]EasySearch.md",
-    "CTF/WriteUp/22-12-19/[0CTF 2016]piapiapia.md",
-    "CTF/WriteUp/23-02-13/[MRCTF2020]Ezaudit.md",
-    "CTF/WriteUp/22-12-26/[GWCTF 2019]枯燥的抽奖.md",
-    "CTF/WriteUp/23-02-06/October 2019 Twice SQL Injection.md",
-    "CTF/WriteUp/23-02-06/[WMCTF2020]Make PHP Great Again.md",
-    "CTF/WriteUp/23-02-06/[HGAME2023]Shared Diary.md"
+    "CTF/WriteUp/22-12-10/[BJDCTF2020]EasySearch.md"
   ]
 }
