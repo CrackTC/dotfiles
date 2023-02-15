@@ -11,4 +11,4 @@ export PATH="$PATH:/home/chen/.dotnet/tools"
 
 export GOPATH="/home/chen/proj/go"
 
-alias ssh="TERM=xterm-256color /bin/ssh"
+export all_proxy=socks5://127.0.0.1:7890
