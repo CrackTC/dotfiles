@@ -8,38 +8,31 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:大一上/线性代数",
+      "query": "path:G1T1/linear_algebra",
       "color": {
         "a": 1,
         "rgb": 14048348
       }
     },
     {
-      "query": "path:大一上/微积分",
+      "query": "path:academic/G1T1/calculus",
       "color": {
         "a": 1,
         "rgb": 14069084
       }
     },
     {
-      "query": "path:大一上/程序设计基础",
+      "query": "path:G1T1/software_design_fund",
       "color": {
         "a": 1,
         "rgb": 11392604
       }
     },
     {
-      "query": "path:大一上/计算机系统导论",
+      "query": "path:G1T1/computer_sys_fund",
       "color": {
         "a": 1,
         "rgb": 6084188
-      }
-    },
-    {
-      "query": "path:大一上/通用学术英语",
-      "color": {
-        "a": 1,
-        "rgb": 6084269
       }
     },
     {
@@ -60,6 +53,6 @@
   "repelStrength": 9.16666666666667,
   "linkStrength": 0.465277777777778,
   "linkDistance": 250,
-  "scale": 0.10401099024891886,
-  "close": false
+  "scale": 0.17799186326836816,
+  "close": true
 }

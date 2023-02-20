@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "7743d6add99dc767",
+        "id": "163e01a3b629d767",
         "type": "tabs",
         "children": [
           {
-            "id": "09f587dcd3b21368",
+            "id": "5de5548d98fa5281",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-02-13/[CSAWQual 2019]Web_Unagi.md",
+                "file": "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/1-def/rank.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3596ea191492591e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -62,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5069465637207
+    "width": 346.5110321044922
   },
   "right": {
     "id": "ba2decbca6383859",
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-02-13/[CSAWQual 2019]Web_Unagi.md",
+                "file": "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,17 +127,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "09f587dcd3b21368",
+  "active": "3596ea191492591e",
   "lastOpenFiles": [
-    "CTF/WriteUp/23-02-13/[CSAWQual 2019]Web_Unagi.md",
-    "CTF/WriteUp/23-02-13/[MRCTF2020]Ezaudit.md",
-    "CTF/WriteUp/23-02-13/img/Pasted image 20230215154544.png",
-    "CTF/WriteUp/23-02-13/img/Pasted image 20230215154558 1.png",
-    "CTF/WriteUp/23-02-13/img/Pasted image 20230215154558.png",
-    "CTF/WriteUp/23-02-13/[极客大挑战 2020]Roamphp1-Welcome.md",
-    "CTF/WriteUp/22-11-14/[GXYCTF2019]禁止套娃.md",
-    "CTF/WriteUp/22-11-21/[GWCTF 2019]我有一个数据库.md",
-    "CTF/WriteUp/22-11-21/[BJDCTF2020]Mark loves cat.md",
-    "CTF/WriteUp/22-12-10/[BJDCTF2020]EasySearch.md"
+    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/1-def/rank.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/3-res/rank_of_mul.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/3-res/companion_mat_rank.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/0-companion_mat/1-prop/companion_mat_prop.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/non-zero_det.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/another_inv_mat_method.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/3-res/fullrank_inv_existence.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/ele_mat_mul.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/ele_col_trans_composited.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/ele_row_trans_composited.md"
   ]
 }
