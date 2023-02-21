@@ -4,37 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "163e01a3b629d767",
+        "id": "b72286f12b93d173",
         "type": "tabs",
         "children": [
           {
-            "id": "5de5548d98fa5281",
+            "id": "bdefe71accc828e4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/1-def/rank.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3596ea191492591e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,17 +107,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3596ea191492591e",
+  "active": "bdefe71accc828e4",
   "lastOpenFiles": [
-    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/1-def/rank.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/3-res/rank_of_mul.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/3-res/companion_mat_rank.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/0-companion_mat/1-prop/companion_mat_prop.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/non-zero_det.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/another_inv_mat_method.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/3-res/fullrank_inv_existence.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/ele_mat_mul.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/ele_col_trans_composited.md",
-    "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/1-iff/ele_row_trans_composited.md"
+    "CTF/WriteUp/23-02-20/[GWCTF 2019]mypassword.md",
+    "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230221173242.png",
+    "academic/G1T1/linear_algebra/3-linear_equation/1-vect_linear_rel/linear_rel.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/1-vect_linear_rel/vect_set_eq.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/1-vect_linear_rel/linear_combination.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/1-vect_linear_rel/vect_set.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/1-elimation/res.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/1-elimation/free_unknown.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/1-elimation/same_solve_eq.md"
   ]
 }
