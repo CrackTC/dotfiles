@@ -4,18 +4,63 @@
     "type": "split",
     "children": [
       {
-        "id": "b72286f12b93d173",
+        "id": "6f22c8d2955049aa",
         "type": "tabs",
         "children": [
           {
-            "id": "bdefe71accc828e4",
+            "id": "d1da749f0e3ea973",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "academic/G1T1/linear_algebra/3-linear_equation/4-solve_struct/ax=0/ax=0.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "959453c8dd843f84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "academic/G1T1/linear_algebra/3-linear_equation/4-solve_struct/ax=0/res.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e55edefb8f280014",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "academic/G1T1/linear_algebra/3-linear_equation/4-solve_struct/ax=b/ax=b.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "60f4e9eecdabada9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-02-20/[BSidesCF 2019]SVGMagic.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -73,6 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CTF/WriteUp/23-02-20/[BSidesCF 2019]SVGMagic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +153,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bdefe71accc828e4",
+  "active": "60f4e9eecdabada9",
   "lastOpenFiles": [
-    "CTF/WriteUp/23-02-20/[GWCTF 2019]mypassword.md",
-    "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230221173242.png",
-    "academic/G1T1/linear_algebra/3-linear_equation/1-vect_linear_rel/linear_rel.md",
-    "academic/G1T1/linear_algebra/3-linear_equation/1-vect_linear_rel/vect_set_eq.md",
-    "academic/G1T1/linear_algebra/3-linear_equation/1-vect_linear_rel/linear_combination.md",
-    "academic/G1T1/linear_algebra/3-linear_equation/1-vect_linear_rel/vect_set.md",
-    "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/1-elimation/res.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/4-solve_struct/ax=b/ax=b.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/4-solve_struct/ax=0/res.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/4-solve_struct/ax=0/ax=0.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/3-row_rank_and_col_rank/1-res/res.md",
     "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/1-elimation/free_unknown.md",
-    "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/1-elimation/same_solve_eq.md"
+    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/3-res/rank_of_mul.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/3-res/fullrank_inv_existence.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/2-max_norel_grp/0-def/def.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/3-row_rank_and_col_rank/0-def/def.md",
+    "academic/G1T1/linear_algebra/2-inv_mat/3-mat_rank/2-calc/2-classes/col_full_rank.md"
   ]
 }

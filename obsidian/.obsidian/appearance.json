@@ -1,8 +1,8 @@
 {
   "theme": "moonstone",
   "translucency": false,
-  "textFontFamily": "MiSans",
-  "interfaceFontFamily": "MiSans",
+  "textFontFamily": "Noto Sans CJK SC,MiSans",
+  "interfaceFontFamily": "Noto Sans CJK SC,MiSans",
   "monospaceFontFamily": "Source Code Variable",
   "baseFontSize": 24,
   "accentColor": "",
