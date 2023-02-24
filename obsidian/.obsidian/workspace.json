@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6f22c8d2955049aa",
+        "id": "dc689e82c583204e",
         "type": "tabs",
         "children": [
           {
-            "id": "9425807c232a7d40",
+            "id": "0d65357fabaf0514",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-02-20/[GYCTF2020]Ez_Express.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "326fb3858bb67e6e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+                "file": "CTF/WriteUp/23-02-20/EasyBypass.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -75,8 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5110321044922,
-    "collapsed": true
+    "width": 346.5110321044922
   },
   "right": {
     "id": "ba2decbca6383859",
@@ -92,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-02-20/[GYCTF2020]Ez_Express.md",
+                "file": "CTF/WriteUp/23-02-20/EasyBypass.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,15 +106,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:新建白板": false,
       "graph:查看关系图谱": false,
-      "canvas:Create new canvas": false,
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9425807c232a7d40",
+  "active": "0d65357fabaf0514",
   "lastOpenFiles": [
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230224235630.png",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230224233752.png",
+    "CTF/WriteUp/23-02-20/EasyBypass.md",
     "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
     "CTF/WriteUp/23-02-20/[GYCTF2020]Ez_Express.md",
     "CTF/Web/Node.js/ejs代码执行.md",
