@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dc689e82c583204e",
+        "id": "e35018d43749de87",
         "type": "tabs",
         "children": [
           {
-            "id": "0d65357fabaf0514",
+            "id": "32c88182a939c59f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6ac3cf0a86a478b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-02-27/[EIS 2019]EzPOP.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "反弹",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -78,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-02-20/EasyBypass.md",
+                "file": "CTF/WriteUp/23-02-27/[EIS 2019]EzPOP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,20 +127,45 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0d65357fabaf0514",
+  "active": "6ac3cf0a86a478b9",
   "lastOpenFiles": [
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230224235630.png",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230224233752.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230227230646.png",
     "CTF/WriteUp/23-02-20/EasyBypass.md",
-    "CTF/WriteUp/23-01-30/[XHLJ2023]real_ez_node.md",
+    "CTF/WriteUp/23-02-27/[EIS 2019]EzPOP.md",
+    "CTF/WriteUp/23-02-20/[SUCTF 2018]annonymous.md",
+    "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230227192525.png",
+    "CTF/WriteUp/23-02-27/img",
+    "CTF/WriteUp/23-02-27",
     "CTF/WriteUp/23-02-20/[GYCTF2020]Ez_Express.md",
-    "CTF/Web/Node.js/ejs代码执行.md",
     "CTF/WriteUp/23-02-20/[GWCTF 2019]mypassword.md",
     "CTF/WriteUp/23-02-20/[BSidesCF 2019]SVGMagic.md",
-    "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230224010027.png",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230224005937.png",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230224005810.png",
-    "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/3-tech/add_edge_method.md"
+    "CTF/WriteUp/23-02-20/[羊城杯2020]easyphp.md",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230226154124.png",
+    "CTF/WriteUp/23-01-02/[网鼎杯 2020 白虎组]PicDown.md",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230226151014.png",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230226142803.png",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230226142322.png",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230226134442.png",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/div.md",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230220192219.png",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230226131534.png",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230224235630.png",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/add.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/mul.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/seq_lim_precise_def.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/2-convergent_seq_prop/uniqueness.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/2-convergent_seq_prop/fixed_sym.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/2-convergent_seq_prop/boundedness.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/seq_lim_intuitive_def.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/divergent.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/convergent.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/seq.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/inc_seq.md",
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/dec_seq.md",
+    "academic/G1T1/calculus/0-pre/2-common_logicsym/1-forall_and_exists/forall.md",
+    "academic/G1T1/calculus/0-pre/2-common_logicsym/1-forall_and_exists/exists.md",
+    "academic/G1T1/calculus/0-pre/2-common_logicsym/0-implies_and_iff/iff.md",
+    "CTF/WriteUp/23-02-20/img/Pasted image 20230224233752.png"
   ]
 }
