@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e35018d43749de87",
+        "id": "b58c321767b57955",
         "type": "tabs",
         "children": [
           {
-            "id": "32c88182a939c59f",
+            "id": "211c505c28102b3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-02-20/EasyBypass.md",
+                "file": "CTF/WriteUp/23-02-27/CTFHub技能树--目录遍历（水.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,20 +21,33 @@
             }
           },
           {
-            "id": "6ac3cf0a86a478b9",
+            "id": "6421986b3861e0e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-02-27/[EIS 2019]EzPOP.md",
-                "mode": "preview",
+                "file": "CTF/WriteUp/23-02-27/CTFHub技能树--phpinfo（水.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef8b66667793c4f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF/WriteUp/23-02-27/CTFHub技能树--网站源码（水.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-02-27/[EIS 2019]EzPOP.md",
+                "file": "CTF/WriteUp/23-02-27/CTFHub技能树--网站源码（水.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,30 +140,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6ac3cf0a86a478b9",
+  "active": "ef8b66667793c4f9",
   "lastOpenFiles": [
-    "CTF/WriteUp/23-02-27/img/Pasted image 20230227230646.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230303123908.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230303123512.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230303123208.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230303123047.png",
+    "CTF/WriteUp/23-02-27/CTFHub技能树--phpinfo（水.md",
+    "CTF/WriteUp/23-02-27/CTFHub技能树--网站源码（水.md",
+    "CTF/WriteUp/23-02-27/CTFHub技能树--目录遍历（水.md",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230303122943.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230303122633.png",
     "CTF/WriteUp/23-02-20/EasyBypass.md",
     "CTF/WriteUp/23-02-27/[EIS 2019]EzPOP.md",
+    "CTF/WriteUp/23-02-27/[安洵杯 2019]不是文件上传.md",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230301160153.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230301155958.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230301021802.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230301021418.png",
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230301003051.png",
     "CTF/WriteUp/23-02-20/[SUCTF 2018]annonymous.md",
     "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
-    "CTF/WriteUp/23-02-27/img/Pasted image 20230227192525.png",
     "CTF/WriteUp/23-02-27/img",
     "CTF/WriteUp/23-02-27",
     "CTF/WriteUp/23-02-20/[GYCTF2020]Ez_Express.md",
     "CTF/WriteUp/23-02-20/[GWCTF 2019]mypassword.md",
     "CTF/WriteUp/23-02-20/[BSidesCF 2019]SVGMagic.md",
     "CTF/WriteUp/23-02-20/[羊城杯2020]easyphp.md",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230226154124.png",
     "CTF/WriteUp/23-01-02/[网鼎杯 2020 白虎组]PicDown.md",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230226151014.png",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230226142803.png",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230226142322.png",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230226134442.png",
     "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/div.md",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230220192219.png",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230226131534.png",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230224235630.png",
     "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/add.md",
     "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/mul.md",
     "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/seq_lim_precise_def.md",
@@ -161,11 +179,6 @@
     "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/divergent.md",
     "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/convergent.md",
     "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/seq.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/inc_seq.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/dec_seq.md",
-    "academic/G1T1/calculus/0-pre/2-common_logicsym/1-forall_and_exists/forall.md",
-    "academic/G1T1/calculus/0-pre/2-common_logicsym/1-forall_and_exists/exists.md",
-    "academic/G1T1/calculus/0-pre/2-common_logicsym/0-implies_and_iff/iff.md",
-    "CTF/WriteUp/23-02-20/img/Pasted image 20230224233752.png"
+    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/inc_seq.md"
   ]
 }
