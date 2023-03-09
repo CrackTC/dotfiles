@@ -11,7 +11,7 @@ Plug 'arcticicestudio/nord-vim'
 " Plug 'morhetz/gruvbox'
 
 " Start screen for vim
-Plug 'mhinz/vim-startify'
+" Plug 'mhinz/vim-startify'
 
 " TODO: Configuration
 Plug 'itchyny/lightline.vim'
