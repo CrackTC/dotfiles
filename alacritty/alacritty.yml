@@ -99,18 +99,18 @@ window:
 font:
   normal:
     # Default: monospace
-    family: Sauce Code Pro Nerd Font
+    family: FiraCode Nerd Font
     style: Medium
   bold:
-    family: Sauce Code Pro Nerd Font
+    family: FiraCode Nerd Font
     style: Bold
   italic:
-    family: Sauce Code Pro Nerd Font
+    family: FiraCode Nerd Font
     style: Italic
   bold_italic:
-    family: Sauce Code Pro Nerd Font
+    family: FiraCode Nerd Font
     style: Bold Italic
-  size: 16.0
+  size: 12.0
 
 
 # Colors (Nord)
