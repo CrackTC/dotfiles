@@ -1,11 +1,14 @@
 {
-  "theme": "moonstone",
+  "theme": "obsidian",
   "translucency": false,
-  "textFontFamily": "Noto Sans CJK SC,MiSans",
-  "interfaceFontFamily": "Noto Sans CJK SC,MiSans",
-  "monospaceFontFamily": "Source Code Variable",
-  "baseFontSize": 24,
-  "accentColor": "",
+  "textFontFamily": "更纱黑体 SC",
+  "interfaceFontFamily": "更纱黑体 UI SC",
+  "monospaceFontFamily": "FiraCode Nerd Font",
+  "baseFontSize": 26,
+  "accentColor": "#81a1c1",
   "cssTheme": "Minimal",
-  "nativeMenus": true
+  "nativeMenus": true,
+  "enabledCssSnippets": [
+    "cursor-animation"
+  ]
 }

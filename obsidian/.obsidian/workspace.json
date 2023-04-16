@@ -4,50 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "b58c321767b57955",
+        "id": "8dc63ab4b432d05f",
         "type": "tabs",
         "children": [
           {
-            "id": "211c505c28102b3c",
+            "id": "8621911707bafb0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-02-27/CTFHub技能树--目录遍历（水.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6421986b3861e0e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/WriteUp/23-02-27/CTFHub技能树--phpinfo（水.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ef8b66667793c4f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/WriteUp/23-02-27/CTFHub技能树--网站源码（水.md",
+                "file": "academic/G1T2/discrete_math/relation/划分.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-02-27/CTFHub技能树--网站源码（水.md",
+                "file": "academic/G1T2/discrete_math/relation/划分.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,45 +113,55 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ef8b66667793c4f9",
+  "active": "8621911707bafb0d",
   "lastOpenFiles": [
+    "academic/G1T2/discrete_math/relation/商集.md",
+    "academic/G1T2/discrete_math/relation/划分.md",
+    "academic/G1T2/discrete_math/relation/等价关系.md",
+    "academic/G1T2/discrete_math/relation/关系的逆.md",
+    "academic/G1T2/discrete_math/relation/传递关系.md",
+    "academic/G1T2/discrete_math/relation/等价类.md",
+    "academic/G1T2/discrete_math/relation/对称关系.md",
+    "academic/G1T2/discrete_math/relation/二元关系.md",
+    "academic/G1T2/discrete_math/relation/反对称关系.md",
+    "academic/G1T2/discrete_math/relation/反自反关系.md",
+    "academic/G1T2/discrete_math/relation/关系的乘积（合成）.md",
+    "academic/G1T2/discrete_math/relation/闭包.md",
+    "academic/G1T2/discrete_math/relation/自反关系.md",
+    "academic/G1T2/discrete_math/set/余集（补集）.md",
+    "未命名.canvas",
+    "academic/G1T2/discrete_math/set/环积.md",
+    "academic/G1T2/discrete_math/relation",
+    "academic/G1T2/discrete_math/set/环和（对称差）.md",
+    "academic/G1T2/discrete_math/set/笛卡儿积.md",
+    "academic/G1T2/discrete_math/set/幂集.md",
+    "textgenerator/prompts/default/summarize.md",
+    "textgenerator/prompts/default/getIdeas.md",
+    "textgenerator/prompts/default/rewrite.md",
+    "textgenerator/prompts/default/getEmailPos.md",
+    "textgenerator/prompts/default/getTags.md",
+    "textgenerator/prompts/default/getParagraph.md",
+    "textgenerator/prompts/default/simplify.md",
+    "textgenerator/prompts/default",
+    "textgenerator/prompts",
+    "textgenerator",
+    "未命名 2.canvas",
+    "未命名 1.canvas",
+    "academic/G1T2/discrete_math/set",
+    "academic/G1T2/discrete_math",
+    "CTF/WriteUp/22-12-10/img/Pasted image 20230410214915.png",
+    "CTF/WriteUp/22-12-10/img/Pasted image 20230410214411.png",
+    "academic/G1T2/electronic/2.bool_algebra/func_std_form",
+    "academic/G1T2/electronic/2.bool_algebra",
+    "academic/G1T2/electronic/1.encoding/1.4.2.可靠性编码",
+    "academic/G1T2",
     "CTF/WriteUp/23-02-27/img/Pasted image 20230303123908.png",
     "CTF/WriteUp/23-02-27/img/Pasted image 20230303123512.png",
     "CTF/WriteUp/23-02-27/img/Pasted image 20230303123208.png",
     "CTF/WriteUp/23-02-27/img/Pasted image 20230303123047.png",
-    "CTF/WriteUp/23-02-27/CTFHub技能树--phpinfo（水.md",
-    "CTF/WriteUp/23-02-27/CTFHub技能树--网站源码（水.md",
-    "CTF/WriteUp/23-02-27/CTFHub技能树--目录遍历（水.md",
     "CTF/WriteUp/23-02-27/img/Pasted image 20230303122943.png",
     "CTF/WriteUp/23-02-27/img/Pasted image 20230303122633.png",
-    "CTF/WriteUp/23-02-20/EasyBypass.md",
-    "CTF/WriteUp/23-02-27/[EIS 2019]EzPOP.md",
-    "CTF/WriteUp/23-02-27/[安洵杯 2019]不是文件上传.md",
     "CTF/WriteUp/23-02-27/img/Pasted image 20230301160153.png",
-    "CTF/WriteUp/23-02-27/img/Pasted image 20230301155958.png",
-    "CTF/WriteUp/23-02-27/img/Pasted image 20230301021802.png",
-    "CTF/WriteUp/23-02-27/img/Pasted image 20230301021418.png",
-    "CTF/WriteUp/23-02-27/img/Pasted image 20230301003051.png",
-    "CTF/WriteUp/23-02-20/[SUCTF 2018]annonymous.md",
-    "CTF/WriteUp/23-02-20/[SUCTF 2018]GetShell.md",
-    "CTF/WriteUp/23-02-27/img",
-    "CTF/WriteUp/23-02-27",
-    "CTF/WriteUp/23-02-20/[GYCTF2020]Ez_Express.md",
-    "CTF/WriteUp/23-02-20/[GWCTF 2019]mypassword.md",
-    "CTF/WriteUp/23-02-20/[BSidesCF 2019]SVGMagic.md",
-    "CTF/WriteUp/23-02-20/[羊城杯2020]easyphp.md",
-    "CTF/WriteUp/23-01-02/[网鼎杯 2020 白虎组]PicDown.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/div.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/add.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/3-seq_lim_op/mul.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/seq_lim_precise_def.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/2-convergent_seq_prop/uniqueness.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/2-convergent_seq_prop/fixed_sym.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/2-convergent_seq_prop/boundedness.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/seq_lim_intuitive_def.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/divergent.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/1-seq_trend_and_lim/convergent.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/seq.md",
-    "academic/G1T1/calculus/1-lim_and_conti_func/0-seq_lim/0-seq/inc_seq.md"
+    "CTF/WriteUp/23-02-27/img/Pasted image 20230301155958.png"
   ]
 }
