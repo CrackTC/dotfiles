@@ -240,7 +240,17 @@ nmap ds0 ds)
 noremap R :call CompileRun()<CR>
 function! CompileRun()
 	execute "w"
-	if &filetype == 'c'
+    if filereadable('Makefile')
+        set splitbelow
+        :split
+        :resize -5
+        :terminal make clean build run
+    elseif filereadable(expand('%:p:h') . '/Makefile')
+        set splitbelow
+        :split
+        :resize -5
+        :terminal make clean build run -C %:p:h
+    elseif &filetype == 'c'
 		set splitbelow
 		exec "!gcc % -Wall -g -lm -o %<.out"
 		:split
@@ -291,6 +301,10 @@ function! CompileRun()
         set splitbelow
         :split
         :terminal php %
+    elseif &filetype == "scheme"
+        set splitbelow
+        :split
+        :terminal mit-scheme < '%'
 	endif
 endfunction
 
