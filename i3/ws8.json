@@ -3,40 +3,18 @@
     "current_border_width": 0,
     "floating": "auto_off",
     "geometry": {
-       "height": 1386,
-       "width": 2546,
-       "x": 6,
-       "y": 45
-    },
-    "marks": [],
-    "name": "QQ",
-    "percent": 0.5,
-    "swallows": [
-       {
-          "class": "^QQ$"
-       }
-    ],
-    "type": "con"
-}
-
-{
-    "border": "pixel",
-    "current_border_width": 0,
-    "floating": "auto_off",
-    "geometry": {
-       "height": 1385,
-       "width": 1268,
-       "x": 1284,
-       "y": 47
+        "height": 1385,
+        "width": 1268,
+        "x": 1284,
+        "y": 47
     },
     "marks": [],
     "name": "Telegram (994)",
     "percent": 0.5,
     "swallows": [
-       {
-          "class": "^TelegramDesktop$"
-       }
+        {
+            "class": "^TelegramDesktop$"
+        }
     ],
     "type": "con"
 }
-

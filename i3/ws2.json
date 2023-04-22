@@ -3,17 +3,17 @@
     "current_border_width": 0,
     "floating": "auto_off",
     "geometry": {
-        "height": 1385,
-        "width": 2544,
-        "x": 0,
-        "y": 0
+        "height": 1387,
+        "width": 2546,
+        "x": 7,
+        "y": 46
     },
     "marks": [],
-    "name": "brave",
+    "name": "Brave",
     "percent": 1,
     "swallows": [
         {
-            "class": "^brave-browser$"
+            "class": "^Brave\\-browser$"
         }
     ],
     "type": "con"
