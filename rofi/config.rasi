@@ -3,7 +3,7 @@ configuration {
     width: 400;
     lines: 20;
     /*  columns: 1;*/
-    font: "MiSans Semibold 14";
+    font: "Maple Mono SC NF Bold 25";
     /*  bw: 1;*/
     /*  location: 0;*/
     /*  padding: 5;*/
@@ -47,7 +47,7 @@ configuration {
     /*  hide-scrollbar: false;*/
     /*  fullscreen: false;*/
     /*  fake-transparency: false;*/
-    dpi: 144;
+    dpi: 96;
     /*  threads: 0;*/
     /*  scrollbar-width: 8;*/
     /*  scroll-method: 0;*/
@@ -72,8 +72,8 @@ configuration {
     /*  pid: "/run/user/1000/rofi.pid";*/
     /*  display-windowcd: ;*/
     display-ssh:    ">";
-    display-run:    ">";
-    display-drun:   ">";
+    display-run:    " >";
+    display-drun:   " >";
     display-window: ">";
     display-combi:  ">";
     /*  display-keys: ;*/

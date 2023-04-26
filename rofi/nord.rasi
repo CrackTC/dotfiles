@@ -1,5 +1,4 @@
-/**
- * Nordic rofi theme
+/** Nordic rofi theme
  * Adapted by undiabler <undiabler@gmail.com>
  *
  * Nord Color palette imported from https://www.nordtheme.com/
@@ -34,7 +33,7 @@
     
     highlight:     underline bold #eceff4;
 
-    transparent: rgb(46,52,64);
+    transparent: #2E344000;
 }
 
 window {
@@ -43,7 +42,7 @@ window {
     transparency: "screenshot";
     padding: 0px;
     border:  0px;
-    border-radius: 17px;
+    border-radius: 20px 20px 0px 0px;
 
     background-color: @transparent;
     spacing: 0;
@@ -67,10 +66,10 @@ message {
 inputbar {
     color: @nord6;
     padding: 11px;
-    background-color: #3b4252;
+    background-color: #3b4252BB;
 
     border: 0px;
-    border-radius:  17px 17px 0px 0px;
+    border-radius:  20px 20px 0px 0px;
 }
 
 entry, prompt, case-indicator {
@@ -84,15 +83,15 @@ prompt {
 
 listview {
     padding: 8px;
-    border-radius: 0px 0px 6px 6px;
-    background-color: rgba(46,52,64,0.9);
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(46,52,64,0.7);
     dynamic: false;
 }
 
 element {
     padding: 3px;
     vertical-align: 0.5;
-    border-radius: 9px;
+    border-radius: 15px;
     background-color: transparent;
     color: @foreground;
     text-color: rgb(216, 222, 233);
