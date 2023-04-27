@@ -142,5 +142,6 @@
     "clangd.arguments": [
         "--fallback-style=Microsoft"
     ],
-    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd"
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
+    "colors.enable": true
 }
