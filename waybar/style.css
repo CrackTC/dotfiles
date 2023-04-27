@@ -160,7 +160,7 @@ label:focus {
 }
 
 #disk {
-    background-color: #964b00;
+    background-color: #3b4252;
 }
 
 #backlight {
@@ -177,7 +177,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
+    background-color: #ebcb8b;
     color: #2E3440;
 }
 
@@ -259,7 +259,7 @@ label:focus {
 
 #language {
     background: #00b093;
-    color: #740864;
+    color: #b48ead;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
