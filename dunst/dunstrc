@@ -24,10 +24,10 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (500, 1000)
+    width = (0, 500)
 
     # The maximum height of a single notification, excluding the frame.
-    height = 1000
+    height = 800
 
     # Position the notification in the top right corner
     origin = top-right
@@ -64,7 +64,7 @@
     progress_bar_corner_radius = 10
 
     # Corner radius for the icon image.
-    icon_corner_radius = 0
+    icon_corner_radius = 10
 
     # Show how many messages are currently hidden (because of
     # notification_limit).
@@ -125,7 +125,7 @@
 
     ### Text ###
 
-    font = Maple Mono SC NF 20
+    font = Maple Mono SC NF 14
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -216,7 +216,7 @@
     min_icon_size = 64
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 256
+    max_icon_size = 128
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
