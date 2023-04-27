@@ -3,7 +3,7 @@ configuration {
     width: 400;
     lines: 20;
     /*  columns: 1;*/
-    font: "Maple Mono SC NF Bold 25";
+    font: "LXGW WenKai Screen R Bold 15";
     /*  bw: 1;*/
     /*  location: 0;*/
     /*  padding: 5;*/
