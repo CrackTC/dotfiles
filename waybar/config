@@ -2,7 +2,7 @@
     "spacing": 4,
     "layer": "top",
     "position": "top",
-    "height": 28,
+    "height": 30,
     "margin-top": 0,
     "margin-left": 10,
     "margin-right": 10,
@@ -44,7 +44,7 @@
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
-        "format": "{name} {icon}",
+        "format": "{icon} {name}",
         "format-icons": {
             "locked": "",
             "unlocked": ""

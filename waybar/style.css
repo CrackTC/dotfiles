@@ -11,6 +11,7 @@ window#waybar {
     color: #D8DEE9;
     transition-property: background-color;
     transition-duration: .5s;
+    border-radius: 16px;
 }
 
 window#waybar.hidden {
@@ -88,11 +89,12 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad,
+#keyboard-state,
 #mpd {
-    margin: 0 2px;
-    margin-top: 5px;
+    margin: 5px 2px;
     padding: 0 12px;
     color: #eceff4;
+    border-radius: 15px;
 }
 
 #window,
@@ -102,7 +104,7 @@ button:hover {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left>widget:first-child>#workspaces {
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
@@ -112,12 +114,11 @@ button:hover {
 
 #clock {
     background-color: #4c566a;
-    border-radius: 15px;
+    margin-right: 10px;
 }
 
 #battery {
     background-color: #d8dee9;
-    border-radius: 15px;
     color: #2E3440;
 }
 
@@ -151,13 +152,11 @@ label:focus {
 #cpu {
     background-color: #8fbcbb;
     color: #434c5e;
-    border-radius: 15px;
 }
 
 #memory {
     background-color: #b48ead;
     color: #434c5e;
-    border-radius: 15px;
 }
 
 #disk {
@@ -166,13 +165,11 @@ label:focus {
 
 #backlight {
     background-color: #5e81ac;
-    border-radius: 15px;
 }
 
 #network {
     background-color: #81a1c1;
     color: #4c566a;
-    border-radius: 15px;
 }
 
 #network.disconnected {
@@ -181,7 +178,6 @@ label:focus {
 
 #pulseaudio {
     background-color: #f1c40f;
-    border-radius: 15px;
     color: #2E3440;
 }
 
@@ -215,7 +211,6 @@ label:focus {
 
 #temperature {
     background-color: #d08770;
-    border-radius: 15px;
     color: #434c5e
 }
 
@@ -225,7 +220,6 @@ label:focus {
 
 #tray {
     background-color: #4c566a;
-    border-radius: 15px;
 }
 
 #tray>.passive {
@@ -275,7 +269,7 @@ label:focus {
     background: #97e1ad;
     color: #2E3440;
     padding: 0 0px;
-    margin: 0 5px;
+    margin: 5px 5px;
     min-width: 16px;
 }
 
