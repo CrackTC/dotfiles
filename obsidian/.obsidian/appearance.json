@@ -4,7 +4,7 @@
   "textFontFamily": "更纱黑体 SC",
   "interfaceFontFamily": "更纱黑体 UI SC",
   "monospaceFontFamily": "FiraCode Nerd Font",
-  "baseFontSize": 22,
+  "baseFontSize": 19,
   "accentColor": "#81a1c1",
   "cssTheme": "Minimal",
   "nativeMenus": true,
