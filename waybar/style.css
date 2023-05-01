@@ -1,15 +1,15 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: 'Symbols Nerd Font', 'Maple Mono NF', 'FiraCode Nerd Font', Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.4);
+    background-color: rgba(46, 52, 64, 0.3);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #D8DEE9;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 13px 13px;
 }
 
 window#waybar.hidden {
@@ -48,13 +48,14 @@ button:hover {
 }
 
 #workspaces button {
-    margin: 5px 0;
-    margin-right: 5px;
+    margin: 0px 0px 5px 5px;
+    padding-top: 2px;
     background-color: transparent;
-    border-radius: 7px;
-    transition-property: background-color;
+    border-radius: 0 0 8px 8px;
+    transition-property: all;
     transition-duration: .5s;
     color: #D8DEE9;
+    border-top: 3px solid rgba(0, 0, 0, 0);
 }
 
 #workspaces button:hover {
@@ -63,10 +64,11 @@ button:hover {
 
 #workspaces button.active {
     background-color: #4c566a;
+    border-color: #a3be8c;
 }
 
 #workspaces button.urgent {
-    background-color: #BF616A;
+    border-color: #bf616a;
 }
 
 #mode {
@@ -118,7 +120,7 @@ button:hover {
 }
 
 #clock {
-    border-radius: 6px;
+    border-radius: 11px;
     background-color: #2e3440;
     margin-right: 5px;
 }
@@ -156,12 +158,12 @@ label:focus {
 }
 
 #cpu {
-    background-color: #8fbcbb;
-    color: #434c5e;
+    background-color: #81a1c1;
+    color: #2E3440;
 }
 
 #memory {
-    background-color: #b48ead;
+    background-color: #8fbcbb;
     color: #434c5e;
 }
 
@@ -174,8 +176,8 @@ label:focus {
 }
 
 #network {
-    background-color: #81a1c1;
-    color: #4c566a;
+    background-color: #4c566a;
+    color: #d8dee9;
 }
 
 #network.disconnected {
@@ -216,7 +218,7 @@ label:focus {
 }
 
 #temperature {
-    background-color: #d08770;
+    background-color: #88c0d0;
     color: #434c5e
 }
 
@@ -293,4 +295,10 @@ label:focus {
 
 #scratchpad.empty {
     background-color: transparent;
+}
+
+#mpris {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: small;
 }

@@ -2,7 +2,7 @@
     "spacing": 4,
     "layer": "top",
     "position": "top",
-    "height": 34,
+    "height": 37,
     "margin-top": 0,
     "margin-left": 10,
     "margin-right": 10,
@@ -10,12 +10,13 @@
         "wlr/workspaces",
         "network",
         "cpu",
+        "temperature",
         "memory",
         "battery",
-        "temperature",
     ],
     "modules-center": [
-        "hyprland/window"
+        // "hyprland/window"
+        "mpris"
     ],
     "modules-right": [
         "pulseaudio",
@@ -30,14 +31,15 @@
         "format": "{icon}",
         "format-icons": {
             "1": "<span size='1000'> </span><span size='small'></span>",
-            "2": "",
-            "3": "",
-            "4": "ﲅ",
-            "5": "󰇮",
-            "6": "󰂺",
-            "8": "",
-            "9": "",
-            "10": "<span size='small'></span>",
+            "2": "<span rise='-18500'>󰈹</span>",
+            "3": "<span size='13000'></span>",
+            "4": "<span size='14000' rise='-17000'>󰞇</span>",
+            "5": "<span rise='-16000'>󰇮</span>",
+            "6": "<span size='14000'>󰂺</span>",
+            "7": "<span rise='-18000'>󱖏</span>",
+            "8": "<span size='14000' rise='-17800'>󰍡</span>",
+            "9": "<span size='14000' rise='-16000'></span>",
+            "10": "<span size='12000' rise='-7000'></span>",
             "urgent": "",
             "focused": "",
             "default": ""
@@ -52,31 +54,14 @@
             "unlocked": ""
         }
     },
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 2,
-        "consume-icons": {
-            "on": " "
+    "mpris": {
+        "player": "spotify",
+        "interval": 1,
+        "format": "{status_icon} {dynamic}",
+        "status-icons": {
+            "playing": "󰏤",
+            "paused": "󰐊"
         },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -86,7 +71,7 @@
         }
     },
     "tray": {
-        "icon-size": 15,
+        "icon-size": 20,
         "spacing": 10
     },
     "clock": {
@@ -95,11 +80,12 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "<span rise='-1000' size='large'> </span>{usage}",
+        "interval": 1,
+        "format": "<span rise='-800' size='large'>󰍛 </span>{usage}",
         "tooltip": true
     },
     "memory": {
-        "format": "<span rise=\"1400\"><small> </small></span>{}"
+        "format": "<span rise=\"400\">󰏖 </span>{}"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -139,7 +125,7 @@
         "format-plugged": "󰚥 {capacity}%",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format-full": "<span rise='-18000'></span>",
         "format-icons": [
             "󰁺",
             "󰁼",
@@ -150,8 +136,8 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "<span rise='1700'>直</span>",
-        "format-ethernet": "<span rise='-15500'><b></b></span>",
+        "format-wifi": "<span size=\"large\">直</span>",
+        "format-ethernet": "<span rise='-18600'></span>",
         "tooltip-format": "{ifname} via  {gwaddr}",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "\uead0",
@@ -159,7 +145,7 @@
     },
     "pulseaudio": {
         "scroll-step": 1,
-        "format": "{icon} {volume}",
+        "format": "<span rise='1100'>{icon} </span>{volume}",
         "format-bluetooth": "{icon} {volume}",
         "format-bluetooth-muted": " muted",
         "format-muted": " muted",
