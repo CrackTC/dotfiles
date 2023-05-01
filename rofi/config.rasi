@@ -4,7 +4,7 @@ configuration {
     font: "LXGW WenKai Screen R Bold 15";
     show-icons: true;
     line-margin: 14;
-    dpi: 192;
+    dpi: 96;
     display-ssh: ">";
     display-run: " >";
     display-drun: " >";
