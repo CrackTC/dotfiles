@@ -252,13 +252,13 @@ function! CompileRun()
         :terminal make clean build run -C %:p:h
     elseif &filetype == 'c'
 		set splitbelow
-		exec "!gcc % -Wall -g -lm -o %<.out"
+		exec "!clang % -Wall -g -lm -o %<.out"
 		:split
 		:resize -5
 		:terminal time ./%<.out
 	elseif &filetype == 'cpp'
 		set splitbelow
-		exec "!g++ -std=c++11 % -Wall -g -o %<.out"
+		exec "!clang++ -O0 -std=c++11 -Wall -g -o %<.out %"
 		:split
 		:resize -5
 		:terminal time ./%<.out
