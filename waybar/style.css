@@ -159,7 +159,7 @@ label:focus {
 
 #cpu {
     background-color: #81a1c1;
-    color: #2E3440;
+    color: #434c5e
 }
 
 #memory {
@@ -300,5 +300,5 @@ label:focus {
 #mpris {
     margin-left: 5px;
     font-weight: bold;
-    font-size: small;
+    font-size: 16px;
 }
