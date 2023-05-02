@@ -1,10 +1,9 @@
 configuration {
     width: 400;
     lines: 20;
-    font: "LXGW WenKai Screen R Bold 15";
+    font: "LXGW WenKai Screen R Bold 20";
     show-icons: true;
     line-margin: 14;
-    dpi: 96;
     display-ssh: ">";
     display-run: " >";
     display-drun: " >";
@@ -24,5 +23,5 @@ window {
 }
 
 element-icon {
-    size: 2.5ch;
+    size: 40px;
 }
