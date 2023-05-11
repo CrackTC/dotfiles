@@ -1,10 +1,10 @@
 {
   "theme": "obsidian",
   "translucency": false,
-  "textFontFamily": "更纱黑体 SC",
+  "textFontFamily": "霞鹜文楷,更纱黑体 SC",
   "interfaceFontFamily": "更纱黑体 UI SC",
-  "monospaceFontFamily": "FiraCode Nerd Font",
-  "baseFontSize": 19,
+  "monospaceFontFamily": "Maple Mono,FiraCode Nerd Font",
+  "baseFontSize": 20,
   "accentColor": "#81a1c1",
   "cssTheme": "Minimal",
   "nativeMenus": true,
