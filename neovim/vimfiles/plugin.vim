@@ -122,5 +122,8 @@ Plug 'pechorin/any-jump.vim'
 " fish syntax highlighting
 Plug 'nickeb96/fish.vim'
 
+" Github Copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
 
