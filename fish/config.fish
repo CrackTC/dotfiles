@@ -9,4 +9,7 @@ export BAT_THEME='Nord'
 bash -c 'if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
   exec Hyprland
 fi'
+
+alias nnn 'nmap -T4 -A -v -Pn'
+
 # vim:ft=sh
