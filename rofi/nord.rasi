@@ -67,7 +67,7 @@ textbox {
     padding: 10px;
     background-color: @nord8;
     border-radius: 10px;
-    font: "Maple Mono Bold 15";
+    font: "sans-serif bold 15";
 }
 
 inputbar {
@@ -96,7 +96,6 @@ listview {
 }
 
 element {
-    padding: 3px;
     vertical-align: 0.5;
     border-radius: 10px;
     background-color: transparent;
@@ -109,9 +108,14 @@ element selected.normal {
 	text-color: #2e3440;
 }
 
-element-text, element-icon {
+element-text {
+    padding: 8px 0px 0px 0px;
     background-color: inherit;
     text-color:       inherit;
+}
+
+element-icon {
+    padding: 3px;
 }
 
 button {
