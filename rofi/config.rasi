@@ -1,7 +1,7 @@
 configuration {
     width: 400;
     lines: 20;
-    font: "LXGW WenKai Screen R Bold 20";
+    font: "sans-serif bold 20";
     show-icons: true;
     line-margin: 14;
     display-ssh: ">";
