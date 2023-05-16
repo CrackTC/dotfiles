@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "行列式",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -53,6 +53,6 @@
   "repelStrength": 9.16666666666667,
   "linkStrength": 0.465277777777778,
   "linkDistance": 250,
-  "scale": 0.8919959944131886,
-  "close": true
+  "scale": 0.7094874441716134,
+  "close": false
 }
