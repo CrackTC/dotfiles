@@ -12,3 +12,5 @@ export PATH="$PATH:/home/chen/.dotnet/tools"
 export GOPATH="/home/chen/proj/go"
 
 export all_proxy=socks5://127.0.0.1:7890
+
+export http_proxy=http://127.0.0.1:7890
