@@ -10,7 +10,7 @@
     "pageSize": "Letter",
     "landscape": false,
     "margin": "1",
-    "downscalePercent": 51
+    "downscalePercent": 75
   },
   "readableLineLength": false,
   "showLineNumber": false,

@@ -4,18 +4,58 @@
     "type": "split",
     "children": [
       {
-        "id": "014cba9f90ba0f33",
+        "id": "1dc283e7706fae1b",
         "type": "tabs",
         "children": [
           {
-            "id": "b862cda2be41d670",
+            "id": "f0427d08206a35c0",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "acee112b40847280",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Q1.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af6bc10216a7a602",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Q2.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7646408150bc100d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Q3.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -61,8 +101,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,6 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Q3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,19 +156,32 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b862cda2be41d670",
+  "active": "7646408150bc100d",
   "lastOpenFiles": [
+    "img/Pasted image 20230517100905.png",
+    "img/Pasted image 20230517100723.png",
+    "img/Pasted image 20230517100526.png",
+    "Q2.md",
+    "Q3.md",
+    "img/Pasted image 20230517095212.png",
+    "img/Pasted image 20230517095153.png",
+    "img/Pasted image 20230517093656.png",
+    "img/Pasted image 20230517093332.png",
+    "img/Pasted image 20230517093242.png",
+    "Q1.md",
+    "img/Pasted image 20230517091537.png",
+    "img/Pasted image 20230517091205.png",
+    "img/Pasted image 20230517085320.png",
+    "img",
+    "未命名",
     "academic/G1T1/linear_algebra/1-det/2-calc/0-det_expansion/2-inference/important_inference.md",
     "academic/G1T1/linear_algebra/1-det/0-def/2-det_val/det_val.md",
     "academic/G1T1/linear_algebra/1-det/0-def/0-def/det.md",
     "academic/G1T1/linear_algebra/2-inv_mat/2-iff_and_calc/0-companion_mat/0-def/companion_mat.md",
     "etl/docker文件映射踩坑.md",
-    "etl/img/Pasted image 20230516160705.png",
     "etl/真有人能心胸开阔 不计得失吗？怎么做到？.md",
     "etl/神奇的对角论证法.md",
     "etl/Leet-speak.md",
-    "etl/img/Pasted image 20230515120039.png",
-    "etl/img/Pasted image 20230515115956.png",
     "etl/img",
     "etl/解决php的readonly filesystem问题.md",
     "etl/abema.tv 视频下载.md",
@@ -138,32 +191,19 @@
     "CTF/Spirit/2023/real/pin.md",
     "CTF/Spirit/2023/real/easy_ssti.md",
     "CTF/Spirit/2023/real/baby_php.md",
-    "CTF/Spirit/2023/real/img/Pasted image 20230514202338.png",
-    "CTF/Spirit/2023/real/img/Pasted image 20230514202231.png",
-    "CTF/Spirit/2023/real/img/Pasted image 20230514190039.png",
-    "CTF/Spirit/2023/real/img/Pasted image 20230514184325.png",
-    "CTF/Spirit/2023/real/img/Pasted image 20230514182339.png",
     "CTF/Web/HTTP/Headers/Referer.md",
     "CTF/Web/HTTP/Headers/client-ip.md",
-    "CTF/Spirit/2023/real/img/Pasted image 20230512152025.png",
-    "CTF/Spirit/2023/real/img/Pasted image 20230512151916.png",
     "CTF/Spirit/2023/real/img",
     "CTF/Spirit/2023/real",
     "CTF/WriteUp/22-11-07/[RoarCTF 2019]Easy Java（学习）.md",
     "CTF/Spirit/2023/warm/qs.md",
     "CTF/Spirit/2023/warm/admin.md",
     "CTF/Spirit/2023/warm/decode.md",
-    "CTF/Spirit/2023/warm/easy_page.md",
-    "CTF/Spirit/2023/warm/robot.md",
-    "CTF/Spirit/2023/warm/www.md",
     "CTF/Spirit/2023/warm/img",
-    "CTF/WriteUp/23-01-09/[HITCON 2017]SSRFme.md",
     "CTF/Spirit/2023/warm",
     "CTF/Spirit/2023",
     "CTF/Spirit",
     "etl/lang/cpp",
-    "etl/lang",
-    "CTF/WriteUp/23-05-01/img",
     "未命名.canvas",
     "未命名 2.canvas",
     "未命名 1.canvas"
