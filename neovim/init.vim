@@ -353,12 +353,16 @@ highlight CocMenuSel ctermbg = 14 guibg = #8fbcbb ctermfg = 8 guifg = #3b4252
 highlight CocFloatThumb ctermbg = 7 guibg = #d8dee9
 highlight CocFloatDividingLine ctermfg = 7 guifg = #d8dee9
 
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 inoremap <silent><expr> <TAB>
-			\ pumvisible() ?
-				\ "\<C-y>" :
-				\ coc#expandableOrJumpable() ?
-					\ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-					\ "\<TAB>"
+            \ coc#pum#visible() ? coc#pum#confirm()
+            \                   : CheckBackspace() ? "\<TAB>"
+            \                                      : coc#refresh()
+
 inoremap <silent> <CR> <C-g>u<CR><C-r>=coc#on_enter()<CR>
 inoremap <silent><expr> <C-SPACE> coc#refresh()
 let g:coc_snippet_next = '<TAB>'
