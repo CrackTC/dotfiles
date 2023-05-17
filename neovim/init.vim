@@ -252,16 +252,16 @@ function! CompileRun()
         :terminal make clean build run -C %:p:h
     elseif &filetype == 'c'
 		set splitbelow
-		exec "!clang % -Wall -g -lm -o %<.out"
+		exec "!clang % -Wall -g -lm -o %<"
 		:split
 		:resize -5
-		:terminal time ./%<.out
+		:terminal time ./%<
 	elseif &filetype == 'cpp'
 		set splitbelow
-		exec "!clang++ -O0 -std=c++11 -Wall -g -o %<.out %"
+		exec "!clang++ -O0 -std=c++11 -Wall -g -o %< %"
 		:split
 		:resize -5
-		:terminal time ./%<.out
+		:terminal time ./%<
 	elseif &filetype == 'java'
 		execute '!javac %'
 		execute '!time java %<'
