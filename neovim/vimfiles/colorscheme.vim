@@ -30,8 +30,8 @@ hi! SignColumn ctermbg = NONE guibg = NONE
 hi! VertSplit ctermbg  = NONE guibg = NONE
 hi! NonText ctermfg    = gray guifg = grey10
 
-let g:coc_status_error_sign   = ' '
-let g:coc_status_warning_sign = ' '
+let g:coc_status_error_sign   = '󰈸 '
+let g:coc_status_warning_sign = ' '
 
 let g:lightline = {
 			\ 'colorscheme' : "nord",

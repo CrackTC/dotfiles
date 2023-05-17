@@ -346,6 +346,13 @@ let g:coc_global_extensions = [
 			\ 'coc-yank'        ,
 			\ ]
 
+" pum highlighting
+highlight CocFloating ctermbg = 8 guibg = None
+highlight CocSearch cterm = undercurl gui = undercurl
+highlight CocMenuSel ctermbg = 14 guibg = #8fbcbb ctermfg = 8 guifg = #3b4252
+highlight CocFloatThumb ctermbg = 7 guibg = #d8dee9
+highlight CocFloatDividingLine ctermfg = 7 guifg = #d8dee9
+
 inoremap <silent><expr> <TAB>
 			\ pumvisible() ?
 				\ "\<C-y>" :
