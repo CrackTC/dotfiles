@@ -25,10 +25,10 @@ colorscheme nord
 " let g:gruvbox_improved_strings  = 1
 " let g:gruvbox_improved_warnings = 1
 
-hi! Normal ctermbg     = NONE guibg = NONE
+hi! Normal     ctermbg = NONE guibg = #2E3440
 hi! SignColumn ctermbg = NONE guibg = NONE
-hi! VertSplit ctermbg  = NONE guibg = NONE
-hi! NonText ctermfg    = gray guifg = grey10
+hi! VertSplit  ctermbg = NONE guibg = NONE
+hi! NonText    ctermfg = gray guifg = grey10
 
 let g:coc_status_error_sign   = '󰈸 '
 let g:coc_status_warning_sign = ' '

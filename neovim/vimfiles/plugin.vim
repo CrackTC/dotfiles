@@ -123,7 +123,7 @@ Plug 'pechorin/any-jump.vim'
 Plug 'nickeb96/fish.vim'
 
 " Github Copilot
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 
 call plug#end()
 

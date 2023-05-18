@@ -12,164 +12,9 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" ===
-" === System
-" ===
-let t_ut=''
-set clipboard+=unnamedplus
-set mouse=a
-set fileencodings=ucs-bom,utf-8,default,gbk,latin1
-
-" ===
-" === Editor Behavior
-" ===
-set number
-set relativenumber
-set cursorline
-set hlsearch
-set ruler
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set autoindent
-set list
-set listchars=tab:\|\ ,trail:▫
-set scrolloff=4
-set nowrap
-" set linebreak " Reserve Whole Word While Wrapping
-set timeoutlen=500
-set textwidth=0
-set indentexpr=""
-set foldmethod=indent
-set foldlevel=99
-set foldenable
-set noshowmode
-set hidden
-set showcmd
-set wildmenu
-set ignorecase
-set smartcase
-set shortmess+=c
-set inccommand=split " Quick Preview While Replacing Words
-set completeopt=longest,noinsert,menuone,noselect,preview " Build-in Completion Config
-set lazyredraw
-silent !mkdir -p ~/.config/nvim/tmp/backup
-set backupdir=~/.config/nvim/tmp/backup,.
-set directory=~/.config/nvim/tmp/backup,.
-silent !mkdir -p ~/.config/nvim/tmp/undo
-if has('persistent_undo')
-	set undofile
-	set undodir=~/.config/nvim/tmp/undo,.
-endif
-set updatetime=90
-set virtualedit=block
-
-autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-exec "nohlsearch"
-
-" ===
-" === Basic Mappings
-" ===
-let mapleader=" "
-noremap ; :
-
-nnoremap S :w<CR>
-nnoremap Q :q<CR>
-
-nnoremap Y y$
-
-nnoremap < <<
-nnoremap > >>
-
-noremap N $
-noremap P 0
-noremap H 5h
-noremap J 5j
-noremap K 5k
-noremap L 5l
-
-nnoremap <A-n> 5<C-e>
-nnoremap <A-p> 5<C-y>
-
-" ===
-" === Searching
-" ===
-nnoremap - N
-nnoremap = n
-noremap <LEADER><CR> :nohlsearch<CR>
-
-" ===
-" === Window Management
-" ===
-noremap s <nop>
-
-nnoremap sl :set splitright<CR>:vsplit<CR>
-nnoremap sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
-nnoremap sj :set splitbelow<CR>:split<CR>
-nnoremap sk :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
-
-nnoremap gj <C-w>j
-nnoremap gk <C-w>k
-nnoremap gh <C-w>h
-nnoremap gl <C-w>l
-
-noremap <UP> :resize +5<CR>
-noremap <DOWN> :resize -5<CR>
-noremap <LEFT> :vertical resize-5<CR>
-noremap <RIGHT> :vertical resize+5<CR>
-
-" ===
-" === Tab Management
-" ===
-nnoremap tj :-tabe<CR>
-nnoremap tk :tabe<CR>
-
-nnoremap th :-tabnext<CR>
-nnoremap tl :+tabnext<CR>
-
-nnoremap tmh :-tabmove<CR>
-nnoremap tml :+tabmove<CR>
-
-nnoremap <LEADER>1 1gt
-nnoremap <LEADER>2 2gt
-nnoremap <LEADER>3 3gt
-nnoremap <LEADER>4 4gt
-nnoremap <LEADER>5 5gt
-nnoremap <LEADER>6 6gt
-nnoremap <LEADER>7 7gt
-nnoremap <LEADER>8 8gt
-nnoremap <LEADER>9 9gt
-
-" ===
-" === Terminal Behavior
-" ===
-autocmd TermOpen term://* startinsert
-tnoremap <C-q> <C-\><C-n>
-tnoremap <C-o> <C-\><C-n><C-o>
-tnoremap <C-h> <C-\><C-n><C-w>h
-tnoremap <C-j> <C-\><C-n><C-w>j
-tnoremap <C-k> <C-\><C-n><C-w>k
-tnoremap <C-l> <C-\><C-n><C-w>l
-
-" Open Simple Terminal(St) With The Cwd
-nnoremap <LEADER>st :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-n>:q<CR>
-
-" Open A New Terminal Window
-nnoremap <LEADER>ty :set splitbelow<CR>:split<CR>:resize +10<CR>:term<CR>
-
-" ===
-" === Insert Mode Cursor Movement
-" ===
-" Move To The End Of A Line
-inoremap <C-a> <ESC>A
-
-" ===
-" === Command Mode Cursor Movement
-" ===
-cnoremap <C-a> <HOME>
-cnoremap <C-e> <END>
-cnoremap <C-p> <LEFT>
-cnoremap <C-n> <RIGHT>
+source ~/.config/nvim/vimfiles/settings.vim
+source ~/.config/nvim/vimfiles/mappings.vim
+source ~/.config/nvim/vimfiles/neovide.vim
 
 " ===
 " === Markdown Settings
@@ -214,7 +59,7 @@ noremap \p :echo expand('%:p')<CR>
 nnoremap <A-k> ddkP
 nnoremap <A-j> ddp
 
-" Press F10 To Show hlgroup
+" Press <A-s> To Show hlgroup
 function! SynGroup()
 	let l:s = synID(line('.'), col('.'), 1)
 	echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
@@ -239,7 +84,7 @@ nmap ds0 ds)
 " Compile Function
 noremap R :call CompileRun()<CR>
 function! CompileRun()
-	execute "w"
+    execute "w"
     if filereadable('Makefile')
         set splitbelow
         :split
@@ -251,52 +96,52 @@ function! CompileRun()
         :resize -5
         :terminal make clean build run -C %:p:h
     elseif &filetype == 'c'
-		set splitbelow
-		exec "!clang % -Wall -g -lm -o %<"
-		:split
-		:resize -5
-		:terminal time ./%<
-	elseif &filetype == 'cpp'
-		set splitbelow
-		exec "!clang++ -O0 -std=c++11 -Wall -g -o %< %"
-		:split
-		:resize -5
-		:terminal time ./%<
-	elseif &filetype == 'java'
-		execute '!javac %'
-		execute '!time java %<'
-	elseif &filetype == 'sh'
-		:!time bash %
-	elseif &filetype == 'lisp'
-		set splitbelow
-		:split
-		:terminal sbcl --script %
-	elseif &filetype == 'python'
-		set splitbelow
-		:split
-		:terminal python3 %
-	elseif &filetype == 'html'
-		silent! execute "!chromium % &"
-	elseif &filetype == 'markdown'
-		execute "MarkdownPreview"
-	elseif &filetype == 'tex'
-		silent! execute "VimtexStop"
-		silent! execute "VimtexCompile"
-	elseif &filetype == 'dart'
-		execute "CocCommand flutter.run -d ".g:flutter_default_device." ".g:flutter_run_args
-		silent! execute "CocCommand flutter.dev.openDevLog"
-	elseif &filetype == 'javascript'
-		set splitbelow
-		:split
-		:terminal export DEBUG="INFO,ERROR,WARNING"; node --trace-warnings .
-	elseif &filetype == 'go'
-		set splitbelow
-		:split
-		:terminal go run .
-	elseif &filetype == "cs"
-		set splitbelow
-		:split
-		:terminal dotnet run
+        set splitbelow
+        exec "!clang % -Wall -g -lm -o %<"
+        :split
+        :resize -5
+        :terminal time ./%<
+    elseif &filetype == 'cpp'
+        set splitbelow
+        exec "!clang++ -O0 -std=c++11 -Wall -g -o %< %"
+        :split
+        :resize -5
+        :terminal time ./%<
+    elseif &filetype == 'java'
+        execute '!javac %'
+        execute '!time java %<'
+    elseif &filetype == 'sh'
+        :!time bash %
+    elseif &filetype == 'lisp'
+        set splitbelow
+        :split
+        :terminal sbcl --script %
+    elseif &filetype == 'python'
+        set splitbelow
+        :split
+        :terminal python3 %
+    elseif &filetype == 'html'
+        silent! execute "!chromium % &"
+    elseif &filetype == 'markdown'
+        execute "MarkdownPreview"
+    elseif &filetype == 'tex'
+        silent! execute "VimtexStop"
+        silent! execute "VimtexCompile"
+    elseif &filetype == 'dart'
+        execute "CocCommand flutter.run -d ".g:flutter_default_device." ".g:flutter_run_args
+        silent! execute "CocCommand flutter.dev.openDevLog"
+    elseif &filetype == 'javascript'
+        set splitbelow
+        :split
+        :terminal export DEBUG="INFO,ERROR,WARNING"; node --trace-warnings .
+    elseif &filetype == 'go'
+        set splitbelow
+        :split
+        :terminal go run .
+    elseif &filetype == "cs"
+        set splitbelow
+        :split
+        :terminal dotnet run
     elseif &filetype == "php"
         set splitbelow
         :split
@@ -305,7 +150,7 @@ function! CompileRun()
         set splitbelow
         :split
         :terminal mit-scheme < '%'
-	endif
+    endif
 endfunction
 
 noremap <LEADER>rc :e $MYVIMRC<CR>
@@ -327,24 +172,24 @@ source ~/.config/nvim/vimfiles/filetype.vim
 " ===
 " TODO: Install & Config Coc-Explorer, Coc-Lists, Coc-Prettier, Coc-Snippets, Coc-Tasks
 let g:coc_global_extensions = [
-			\ 'coc-clangd'      ,
-			\ 'coc-css'         ,
-			\ 'coc-explorer'    ,
-			\ 'coc-gitignore'   ,
-			\ 'coc-go'          ,
-			\ 'coc-html'        ,
-			\ 'coc-json'        ,
-			\ 'coc-marketplace' ,
-			\ 'coc-pairs'       ,
-			\ 'coc-python'      ,
-			\ 'coc-snippets'    ,
-			\ 'coc-tasks'       ,
-			\ 'coc-translator'  ,
-			\ 'coc-tsserver'    ,
-			\ 'coc-vimlsp'      ,
-			\ 'coc-yaml'        ,
-			\ 'coc-yank'        ,
-			\ ]
+            \ 'coc-clangd'      ,
+            \ 'coc-css'         ,
+            \ 'coc-explorer'    ,
+            \ 'coc-gitignore'   ,
+            \ 'coc-go'          ,
+            \ 'coc-html'        ,
+            \ 'coc-json'        ,
+            \ 'coc-marketplace' ,
+            \ 'coc-pairs'       ,
+            \ 'coc-python'      ,
+            \ 'coc-snippets'    ,
+            \ 'coc-tasks'       ,
+            \ 'coc-translator'  ,
+            \ 'coc-tsserver'    ,
+            \ 'coc-vimlsp'      ,
+            \ 'coc-yaml'        ,
+            \ 'coc-yank'        ,
+\ ]
 
 " pum highlighting
 highlight CocFloating ctermbg = 8 guibg = None
