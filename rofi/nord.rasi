@@ -109,7 +109,7 @@ element selected.normal {
 }
 
 element-text {
-    padding: 8px 0px 0px 0px;
+    padding: 4px 0px 0px 0px;
     background-color: inherit;
     text-color:       inherit;
 }
