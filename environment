@@ -11,7 +11,7 @@ QT_QPA_PLATFORMTHEME=qt5ct
 QT_AUTO_SCREEN_SCALE_FACTOR=1
 
 # Proxy
-all_proxy=socks5://127.0.0.1:7890
+all_proxy=http://127.0.0.1:7890
 http_proxy=http://127.0.0.1:7890
 
 GTK_IM_MODULE=fcitx
