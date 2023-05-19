@@ -101,3 +101,5 @@ cnoremap <C-a> <HOME>
 cnoremap <C-e> <END>
 cnoremap <C-p> <LEFT>
 cnoremap <C-n> <RIGHT>
+
+nmap <LEADER>rr r$
