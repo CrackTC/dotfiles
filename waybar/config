@@ -16,14 +16,18 @@
     ],
     "modules-center": [
         // "hyprland/window"
-        "mpris"
+        "mpris",
+        "custom/cava",
     ],
     "modules-right": [
-        "pulseaudio",
         "backlight",
+        "pulseaudio",
+        "clock",
         "tray",
-        "clock"
     ],
+    "custom/cava": {
+        "exec": "~/.config/waybar/scripts/cava.sh",
+    },
     "wlr/workspaces": {
         "disable-scroll": true,
         "on-click": "activate",
@@ -57,10 +61,10 @@
     "mpris": {
         "player": "spotify",
         "interval": 1,
-        "format": "{status_icon}  {dynamic}",
+        "format": "{status_icon} ",
         "status-icons": {
-            "playing": "󰏤",
-            "paused": "󰐊"
+            "playing": "<span rise='1000' size='large'>󰏤 </span>",
+            "paused": "<span rise='1000' size='large'>󰐊 </span>"
         },
     },
     "idle_inhibitor": {

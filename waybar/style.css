@@ -86,7 +86,6 @@ button:hover {
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -120,8 +119,8 @@ button:hover {
 }
 
 #clock {
-    border-radius: 11px;
-    background-color: #2e3440;
+    color: #434c5e;
+    background-color: #81a1c1;
     margin-right: 5px;
 }
 
@@ -172,7 +171,8 @@ label:focus {
 }
 
 #backlight {
-    background-color: #4c566a;
+    background-color: #8fbcbb;
+    color: #434c5e;
 }
 
 #network {
@@ -185,8 +185,8 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #4c566a;
-    color: #d8dee9;
+    background-color: #88c0d0;
+    color: #434c5e;
 }
 
 #pulseaudio.muted {
@@ -194,27 +194,10 @@ label:focus {
     color: #2a5c45;
 }
 
-#wireplumber {
-    background-color: #fff0f5;
-    color: #2e3440;
-}
-
-#wireplumber.muted {
-    background-color: #bf616a;
-}
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
+#custom-cava {
+    color: #81a1c1;
+    margin-left: 10px;
+    letter-spacing: 2px;
 }
 
 #temperature {
@@ -239,66 +222,7 @@ label:focus {
     background-color: #bf616a;
 }
 
-#idle_inhibitor {
-    background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
-}
-
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #bf616a;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #b48ead;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #2E3440;
-    padding: 0 0px;
-    margin: 5px 5px;
-    min-width: 16px;
-}
-
-#keyboard-state>label {
-    padding: 0 5px;
-}
-
-#keyboard-state>label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-    background-color: transparent;
-}
-
 #mpris {
     margin-left: 5px;
     font-weight: bold;
-    font-size: 16px;
 }
