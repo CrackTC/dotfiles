@@ -16,7 +16,7 @@
     ],
     "modules-center": [
         // "hyprland/window"
-        "mpris",
+        // "mpris",
         "custom/cava",
     ],
     "modules-right": [
@@ -27,6 +27,9 @@
     ],
     "custom/cava": {
         "exec": "~/.config/waybar/scripts/cava.sh",
+        "on-scroll-up": "playerctl -p spotify,edge previous",
+        "on-scroll-down": "playerctl -p spotify,edge next",
+        "on-click": "playerctl -p spotify,edge play-pause"
     },
     "wlr/workspaces": {
         "disable-scroll": true,
