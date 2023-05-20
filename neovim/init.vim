@@ -12,9 +12,12 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+source ~/.config/nvim/vimfiles/plugin.vim
 source ~/.config/nvim/vimfiles/settings.vim
 source ~/.config/nvim/vimfiles/mappings.vim
 source ~/.config/nvim/vimfiles/neovide.vim
+source ~/.config/nvim/vimfiles/colorscheme.vim
+source ~/.config/nvim/vimfiles/filetype.vim
 
 " ===
 " === Markdown Settings
@@ -160,35 +163,26 @@ nnoremap <C-u> mzgUiw`z
 noremap b- :bp<CR>
 noremap b= :bn<CR>
 
-" ===
-" === Sources
-" ===
-source ~/.config/nvim/vimfiles/plugin.vim
-source ~/.config/nvim/vimfiles/colorscheme.vim
-source ~/.config/nvim/vimfiles/filetype.vim
 
-" ===
-" === Coc.Nvim
-" ===
-" TODO: Install & Config Coc-Explorer, Coc-Lists, Coc-Prettier, Coc-Snippets, Coc-Tasks
+" coc.nvim
 let g:coc_global_extensions = [
-            \ 'coc-clangd'      ,
-            \ 'coc-css'         ,
-            \ 'coc-explorer'    ,
-            \ 'coc-gitignore'   ,
-            \ 'coc-go'          ,
-            \ 'coc-html'        ,
-            \ 'coc-json'        ,
-            \ 'coc-marketplace' ,
-            \ 'coc-pairs'       ,
-            \ 'coc-python'      ,
-            \ 'coc-snippets'    ,
-            \ 'coc-tasks'       ,
-            \ 'coc-translator'  ,
-            \ 'coc-tsserver'    ,
-            \ 'coc-vimlsp'      ,
-            \ 'coc-yaml'        ,
-            \ 'coc-yank'        ,
+    \ 'coc-clangd'      ,
+    \ 'coc-css'         ,
+    \ 'coc-explorer'    ,
+    \ 'coc-gitignore'   ,
+    \ 'coc-go'          ,
+    \ 'coc-html'        ,
+    \ 'coc-json'        ,
+    \ 'coc-marketplace' ,
+    \ 'coc-pairs'       ,
+    \ 'coc-python'      ,
+    \ 'coc-snippets'    ,
+    \ 'coc-tasks'       ,
+    \ 'coc-translator'  ,
+    \ 'coc-tsserver'    ,
+    \ 'coc-vimlsp'      ,
+    \ 'coc-yaml'        ,
+    \ 'coc-yank'        ,
 \ ]
 
 " pum highlighting
@@ -204,14 +198,15 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+let g:coc_snippet_next = '<TAB>'
 inoremap <silent><expr> <TAB>
-            \ coc#pum#visible() ? coc#pum#confirm()
-            \                   : CheckBackspace() ? "\<TAB>"
-            \                                      : coc#refresh()
+            \ coc#pum#visible() ? coc#pum#confirm() :
+            \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+            \ CheckBackspace() ? "\<TAB>" :
+            \ coc#refresh()
 
 inoremap <silent> <CR> <C-g>u<CR><C-r>=coc#on_enter()<CR>
 inoremap <silent><expr> <C-SPACE> coc#refresh()
-let g:coc_snippet_next = '<TAB>'
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -223,19 +218,16 @@ nmap <silent> <LEADER>m <Plug>(coc-format)
 nmap <silent> <LEADER>rn <Plug>(coc-rename)
 vmap <silent> m <Plug>(coc-format-selected)
 nmap <silent> <A-h> <Plug>(coc-float-hide)
+nnoremap <silent> <LEADER>a <Plug>(coc-codeaction)
 
 nnoremap <C-c> :CocCommand<CR>
-nnoremap <LEADER>a :CocAction<CR>
 nnoremap <LEADER>dd :CocList diagnostics<CR>
 nnoremap <LEADER>dc :call Show_documentation()<CR>
 
 function! Show_documentation()
-	call CocActionAsync('highlight')
-	if (index(['vim','help'], &filetype) >= 0)
-		execute 'h '.expand('<cword>')
-	else
-		call CocAction('doHover')
-	endif
+    if CocAction('hasProvider', 'hover')
+        call CocActionAsync('doHover')
+    endif
 endfunction
 
 " Text Objects
@@ -269,69 +261,7 @@ nnoremap <silent> <LEADER>tk :CocList tasks<CR>
 " Coc-Gitignore
 nnoremap <silent> <LEADER>gi :CocList gitignore<CR>
 
-" ===
-" === Omnisharp
-" ===
-" let g:Omnisharp_typeLookupInPreview = 1
-" let g:omnicomplete_fetch_full_documentation = 1
-" let g:OmniSharp_server_use_net6 = 1
-" let g:Omnisharp_highlight_types = 2
-
-" autocmd FileType cs nnoremap <buffer> <LEADER>m :OmniSharpCodeFormat<CR>
-" autocmd FileType cs nnoremap <buffer> <LEADER>dc :OmniSharpDocumentation<CR>
-" autocmd FileType cs nnoremap <buffer> gd :OmniSharpPreviewDefinition<CR>
-" autocmd FileType cs nnoremap <buffer> gr :OmniSharpFindUsages<CR>
-" autocmd FileType cs nnoremap <buffer> <LEADER>a :OmniSharpGetCodeActions<CR><C-\><C-n>:resize +5<CR>i
-" autocmd FileType cs nnoremap <buffer> <LEADER>rn :OmniSharpRename<CR><C-N>:res +5<CR>
-" autocmd FileType cs setlocal tabstop=4
-" autocmd FileType cs setlocal shiftwidth=4
-
-" sign define OmniSharpCodeActions text=💡
-
-" augroup OSCountCodeActions
-" 	autocmd!
-" 	autocmd FileType cs set signcolumn=yes
-" 	autocmd CursorHold *.cs call OSCountCodeActions()
-" augroup END
-
-" function! OSCountCodeActions() abort
-" 	if bufname('%') ==# '' || OmniSharp#FugitiveCheck() | return | endif
-" 	if !OmniSharp#IsServerRunning() | return | endif
-" 	let opts = {
-" 				\ 'CallbackCount': function('s:CBReturnCount'),
-" 				\ 'CallbackCleanup': {-> execute('sign unplace 99')}
-" 				\}
-" 	call OmniSharp#actions#codeactions#Count(opts)
-" endfunction
-
-" function! s:CBReturnCount(count) abort
-" 	if a:count
-" 		let l = getpos('.')[1]
-" 		let f = expand('%:p')
-" 		execute ':sign place 99 line='.l.' name=OmniSharpCodeActions file='.f
-" 	endif
-" endfunction
-
-" ===
-" === ALE
-" ===
-let g:ale_sign_error = '•'
-let g:ale_sign_warning = '•'
-let g:ale_sign_info = '·'
-let g:ale_sign_style_error = '·'
-let g:ale_sign_style_warning = '·'
-
-let g:ale_linters = { 'cs': ['OmniSharp'] }
-
-
-" ===
-" === Vim Table Mode
-" ===
-nnoremap <LEADER>tm :TableModeToggle<CR>
-
-" ===
-" === FZF
-" ===
+" FZF
 nnoremap <C-f> :Rg<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-h> :History<CR>
@@ -343,28 +273,26 @@ let g:fzf_preview_window = 'right:60%'
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 
 function! s:list_buffers()
-	redir => list
-	silent ls
-	redir END
-	return split(list, "\n")
+    redir => list
+    silent ls
+    redir END
+    return split(list, "\n")
 endfunction
 
 function! s:delete_buffers(lines)
-	execute 'bwipeout' join(map(a:lines, {_, line -> split(line)[0]}))
+    execute 'bwipeout' join(map(a:lines, {_, line -> split(line)[0]}))
 endfunction
 
 command! BD call fzf#run(fzf#wrap({
-			\ 'source'  :  s:list_buffers(),
-			\ 'sink*'   :  { lines -> s:delete_buffers(lines) },
-			\ 'options' :  '--multi --reverse --bind ctrl-a:select-all+accept'
-			\ }))
+    \ 'source'  :  s:list_buffers(),
+    \ 'sink*'   :  { lines -> s:delete_buffers(lines) },
+    \ 'options' :  '--multi --reverse --bind ctrl-a:select-all+accept'
+    \ }))
 
 noremap <C-d> :BD<CR>
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
 
-" ===
-" === Undotree
-" ===
+" Undotree
 nnoremap <LEADER>k :UndotreeToggle<CR>
 
 let g:undotree_SetFocusWhenToggle = 1
@@ -373,128 +301,32 @@ let g:undotree_WindowLayout       = 2
 let g:undotree_DiffpanelHeight    = 8
 let g:undotree_SplitWidth         = 24
 
-" ===
-" === Vimspector
-" ===
-let g:vimspector_enable_mappings = 'HUMAN'
-let g:vimspector_sidebar_width = 35
-let g:vimspector_code_minwidth = 50
-let g:vimspector_terminal_minwidth = 30
-
-noremap <A-q> :VimspectorReset<CR>
-noremap <A-w> :VimspectorWatch 
-noremap <A-e> :VimspectorEval 
-
-sign define vimspectorBP text= texthl=Normal
-sign define vimspectorBPDisabled text= texthl=Normal
-sign define vimspectorPC text= texthl=Normal
-
-" ===
-" === Vimwiki
-" ===
-let g:vimwiki_list = [{
-    \ 'path'             : '~/vimwiki',
-    \ 'template_path'    : '~/vimwiki/templates/',
-    \ 'template_default' : 'markdown',
-    \ 'syntax'           : 'markdown',
-    \ 'ext'              : '.md',
-    \ 'path_html'        : '~/vimwiki/site_html/',
-    \ 'custom_wiki2html' : 'vimwiki_markdown',
-    \ 'template_ext'     : '.tpl'}]
-
-" ===
-" === Clever-F
-" ===
+" Clever-F
 let g:clever_f_chars_match_any_signs = ';'
 
-" ===
-" === Suda
-" ===
-let g:suda_smart_edit = 1
+" Suda
+let g:suda#nopass = 1
 
-" ===
-" === GitGutter
-" ===
+" GitGutter
 let g:gitgutter_map_keys = 0
-" let g:gitgutter_sign_added = '▎'
-" let g:gitgutter_sign_modified = '░'
-" let g:gitgutter_sign_removed = '▏'
-" let g:gitgutter_sign_removed_first_line = '▔'
-" let g:gitgutter_sign_modified_removed = '▒'
 nnoremap <LEADER>gf :GitGutterFold<CR>
 nnoremap g- :GitGutterPrevHunk<CR>
 nnoremap g= :GitGutterNextHunk<CR>
 nnoremap <LEADER>G :GitGutterPreviewHunk<CR>
 
-" ===
-" === Vista
-" ===
-noremap <LEADER>l :Vista!!<CR>
-noremap <C-t> :silent! Vista finder coc<CR>
-let g:vista_icon_indent          = ["╰─▸ ", "├─▸ "]
-let g:vista_default_executive    = 'coc'
-let g:vista_fzf_preview          = ['right:50%']
-let g:vista#renderer#enable_icon = 1
-let g:vista#renderer#icons       = {
-			\ "func"           : "",
-			\ "function"       : "",
-			\ "functions"      : "",
-			\ 'var'            : "",
-			\ "variable"       : "",
-			\ 'variables'      : "",
-			\ 'const'          : "",
-			\ 'constant'       : "",
-			\ 'method'         : "",
-			\ 'package'        : "",
-			\ 'packages'       : "",
-			\ 'enum'           : "",
-			\ 'enumerator'     : "",
-			\ 'module'         : "",
-			\ 'modules'        : "",
-			\ 'type'           : "",
-			\ 'typedef'        : "",
-			\ 'types'          : "",
-			\ 'field'          : "綠",
-			\ 'fields'         : "綠",
-			\ 'macro'          : "",
-			\ 'macros'         : "",
-			\ 'map'            : "",
-			\ 'class'          : "",
-			\ 'augroup'        : "",
-			\ 'struct'         : "פּ",
-			\ 'union'          : "",
-			\ 'member'         : "",
-			\ 'target'         : "",
-			\ 'property'       : "襁",
-			\ 'interface'      : "",
-			\ 'namespace'      : "",
-			\ 'subroutine'     : "羚",
-			\ 'implementation' : "",
-			\ 'typeParameter'  : "",
-			\ 'default'        : ""
-			\}
-
-" ===
-" === Tabular
-" ===
+" Tabular
 vmap a :Tabularize /
 
-" ===
-" === Vim-After-Object
-" ===
+" Vim-After-Object
 autocmd VimEnter * call after_object#enable('=', ':', '-', '#', ' ')
 
-" ===
-" === Rainbow
-" ===
+" Rainbow
 let g:rainbow_active = 1
 let g:rainbow_conf = {
-            \ 'guifgs': ['#81A1C1', '#EBCB8B', '#8FBCBB', '#B48EAD'],
-      \ }
+    \ 'guifgs': ['#5e81ac', '#81a1c1', '#88c0d0', '#8fbcbb'],
+\ }
 
-" ===
-" === Xtabline
-" ===
+" Xtabline
 let g:xtabline_settings                 = {}
 let g:xtabline_settings.enable_mappings = 0
 let g:xtabline_settings.tabline_modes   = ['tabs', 'buffers']
@@ -502,99 +334,38 @@ let g:xtabline_settings.enable_persistance = 0
 let g:xtabline_settings.last_open_first = 1
 noremap to :XTabMode<CR>
 
-" ===
-" === Vim-Markdown-Toc
-" ===
-let g:vmt_cycle_list_item_markers = 1
-let g:vmt_fence_text              = 'TOC'
-let g:vmt_fence_closing_text      = '/TOC'
-
-" ===
-" === Rnvimr
-" ===
-let g:rnvimr_enable_ex     = 1
-let g:rnvimr_enable_picker = 1
-let g:rnvimr_presets       = [{'width': 0.8, 'height': 0.8}]
-highlight link RnvimrNormal CursorLine
-nnoremap <silent> <LEADER>e :RnvimrToggle<CR><C-\><C-n>:RnvimrResize 0<CR>
-let g:rnvimr_action = {
-			\ '<C-t>': 'NvimEdit tabedit',
-			\ '<C-x>': 'NvimEdit split',
-			\ '<C-v>': 'NvimEdit vsplit',
-			\ 'gw': 'JumpNvimCwd',
-			\ 'yw': 'EmitRangerCwd'
-			\ }
-
-" ===
-" === Vim-Subversive
-" ===
+" Vim-Subversive
 nmap r <Plug>(SubversiveSubstitute)
 nmap rr <Plug>(SubversiveSubstituteLine)
 
-" ===
-" === Vim-Visual-Multi
-" ===
+" Vim-Visual-Multi
 let g:VM_maps = {}
 let g:VM_maps['Find Under'] = 'n'
 let g:VM_maps['Find Subword Under'] = 'n'
 
-" ===
-" === Vim-Illuminate
-" ===
-let g:Illuminate_delay          = 250
+" Vim-Illuminate
+let g:Illuminate_delay = 250
 highlight IlluminatedWordText cterm = undercurl gui = undercurl
 
-" ===
-" === Vim-Rooter
-" ===
-let g:rooter_patterns     = ['__vim_project_root', '.git/']
+" Vim-Rooter
+let g:rooter_patterns = ['__vim_project_root', '.git/']
 let g:rooter_silent_chdir = 1
 
-" ===
-" === NrrwRgn
-" ===
+" NrrwRgn
 let g:nrrw_rgn_nomap_nr = 1
 let g:nrrw_rgn_nomap_Nr = 1
 noremap <c-y> :NR<CR>
 
-" ===
-" === Calendar
-" ===
-" noremap \\ :Calendar -view=clock -position=here<CR>
-
-" let g:calendar_google_calendar      = 1
-" let g:calendar_google_task          = 1
-" let g:calendar_google_api_key       = 'AIzaSyA6fAU5C1r5rMsiwxb7-CPNWm_M8gZpsIo'
-" let g:calendar_google_client_id     = '168755098063-lbht3c3im6vlltj9p5k18sochlsa9gps.apps.googleusercontent.com'
-" let g:calendar_google_client_secret = 'VPADRlMUXumXP762fLG_Kgfv'
-
-" ===
-" === Vim-Easymotion
-" ===
+" Vim-Easymotion
 let g:EasyMotion_do_mapping = 0
-let g:EasyMotion_do_shade   = 0
-let g:EasyMotion_smartcase  = 1
+let g:EasyMotion_do_shade = 0
+let g:EasyMotion_smartcase = 1
 
 nmap ss <Plug>(easymotion-overwin-f2)
 
 map <LEADER>J <PLUG>(easymotion-j)
 map <LEADER>K <PLUG>(easymotion-k)
 
-" ===
-" === Any-Jump
-" ===
+" Any-Jump
 let g:any_jump_window_width_ratio  = 0.8
 let g:any_jump_window_height_ratio = 0.9
-
-" ===
-" === semshi
-" ===
-" let g:semshi#excluded_hl_groups = []
-" let g:semshi#mark_selected_nodes = 0
-" let g:semshi#simplify_markup = 0
-" let g:semshi#error_sign = 0
-
-" ===
-" === braceless
-" ===
-" autocmd FileType python BracelessEnable +indent +fold +highlight

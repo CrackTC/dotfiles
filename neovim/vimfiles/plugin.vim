@@ -1,69 +1,31 @@
-" TODO: Install and config these plugins:
-" Plug 'skywind3000/asynctasks.vim'
-" Plug 'skywind3000/asyncrun.vim'
-
 call plug#begin('~/.config/nvim/plugged')
 
-" Custom Color Scheme and Bar
-
-Plug 'arcticicestudio/nord-vim'
+" Color Scheme
 " Plug 'rakr/vim-one'
 " Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 
-" Start screen for vim
-" Plug 'mhinz/vim-startify'
-
-" TODO: Configuration
+" cool status line
 Plug 'itchyny/lightline.vim'
 
 " Git diff markers in sign column
 Plug 'airblade/vim-gitgutter'
-
-" TODO: Switch to another alternative:'RRethy/vim-hexokinase'.
-" Plug 'ap/vim-css-color'
 
 Plug 'ryanoasis/vim-devicons'
 
 " TODO: Learn how to use.
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
-" Markdown
-
-" TODO: Learn how to use.
-" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for':['markdown', 'vim-plug']}
+" markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
-" TODO: Learn how to use
-" Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
-
-" Auto Generate Toc
-" Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
 
 " Automatic labeling
 Plug 'dkarter/bullets.vim', { 'for': ['text', 'markdown', 'vim-plug', 'gitcommit', 'scratch'] }
 
-" TODO: Install & Configuration.
-" Plug 'vimwiki/vimwiki'
-
-" Auto Complete
+" conquer of completion~
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'liuchengxu/vista.vim', {'on': 'Vista'}
-
-" Plug 'OmniSharp/omnisharp-vim', {'for' :['cs', 'vim-plug']}
-
-" ===
-" Plug 'dense-analysis/ale', {'for' :['cs', 'vim-plug']}
-Plug 'jackguo380/vim-lsp-cxx-highlight', {'for' :['c', 'cpp', 'vim', 'vim-plug']}
-
-" TODO: Learn how to use.
-" Plug 'mattn/emmet-vim', {'for' :['html', 'xml', 'css', 'vim-plug']}
-
-" TODO: Learn how to use.
-" Manual: https://puremourning.github.io/vimspector-web/
-" Plug 'puremourning/vimspector'
 
 " Quick find file
-" TODO: Configuration
 Plug 'junegunn/fzf.vim'
 
 " Tim Pope
@@ -83,47 +45,47 @@ Plug 'yianwillis/vimcdoc'
 " Highlight the same word in document after a delay
 Plug 'RRethy/vim-illuminate'
 
-Plug 'theniceboy/antovim' " gs to switch
+" gs to switch
+Plug 'theniceboy/antovim'
 
-Plug 'CrackTC/argtextobj.vim' " daa to delete an argument
+" daa to delete an argument
+Plug 'CrackTC/argtextobj.vim'
 
+" enhanced f and t motions
 Plug 'rhysd/clever-f.vim'
 
+" handle privilledge issues
 Plug 'lambdalisue/suda.vim'
 
+" align lines with specific pattern
 Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
 
+" rainbow brackets
 Plug 'luochen1990/rainbow'
 
 Plug 'junegunn/vim-after-object'
 
 Plug 'mg979/vim-xtabline'
 
-" Plug 'kevinhwang91/rnvimr', { 'on': 'RnvimrToggle' }
-
+" smarter replace motions
 Plug 'svermeulen/vim-subversive'
 
+" auto switch cwd
 Plug 'airblade/vim-rooter'
 
 Plug 'chrisbra/NrrwRgn', { 'on': 'NR' }
 
-" Gitignore Highlighting
+" highlighting for gitignore
 Plug 'theniceboy/vim-gitignore'
 
-" Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
-
-" gS to split & gJ to join
-" Plug 'AndrewRadev/splitjoin.vim'
-
+" ss to quick jump
 Plug 'easymotion/vim-easymotion'
-
-Plug 'pechorin/any-jump.vim'
 
 " fish syntax highlighting
 Plug 'nickeb96/fish.vim'
 
 " Github Copilot
-" Plug 'github/copilot.vim'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
