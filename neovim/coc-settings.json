@@ -26,6 +26,10 @@
         "rounded": true,
         "border": true,
     },
+    "suggest.pumFloatConfig": {
+        "rounded": true,
+        "border": true
+    },
     "suggest.labelMaxLength": 40,
     "suggest.noselect": false,
     "suggest.snippetIndicator": " ",
@@ -162,5 +166,6 @@
         "--fallback-style=Microsoft"
     ],
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
-    "colors.enable": true
+    "colors.enable": true,
+    "translator.proxy": "http://127.0.0.1:7890"
 }

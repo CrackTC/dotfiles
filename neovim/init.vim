@@ -192,11 +192,12 @@ let g:coc_global_extensions = [
 \ ]
 
 " pum highlighting
-highlight CocFloating ctermbg = 8 guibg = None
-highlight CocSearch cterm = undercurl gui = undercurl
-highlight CocMenuSel ctermbg = 14 guibg = #8fbcbb ctermfg = 8 guifg = #3b4252
-highlight CocFloatThumb ctermbg = 7 guibg = #d8dee9
-highlight CocFloatDividingLine ctermfg = 7 guifg = #d8dee9
+highlight CocFloating          ctermbg = 8         guibg = None
+highlight CocSearch            cterm   = undercurl gui   = undercurl
+highlight CocMenuSel           ctermbg = 14        guibg = #8fbcbb   ctermfg = 8 guifg = #2E3440
+highlight CocFloatThumb        ctermbg = 7         guibg = #d8dee9   ctermfg = 8 guifg = #2E3440
+highlight CocFloatSbar         ctermfg = 8         guifg = #2E3440   ctermbg = 8 guibg = #2E3440
+highlight CocFloatDividingLine ctermfg = 7         guifg = #d8dee9
 
 function! CheckBackspace() abort
   let col = col('.') - 1
