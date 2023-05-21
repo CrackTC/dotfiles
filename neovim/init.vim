@@ -306,6 +306,7 @@ let g:clever_f_chars_match_any_signs = ';'
 
 " Suda
 let g:suda#nopass = 1
+let g:suda_smart_edit = 1
 
 " GitGutter
 let g:gitgutter_map_keys = 0
