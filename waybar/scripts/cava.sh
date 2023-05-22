@@ -2,7 +2,7 @@
 
 trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
 
-bar="▁▂▃▄▅▆▇█"
+bar=" ▁▂▃▄▅▆▇█"
 dict="s/;//g;"
 
 # creating "dictionary" to replace char with bar
@@ -30,7 +30,7 @@ bars = 60
 method = raw
 raw_target = $pipe
 data_format = ascii
-ascii_max_range = 7
+ascii_max_range = 8
 " > $config_file
 
 # run cava in the background
