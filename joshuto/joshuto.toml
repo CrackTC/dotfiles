@@ -1,0 +1,9 @@
+max_preview_size = 50000097152
+
+[display]
+collapse_preview = false
+
+[preview]
+preview_script = "~/.config/joshuto/preview.sh"
+preview_shown_hook_script = "~/.config/joshuto/icat_show"
+preview_removed_hook_script = "~/.config/joshuto/icat_remove"
