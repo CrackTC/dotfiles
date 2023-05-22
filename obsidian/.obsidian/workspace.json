@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "etl/关于扩展欧几里得.md",
+                "file": "etl/类型论初见.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "etl/关于扩展欧几里得.md",
+                "file": "etl/类型论初见.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,10 +123,11 @@
   },
   "active": "e13fca7a37ce4cef",
   "lastOpenFiles": [
+    "etl/关于扩展欧几里得.md",
+    "etl/类型论初见.md",
     "etl/神奇的对角论证法.md",
     "etl/解决php的readonly filesystem问题.md",
     "etl/真有人能心胸开阔 不计得失吗？怎么做到？.md",
-    "etl/关于扩展欧几里得.md",
     "Q3.md",
     "Q2.md",
     "Q1.md",
@@ -163,7 +164,6 @@
     "CTF/WriteUp/22-11-07/[RoarCTF 2019]Easy Java（学习）.md",
     "CTF/Spirit/2023/warm/qs.md",
     "CTF/Spirit/2023/warm/admin.md",
-    "CTF/Spirit/2023/warm/decode.md",
     "CTF/Spirit/2023/warm/img",
     "CTF/Spirit/2023/warm",
     "CTF/Spirit/2023",
