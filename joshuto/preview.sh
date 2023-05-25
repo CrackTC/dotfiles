@@ -59,6 +59,8 @@ while [ "$#" -gt 0 ]; do
     shift
 done
 
+# notify-send "$FILE_PATH $PREVIEW_WIDTH $PREVIEW_HEIGHT"
+
 tmsu_tag_list() {
     taglist=`tmsu tags -n never -1 "$FILE_PATH"`
     result=$?
@@ -183,8 +185,17 @@ handle_mime() {
             xls2csv -- "${FILE_PATH}" && exit 0
             exit 1;;
 
+        */xml)
+            bat --color=always --language=xml \
+        --paging=never \
+        --style=plain \
+        --terminal-width="${PREVIEW_WIDTH}" \
+         "${FILE_PATH}" && exit 0
+            cat "${FILE_PATH}" && exit 0
+            exit 1;;
+
         ## Text
-        text/* | */xml)
+        text/*)
             bat --color=always --paging=never \
         --style=plain \
         --terminal-width="${PREVIEW_WIDTH}" \

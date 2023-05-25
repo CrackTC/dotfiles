@@ -16,9 +16,10 @@ function image {
 case $(file -b --mime-type "${file}") in
     image/*)
         image "${file}"
-        ;;
+        exit 0;;
     *)
         kitty +kitten icat --transfer-mode=file --clear 2>/dev/null
+        exit 0;;
 esac
 
 
