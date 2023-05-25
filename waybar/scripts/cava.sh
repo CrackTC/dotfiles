@@ -24,7 +24,7 @@ mkfifo $pipe
 config_file="/tmp/polybar_cava_config"
 echo "
 [general]
-bars = 60
+bars = 80
 
 [output]
 method = raw
