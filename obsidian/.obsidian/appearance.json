@@ -4,7 +4,7 @@
   "textFontFamily": "Maple Mono,霞鹜文楷,更纱黑体 SC",
   "interfaceFontFamily": "更纱黑体 UI SC",
   "monospaceFontFamily": "Maple Mono,FiraCode Nerd Font",
-  "baseFontSize": 20,
+  "baseFontSize": 23,
   "accentColor": "#81a1c1",
   "cssTheme": "Minimal",
   "nativeMenus": true,
