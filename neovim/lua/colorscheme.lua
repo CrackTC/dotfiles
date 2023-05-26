@@ -1,9 +1,6 @@
 vim.cmd([[
 set termguicolors
 
-" one
-" let g:one_allow_italics = 1
-
 set background=dark
 
 " nord
@@ -18,18 +15,12 @@ let g:nord_uniform_diff_background       = 1
 
 colorscheme nord
 
-" gruvbox
-" let g:gruvbox_italic            = 1
-" let g:gruvbox_contrast_dark     = 'soft'
-" let g:gruvbox_contrast_light    = 'soft'
-" let g:gruvbox_invert_selection  = 0
-" let g:gruvbox_improved_strings  = 1
-" let g:gruvbox_improved_warnings = 1
-
-hi! Normal     ctermbg = NONE guibg = #2E3440
-hi! SignColumn ctermbg = NONE guibg = NONE
-hi! VertSplit  ctermbg = NONE guibg = NONE
-hi! NonText    ctermfg = gray guifg = grey10
+hi! Normal          ctermbg = NONE   guibg = #2E3440
+hi! SignColumn      ctermbg = NONE   guibg = NONE
+hi! VertSplit       ctermbg = NONE   guibg = NONE
+hi! NonText         ctermfg = gray   guifg = #434c5e
+hi! CocMarkdownLink ctermfg = 12     guifg = #8fbcbb
+hi! CocInlayHint    ctermfg = 12     guifg = #616e88
 
 let g:coc_status_error_sign   = '󰈸 '
 let g:coc_status_warning_sign = ' '
