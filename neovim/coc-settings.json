@@ -4,6 +4,8 @@
     "coc.source.around.enable": false,
     "coc.source.buffer.enable": false,
     "codeLens.enable": true,
+    "inlayHint.parameterSeparator": "󰶻 ",
+    "inlayHint.refreshOnInsertMode": true,
     "suggest.autoTrigger": "always",
     "suggest.detailField": "preview",
     "floatFactory.floatConfig": {
@@ -79,69 +81,6 @@
     "signature.target": "float",
     "yank.enableCompletion": false,
     "typescript.suggestionActions.enabled": true,
-    "explorer.width": 38,
-    "explorer.quitOnOpen": true,
-    "explorer.sources": [
-        {
-            "name": "buffer",
-            "expand": false
-        },
-        {
-            "name": "file",
-            "expand": true
-        }
-    ],
-    "explorer.file.column.indent.indentLine": true,
-    "explorer.file.showHiddenFiles": true,
-    "explorer.icon.enableNerdfont": true,
-    "explorer.keyMappingMode": "none",
-    "explorer.buffer.showHiddenBuffers": false,
-    "explorer.keyMappings.global": {
-        "k": "nodePrev",
-        "j": "nodeNext",
-        "v": "toggleSelection",
-        "<TAB>": "actionMenu",
-        "gl": "expandRecursive",
-        "gh": "collapseRecursive",
-        "o": "open",
-        "<CR>": "open",
-        "L": "open:vsplit",
-        "l": "expand",
-        "O": "open:tab",
-        "h": "collapse",
-        "u": "gotoParent",
-        "yp": "copyFilepath",
-        "yn": "copyFilename",
-        "yy": "copyFile",
-        "dd": "cutFile",
-        "pp": "pasteFile",
-        "dD": "deleteForever",
-        "e": "addFile",
-        "n": "addFile",
-        "m": "addDirectory",
-        "cw": "rename",
-        ".": "toggleHidden",
-        "zh": "toggleHidden",
-        "R": "refresh",
-        "?": "help",
-        "q": "quit",
-        "Q": "quit",
-        "X": "systemExecute",
-        "/": "search",
-        "f": "search",
-        "F": "searchRecursive",
-        "b": "gotoSource:file",
-        "B": "gotoSource:buffer",
-        "[[": "sourcePrev",
-        "]]": "sourceNext",
-        "[d": "diagnosticPrev",
-        "]d": "diagnosticNext",
-        "[g": "gitPrev",
-        "]g": "gitNext",
-        "<": "gitStage",
-        ">": "gitUnstage"
-    },
-    "python.autoComplete.addBrackets": true,
     "python.formatting.provider": "yapf",
     "python.formatting.yapfArgs": [
         "--style",
@@ -153,7 +92,6 @@
     "javascript.suggest.names": true,
     "javascript.suggestionActions.enabled": true,
     "json.format.enable": true,
-    "todolist.monitor": true,
     "clangd.arguments": [
         "--fallback-style=Microsoft"
     ],
@@ -164,9 +102,10 @@
         "vim"
     ],
     "Lua.workspace.library": [
-        "/usr/share/nvim/runtime/lua"
+        "/usr/share/nvim/runtime/lua",
+        "/usr/share/nvim/runtime/lua/vim",
+        "/usr/share/nvim/runtime/lua/vim/lsp"
     ],
-    "copilot.enable": true,
-    "copilot.priority": 100,
-    "suggest.languageSourcePriority": 80
+    "Lua.hint.enable": true,
+    "Lua.codeLens.enable": true
 }
