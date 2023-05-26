@@ -55,9 +55,6 @@ Plug 'CrackTC/argtextobj.vim'
 " enhanced f and t motions
 Plug 'rhysd/clever-f.vim'
 
-" handle privilledge issues
-Plug 'lambdalisue/suda.vim'
-
 " align lines with specific pattern
 Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
 
