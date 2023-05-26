@@ -171,16 +171,14 @@ noremap b= :bn<CR>
 let g:coc_global_extensions = [
     \ 'coc-clangd'      ,
     \ 'coc-css'         ,
-    \ 'coc-explorer'    ,
     \ 'coc-gitignore'   ,
     \ 'coc-go'          ,
     \ 'coc-html'        ,
     \ 'coc-json'        ,
+    \ 'coc-lua'         ,
     \ 'coc-marketplace' ,
     \ 'coc-pairs'       ,
-    \ 'coc-python'      ,
     \ 'coc-snippets'    ,
-    \ 'coc-tasks'       ,
     \ 'coc-translator'  ,
     \ 'coc-tsserver'    ,
     \ 'coc-vimlsp'      ,
@@ -246,9 +244,6 @@ omap ac <Plug>(coc-classobj-a)
 " Coc-Yank
 nnoremap <silent> <LEADER>p :<C-u>CocList --normal yank<CR>
 
-" Coc-Explorer
-nnoremap <LEADER>h :CocCommand explorer<CR>
-
 " Coc-Translator
 nmap <silent> ts <Plug>(coc-translator-p)
 vmap <silent> ts <Plug>(coc-translator-pv)
@@ -257,9 +252,6 @@ vmap <silent> ts <Plug>(coc-translator-pv)
 nnoremap tn :CocCommand todolist.create<CR>
 nnoremap do :CocList --normal todolist<CR>
 nnoremap <LEADER>tu :CocCommand todolist.download<CR>:CocCommand todolist.upload<CR>
-
-" Coc-Tasks
-nnoremap <silent> <LEADER>tk :CocList tasks<CR>
 
 " Coc-Gitignore
 nnoremap <silent> <LEADER>gi :CocList gitignore<CR>
@@ -306,10 +298,6 @@ let g:undotree_SplitWidth         = 24
 
 " Clever-F
 let g:clever_f_chars_match_any_signs = ';'
-
-" Suda
-let g:suda#nopass = 1
-let g:suda_smart_edit = 1
 
 " GitGutter
 let g:gitgutter_map_keys = 0
