@@ -1,3 +1,4 @@
+vim.cmd([[
 call plug#begin('~/.config/nvim/plugged')
 
 " Color Scheme
@@ -88,4 +89,4 @@ Plug 'nickeb96/fish.vim'
 Plug 'github/copilot.vim'
 
 call plug#end()
-
+]])

@@ -75,14 +75,6 @@
     "list.previewHighlightGroup": "Statement",
     "list.previousKeymap": "<C-k>",
     "list.signOffset": 1,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
-        "typescript",
-        "css",
-        "json",
-        "vue",
-        "svelte"
-    ],
     "yaml.format.enable": true,
     "signature.target": "float",
     "yank.enableCompletion": false,
@@ -167,5 +159,14 @@
     ],
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
     "colors.enable": true,
-    "translator.proxy": "http://127.0.0.1:7890"
+    "translator.proxy": "http://127.0.0.1:7890",
+    "Lua.diagnostics.globals": [
+        "vim"
+    ],
+    "Lua.workspace.library": [
+        "/usr/share/nvim/runtime/lua"
+    ],
+    "copilot.enable": true,
+    "copilot.priority": 100,
+    "suggest.languageSourcePriority": 80
 }

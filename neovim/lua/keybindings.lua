@@ -1,3 +1,4 @@
+vim.cmd([[
 " ===
 " === Basic Mappings
 " ===
@@ -103,3 +104,4 @@ cnoremap <C-p> <LEFT>
 cnoremap <C-n> <RIGHT>
 
 nmap <LEADER>rr r$
+]])

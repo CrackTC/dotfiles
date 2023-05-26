@@ -1,28 +1,31 @@
-"  __  ____   ___   ___     _____ __  __ ____   ____
-" |  \/  \ \ / / \ | \ \   / /_ _|  \/  |  _ \ / ___|
-" | |\/| |\ V /|  \| |\ \ / / | || |\/| | |_) | |
-" | |  | | | | | |\  | \ V /  | || |  | |  _ <| |___
-" |_|  |_| |_| |_| \_|  \_/  |___|_|  |_|_| \_\\____|
+--  __  ____   ___   ___     _____ __  __ ____   ____
+-- |  \/  \ \ / / \ | \ \   / /_ _|  \/  |  _ \ / ___|
+-- | |\/| |\ V /|  \| |\ \ / / | || |\/| | |_) | |
+-- | |  | | | | | |\  | \ V /  | || |  | |  _ <| |___
+-- |_|  |_| |_| |_| \_|  \_/  |___|_|  |_|_| \_\\____|
 
-" ===
-" === Auto Download Plugin For First Time Use.
-" ===
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+-- Auto Download Plugin For First Time Use.
+if not vim.fn.filereadable('~/.config/nvim/autoload/plug.vim') then
+    os.execute('curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
+    vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
+end
 
-source ~/.config/nvim/vimfiles/plugin.vim
-source ~/.config/nvim/vimfiles/settings.vim
-source ~/.config/nvim/vimfiles/mappings.vim
-source ~/.config/nvim/vimfiles/neovide.vim
-source ~/.config/nvim/vimfiles/colorscheme.vim
-source ~/.config/nvim/vimfiles/filetype.vim
+require('settings')
+require('plugin')
+require('keybindings')
+require('colorscheme')
+require('filetype')
+require('markdown')
 
+if vim.fn.exists('g:neovide') then
+    require('neovide')
+end
+
+
+vim.cmd([[
 " ===
 " === Markdown Settings
 " ===
-source ~/.config/nvim/vimfiles/markdown.vim
 " autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal nowrap
 
@@ -375,3 +378,4 @@ let g:any_jump_window_height_ratio = 0.9
 let g:copilot_filetypes = {
             \ 'markdown': v:true,
             \ }
+]])

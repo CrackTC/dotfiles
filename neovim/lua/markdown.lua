@@ -1,3 +1,4 @@
+vim.cmd([[
 autocmd FileType markdown inoremap <buffer> ,f <ESC>/<++><CR>:nohl<CR>ca>
 autocmd FileType markdown inoremap <buffer> ,b **** <++><ESC>2F*i
 autocmd FileType markdown inoremap <buffer> ,i ** <++><ESC>F*i
@@ -15,3 +16,4 @@ autocmd FileType markdown inoremap <buffer> ,3 ###<SPACE><CR><++><ESC>kA
 autocmd FileType markdown inoremap <buffer> ,4 ####<SPACE><CR><++><ESC>kA
 autocmd FileType markdown inoremap <buffer> ,5 #####<SPACE><CR><++><ESC>kA
 autocmd FileType markdown inoremap <buffer> ,6 ######<SPACE><CR><++><ESC>kA
+]])
