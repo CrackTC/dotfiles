@@ -195,7 +195,7 @@ handle_mime() {
             exit 1;;
 
         ## Text
-        text/*)
+        text/*|application/json)
             bat --color=always --paging=never \
         --style=plain \
         --terminal-width="${PREVIEW_WIDTH}" \
