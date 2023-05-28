@@ -95,7 +95,7 @@
     frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#8fbcbb"
+    frame_color = "#dedee9"
 
     highlight = "#8fbcbb"
 
