@@ -26,7 +26,7 @@ local function tnoremap(lhs, rhs, opts)
     noremap('t', lhs, rhs, opts)
 end
 
-local function nmap(lhs, rhs, opts)
+local function nmap(lhs, rhs)
     map('n', lhs, rhs, { remap = true })
 end
 
