@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "da2c78a462af3d7b",
+        "id": "0264cbf22f241f95",
         "type": "tabs",
         "children": [
           {
-            "id": "23e5aa0e68870f6f",
+            "id": "616777fbe2e537c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academic/G1T2/discrete_math/graph/Hamilton/Hamilton图.md",
+                "file": "academic/G1T2/discrete_math/number/辗转相除.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "行列式",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "academic/G1T2/discrete_math/graph/Hamilton/Hamilton图.md",
+                "file": "academic/G1T2/discrete_math/number/辗转相除.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,13 +121,29 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "23e5aa0e68870f6f",
+  "active": "616777fbe2e537c5",
   "lastOpenFiles": [
+    "academic/G1T2/discrete_math/number/整除.md",
+    "academic/G1T2/discrete_math/number/辗转相除.md",
+    "academic/G1T2/discrete_math/number/最大公因数.md",
+    "academic/G1T2/discrete_math/number/最高公因数.md",
+    "academic/G1T2/discrete_math/number/公因数.md",
+    "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/0-compatibility_and_cramer/1-def/compatibility.md",
+    "academic/G1T2/discrete_math/graph/Hamilton/Hamilton图.md",
+    "academic/G1T2/discrete_math/number",
     "academic/G1T2/discrete_math/graph/Hamilton/Hamilton路.md",
     "academic/G1T2/discrete_math/graph/Hamilton/Hamilton回路.md",
+    "academic/G1T2/discrete_math/graph/Hamilton/连接图.md",
     "academic/G1T2/discrete_math/graph/Hamilton/极大非Hamilton图.md",
+    "academic/G1T2/discrete_math/graph/Hamilton/img/Pasted image 20230527112445.png",
+    "academic/G1T2/discrete_math/graph/Hamilton/img/Pasted image 20230527112333.png",
+    "academic/G1T2/discrete_math/graph/Hamilton/完全图.md",
+    "academic/G1T2/discrete_math/graph/Hamilton/img/Pasted image 20230527111606.png",
+    "academic/G1T2/discrete_math/graph/Hamilton/img",
+    "academic/G1T2/discrete_math/graph/Hamilton/度增大.md",
+    "academic/G1T2/discrete_math/graph/Hamilton/增大（实数序列）.md",
+    "academic/G1T2/discrete_math/graph/Hamilton/度序列.md",
     "academic/G1T2/discrete_math/graph/Hamilton/闭合图.md",
-    "academic/G1T2/discrete_math/graph/Hamilton/Hamilton图.md",
     "academic/G1T2/discrete_math/graph/Euler/欧拉图.md",
     "academic/G1T2/discrete_math/graph/directed/漠视图.md",
     "academic/G1T2/discrete_math/graph/directed/强连通.md",
@@ -143,18 +159,7 @@
     "academic/G1T2/discrete_math/graph/euler/img",
     "academic/G1T2/discrete_math/graph/directed/树和有向树的转化定理.md",
     "academic/G1T2/discrete_math/graph/Euler",
-    "academic/G1T2/discrete_math/graph/directed/有向树.md",
-    "academic/G1T2/discrete_math/graph/directed/根.md",
-    "academic/G1T2/discrete_math/graph/directed/弧.md",
-    "academic/G1T2/discrete_math/graph/directed/反身弧.md",
-    "academic/G1T2/discrete_math/graph/directed/有向图.md",
-    "academic/G1T2/discrete_math/graph/trees/Kruskal.md",
     "academic/G1T2/discrete_math/graph/directed",
-    "academic/G1T2/discrete_math/graph/trees/支撑树.md",
-    "academic/G1T2/discrete_math/graph/trees/树.md",
-    "academic/G1T2/discrete_math/graph/trees/森林.md",
-    "academic/G1T2/discrete_math/graph/basics/Dijkstra.md",
-    "academic/G1T2/discrete_math/graph/basics/支撑子图.md",
     "academic/G1T2/discrete_math/graph/trees",
     "academic/G1T2/discrete_math/graph/basics",
     "academic/G1T2/discrete_math/graph",
@@ -164,11 +169,6 @@
     "img/Pasted image 20230524092208.png",
     "img/Pasted image 20230524091851.png",
     "img/Pasted image 20230524091415.png",
-    "img/Pasted image 20230524091238.png",
-    "img/Pasted image 20230524091128.png",
-    "img/Pasted image 20230524090514.png",
-    "未命名",
-    "img",
     "未命名.canvas",
     "未命名 2.canvas",
     "未命名 1.canvas"
