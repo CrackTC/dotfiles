@@ -1,5 +1,7 @@
 [display]
 collapse_preview = false
+show_borders = false
+show_icons = true
 
 [preview]
 max_preview_size = 1048576000
