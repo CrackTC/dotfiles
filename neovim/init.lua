@@ -6,8 +6,12 @@
 
 -- Auto Download Plugin For First Time Use.
 if not vim.fn.filereadable('~/.config/nvim/autoload/plug.vim') then
-    os.execute('curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
-    vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
+    os.execute(
+        'curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
+    vim.api.nvim_create_autocmd("VimEnter", {
+        pattern = { "*" },
+        command = "PlugInstall --sync | source $MYVIMRC"
+    })
 end
 
 require('settings')
@@ -56,7 +60,7 @@ nnoremap <LEADER>wp :setlocal wrap!<CR>
 noremap ` ~
 
 " Generate ASCII Image
-nnoremap <LEADER>f :r !figlet 
+nnoremap <LEADER>f :r !figlet
 
 " Show CWD
 noremap \p :echo expand('%:p')<CR>
