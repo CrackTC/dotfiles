@@ -95,7 +95,6 @@
     "clangd.arguments": [
         "--fallback-style=Microsoft"
     ],
-    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
     "colors.enable": true,
     "translator.proxy": "http://127.0.0.1:7890",
     "Lua.diagnostics.globals": [
