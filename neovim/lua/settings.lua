@@ -16,7 +16,7 @@ vim.opt.tabstop = 4                                               -- tab size, n
 vim.opt.shiftwidth = 4                                            -- indent size, number of spaces, used for >>, <<, ==, etc.
 vim.opt.autoindent = true                                         -- copy indent from current line when starting a new line
 vim.opt.list = true                                               -- show whitespace characters
-vim.opt.listchars = [[tab:󰌒 ,trail:·]]                        -- whitespace characters
+vim.opt.listchars = [[tab:󰌒 ,trail:·]]                            -- whitespace characters
 vim.opt.scrolloff = 4                                             -- minimum number of lines to keep above and below cursor
 vim.opt.wrap = false                                              -- don't wrap lines
 vim.opt.linebreak = false                                         -- wrap long lines at characters in 'breakat'
@@ -65,7 +65,7 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     pattern = "*",
     callback = function()
         if vim.fn.line("'\"") > 1 and vim.fn.line("'\"") <= vim.fn.line("$") then
-            vim.cmd([[normal! g`"]])
+            vim.cmd.normal([[g`"]])
         end
     end
 })
