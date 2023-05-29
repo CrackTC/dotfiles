@@ -34,9 +34,18 @@ nnoremap('<A-p>', '5<C-y>')
 
 -- [searching] --
 
-nnoremap('-', 'N')
-nnoremap('=', 'n')
+nnoremap('-', 'Nzz')
+nnoremap('=', 'nzz')
 nnoremap('<leader><CR>', ':nohlsearch<CR>', { silent = true })
+cnoremap('<CR>', function()
+    local cmdtype = vim.fn.getcmdtype()
+    if cmdtype == '/' or cmdtype == '?' then
+        vim.opt.hlsearch = false
+        vim.api.nvim_feedkeys('\nzz', 'n', true)
+    else
+        vim.api.nvim_feedkeys('\n', 'n', true)
+    end
+end)
 
 -- [window management] --
 
