@@ -2,35 +2,6 @@
 
 vim.g.mapleader = ' '
 
-local map = vim.keymap.set
-
-local function noremap(mode, lhs, rhs, opts)
-    opts = opts or {}
-    opts.noremap = true
-    map(mode, lhs, rhs, opts)
-end
-
-local function nnoremap(lhs, rhs, opts)
-    noremap('n', lhs, rhs, opts)
-end
-
-local function vnoremap(lhs, rhs, opts)
-    noremap('v', lhs, rhs, opts)
-end
-
-local function cnoremap(lhs, rhs, opts)
-    noremap('c', lhs, rhs, opts)
-end
-
-local function tnoremap(lhs, rhs, opts)
-    noremap('t', lhs, rhs, opts)
-end
-
-local function nmap(lhs, rhs)
-    map('n', lhs, rhs, { remap = true })
-end
-
-
 -- [basic mappings] --
 
 nnoremap(';', ':')
@@ -86,6 +57,7 @@ nnoremap('<LEFT>', ':vertical resize-5<CR>')
 nnoremap('<RIGHT>', ':vertical resize+5<CR>')
 
 -- [tab management] --
+
 nnoremap('tj', ':-tabe<CR>')
 nnoremap('tk', ':tabe<CR>')
 
@@ -106,6 +78,7 @@ nnoremap('<leader>8', '8gt')
 nnoremap('<leader>9', '9gt')
 
 -- [terminal behavior] --
+
 vim.api.nvim_create_autocmd('TermOpen', {
     pattern = 'term://*',
     command = 'startinsert'
@@ -119,13 +92,81 @@ tnoremap('<C-k>', [[<C-\><C-n><C-w>k]])
 tnoremap('<C-l>', [[<C-\><C-n><C-w>l]])
 
 -- open kitty in cwd
+
 nnoremap('<leader>tt', function()
     os.execute('kitty&')
 end)
 
 -- [command mode cursor movement] --
+
 cnoremap('<C-a>', '<Home>')
 cnoremap('<C-e>', '<End>')
 cnoremap('<C-p>', '<Left>')
 cnoremap('<C-n>', '<Right>')
+
+-- [other useful mappings] --
+
+-- open fold
+nnoremap('<leader>o', 'za', { silent = true })
+
+-- select a line (no eol)
+nnoremap('vv', '0v$h')
+
+-- replace next placeholder and insert
+nnoremap('<leader><leader>', '<ESC>/<++><CR>:nohl<CR>ca>', { silent = true })
+
+-- toggle spellcheck
+nnoremap('<leader>sc', ':setlocal spell!<CR>', { silent = true })
+
+-- toggle wrap
+nnoremap('<leader>wp', ':setlocal wrap!<CR>', { silent = true })
+
+-- change case
+nnoremap('`', '~')
+
+-- generate ascii figlet
+nnoremap('<leader>f', ':r !figlet ')
+
+-- show cwd
+nnoremap('<leader>cd', ':echo getcwd()<CR>')
+
+-- Move Lines
+nnoremap("<A-j>", "<cmd>m .+1<cr>==")
+nnoremap("<A-k>", "<cmd>m .-2<cr>==")
+inoremap("<A-j>", "<esc><cmd>m .+1<cr>==gi")
+inoremap("<A-k>", "<esc><cmd>m .-2<cr>==gi")
+vnoremap("<A-j>", ":m '>+1<cr>gv=gv")
+vnoremap("<A-k>", ":m '<-2<cr>gv=gv")
+
+-- show higroup
+nnoremap('<A-s>', print_higroup)
+
+-- quick surround
+xmap('"', 'S"')
+xmap("'", "S'")
+xmap("}", "S}")
+xmap("]", "S]")
+xmap("t", "St")
+-- xmap("0", "S)")
+-- xmap(">", "S>")
+xmap("i0", "i)")
+xmap("a0", "a)")
+omap("i0", "i)")
+omap("a0", "a)")
+nmap("ds0", "ds")
+
+-- compile and run
+
+nnoremap("R", compile_run)
+
+-- open init.lua
+nnoremap("<leader>rc", ":e $MYVIMRC<CR>")
+
+-- quick uppercase
+inoremap("<C-u>", "<ESC>mzgUiw`za")
+nnoremap("<C-u>", "mzgUiw`z")
+
+-- switch between buffer
+nnoremap("b-", ":bp<CR>")
+nnoremap("b=", ":bn<CR>")
 

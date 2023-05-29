@@ -52,11 +52,15 @@ function! LightlineCoc()
   endif
   return trim(coc#status())
 endfunction
+]])
 
+vim.cmd([[
 function! LightlineReadonly()
     return &readonly ? '' : ''
 endfunction
+]])
 
+vim.cmd([[
 function! LightlineFugitive()
     if exists('*FugitiveHead')
         let branch = FugitiveHead()
@@ -64,15 +68,21 @@ function! LightlineFugitive()
     endif
     return ''
 endfunction
+]])
 
+vim.cmd([[
 function! MyFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
 endfunction
+]])
 
+vim.cmd([[
 function! MyFileformat()
   return winwidth(0) > 70 ? (WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
+]])
 
+vim.cmd([[
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()
   return printf('+%d ~%d -%d', a, m, r)

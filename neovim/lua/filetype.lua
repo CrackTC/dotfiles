@@ -1,8 +1,4 @@
-vim.cmd([[
-" Markdown {{{
-augroup Markdown
-    autocmd!
-    autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
-augroup END
-" }}}
-]])
+-- [[file type specific settings]] --
+
+require('filetypes.markdown')
+require('filetypes.lisp')

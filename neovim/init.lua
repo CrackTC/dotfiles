@@ -14,12 +14,12 @@ if not vim.fn.filereadable('~/.config/nvim/autoload/plug.vim') then
     })
 end
 
+require('utils')
 require('settings')
-require('plugin')
 require('keybindings')
+require('plugin')
 require('colorscheme')
 require('filetype')
-require('markdown')
 
 if vim.fn.exists('g:neovide') then
     require('neovide')
@@ -27,142 +27,6 @@ end
 
 
 vim.cmd([[
-" ===
-" === Markdown Settings
-" ===
-" autocmd BufRead,BufNewFile *.md setlocal spell
-autocmd BufRead,BufNewFile *.md setlocal nowrap
-
-" ===
-" === Lisp Settings
-" ===
-autocmd BufRead,BufNewFile *.lisp let b:coc_pairs_disabled = ['<', "'"]
-
-" ===
-" === Other Useful Stuff
-" ===
-" Open Fold
-nnoremap <silent> <LEADER>o za
-
-" Select To End Of A Line (Without EOL)
-nnoremap vv 0v$h
-
-" Replace Next Place Holder And Insert
-nnoremap <LEADER><LEADER> <ESC>/<++><CR>:nohlsearch<CR>ca>
-
-" Toggle Spelling Checking
-nnoremap <LEADER>sc :setlocal spell!<CR>
-
-" Toggle Wrap
-nnoremap <LEADER>wp :setlocal wrap!<CR>
-
-" Change Case
-noremap ` ~
-
-" Generate ASCII Image
-nnoremap <LEADER>f :r !figlet
-
-" Show CWD
-noremap \p :echo expand('%:p')<CR>
-
-" Move Line Up/Down
-nnoremap <A-k> ddkP
-nnoremap <A-j> ddp
-
-" Press <A-s> To Show hlgroup
-function! SynGroup()
-	let l:s = synID(line('.'), col('.'), 1)
-	echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
-endfunction
-map <A-s> :call SynGroup()<CR>
-
-" Quick Surround
-xmap " S"
-xmap ' S'
-xmap } S}
-xmap ] S]
-" xmap 0 S)
-" xmap > S>
-xmap t St
-
-xmap i0 i)
-xmap a0 a)
-omap a0 a)
-omap i0 i)
-nmap ds0 ds)
-
-" Compile Function
-noremap R :call CompileRun()<CR>
-function! CompileRun()
-    execute "w"
-    if filereadable('Makefile')
-        set splitbelow
-        :split
-        :resize -5
-        :terminal make clean build run
-    elseif filereadable(expand('%:p:h') . '/Makefile')
-        set splitbelow
-        :split
-        :resize -5
-        :terminal make clean build run -C %:p:h
-    elseif &filetype == 'c'
-        set splitbelow
-        exec "!clang % -Wall -g -lm -o %<"
-        :split
-        :resize -5
-        :terminal time ./%<
-    elseif &filetype == 'cpp'
-        set splitbelow
-        exec "!clang++ -O0 -std=c++11 -Wall -g -o %< %"
-        :split
-        :resize -5
-        :terminal time ./%<
-    elseif &filetype == 'java'
-        execute '!javac %'
-        execute '!time java %<'
-    elseif &filetype == 'sh'
-        :!time bash %
-    elseif &filetype == 'lisp'
-        set splitbelow
-        :split
-        :terminal sbcl --script %
-    elseif &filetype == 'python'
-        set splitbelow
-        :split
-        :terminal python3 %
-    elseif &filetype == 'html'
-        silent! execute "!chromium % &"
-    elseif &filetype == 'markdown'
-        execute "MarkdownPreview"
-    elseif &filetype == 'tex'
-        silent! execute "VimtexStop"
-        silent! execute "VimtexCompile"
-    elseif &filetype == 'dart'
-        execute "CocCommand flutter.run -d ".g:flutter_default_device." ".g:flutter_run_args
-        silent! execute "CocCommand flutter.dev.openDevLog"
-    elseif &filetype == 'javascript'
-        set splitbelow
-        :split
-        :terminal export DEBUG="INFO,ERROR,WARNING"; node --trace-warnings .
-    elseif &filetype == 'go'
-        set splitbelow
-        :split
-        :terminal go run .
-    elseif &filetype == "cs"
-        set splitbelow
-        :split
-        :terminal dotnet run
-    elseif &filetype == "php"
-        set splitbelow
-        :split
-        :terminal php %
-    elseif &filetype == "scheme"
-        set splitbelow
-        :split
-        :terminal mit-scheme < '%'
-    endif
-endfunction
-
 noremap <LEADER>rc :e $MYVIMRC<CR>
 inoremap <C-u> <ESC>mzgUiw`za
 nnoremap <C-u> mzgUiw`z
