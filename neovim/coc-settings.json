@@ -1,32 +1,35 @@
 {
     "coc.preferences.extensionUpdateCheck": "daily",
+    "coc.preferences.enableMessageDialog": true,
     "coc.preferences.messageLevel": "error",
     "coc.source.around.enable": false,
     "coc.source.buffer.enable": false,
     "codeLens.enable": true,
+    "inlayHint.display": true,
+    "inlayHint.enableParameter": true,
     "inlayHint.parameterSeparator": "󰶻 ",
     "inlayHint.refreshOnInsertMode": true,
     "suggest.autoTrigger": "always",
     "suggest.detailField": "preview",
     "floatFactory.floatConfig": {
         "rounded": true,
-        "border": true,
+        "border": true
     },
     "suggest.floatConfig": {
         "rounded": true,
-        "border": true,
+        "border": true
     },
     "hover.floatConfig": {
         "rounded": true,
-        "border": true,
+        "border": true
     },
     "signature.floatConfig": {
         "rounded": true,
-        "border": true,
+        "border": true
     },
     "diagnostic.floatConfig": {
         "rounded": true,
-        "border": true,
+        "border": true
     },
     "suggest.pumFloatConfig": {
         "rounded": true,
@@ -65,12 +68,11 @@
         "variable": " "
     },
     "diagnostic.checkCurrentLine": true,
-    "diagnostic.displayByAle": false,
     "diagnostic.errorSign": "",
-    "diagnostic.hintSign": "",
-    "diagnostic.infoSign": "",
+    "diagnostic.hintSign": "",
+    "diagnostic.infoSign": "󰋽",
     "diagnostic.virtualText": true,
-    "diagnostic.virtualTextPrefix": "==> ",
+    "diagnostic.virtualTextPrefix": "-> ",
     "diagnostic.warningSign": "",
     "diagnostic.refreshOnInsertMode": true,
     "list.nextKeymap": "<C-j>",
@@ -79,7 +81,6 @@
     "list.signOffset": 1,
     "yaml.format.enable": true,
     "signature.target": "float",
-    "yank.enableCompletion": false,
     "typescript.suggestionActions.enabled": true,
     "python.formatting.provider": "yapf",
     "python.formatting.yapfArgs": [
@@ -106,5 +107,5 @@
         "/usr/share/nvim/runtime/lua/vim/lsp"
     ],
     "Lua.hint.enable": true,
-    "Lua.codeLens.enable": true
+    "Lua.codeLens.enable": false
 }

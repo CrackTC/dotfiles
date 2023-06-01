@@ -2,3 +2,4 @@
 
 require('filetypes.markdown')
 require('filetypes.lisp')
+require('filetypes.coctree')

@@ -1,64 +1,97 @@
 -- [[util functions]] --
 
+local M = {}
+
 -- [maps] --
 
 local map = vim.keymap.set
 
-function _G.noremap(mode, lhs, rhs, opts)
+function M.remap(mode, lhs, rhs, opts)
+    opts = opts or {}
+    opts.remap = true
+
+    if lhs ~= rhs then
+        map(mode, lhs, rhs, opts)
+    end
+end
+
+function M.noremap(mode, lhs, rhs, opts)
     opts = opts or {}
     opts.noremap = true
     map(mode, lhs, rhs, opts)
 end
 
-function _G.nnoremap(lhs, rhs, opts)
-    noremap('n', lhs, rhs, opts)
+function M.nnoremap(lhs, rhs, opts)
+    M.noremap('n', lhs, rhs, opts)
 end
 
-function _G.inoremap(lhs, rhs, opts)
-    noremap('i', lhs, rhs, opts)
+function M.inoremap(lhs, rhs, opts)
+    M.noremap('i', lhs, rhs, opts)
 end
 
-function _G.vnoremap(lhs, rhs, opts)
-    noremap('v', lhs, rhs, opts)
+function M.vnoremap(lhs, rhs, opts)
+    M.noremap('v', lhs, rhs, opts)
 end
 
-function _G.cnoremap(lhs, rhs, opts)
-    noremap('c', lhs, rhs, opts)
+function M.cnoremap(lhs, rhs, opts)
+    M.noremap('c', lhs, rhs, opts)
 end
 
-function _G.tnoremap(lhs, rhs, opts)
-    noremap('t', lhs, rhs, opts)
+function M.tnoremap(lhs, rhs, opts)
+    M.noremap('t', lhs, rhs, opts)
 end
 
-function _G.nmap(lhs, rhs)
-    map('n', lhs, rhs, { remap = true })
+function M.imap(lhs, rhs, opts)
+    M.remap('i', lhs, rhs, opts)
 end
 
-function _G.xmap(lhs, rhs)
-    map('x', lhs, rhs, { remap = true })
+function M.nmap(lhs, rhs, opts)
+    M.remap('n', lhs, rhs, opts)
 end
 
-function _G.omap(lhs, rhs)
-    map('o', lhs, rhs, { remap = true })
+function M.xmap(lhs, rhs, opts)
+    M.remap('x', lhs, rhs, opts)
 end
 
-function _G.buffered_inoremap(lhs, rhs)
-    vim.keymap.set('i', lhs, rhs, { buffer = true })
+function M.xnoremap(lhs, rhs, opts)
+    M.noremap('x', lhs, rhs, opts)
+end
+
+function M.omap(lhs, rhs, opts)
+    M.remap('o', lhs, rhs, opts)
+end
+
+function M.onoremap(lhs, rhs, opts)
+    M.noremap('o', lhs, rhs, opts)
+end
+
+function M.buffered_noremap(mode, lhs, rhs, opts)
+    opts = opts or {}
+    opts.buffer = true
+    M.noremap(mode, lhs, rhs, opts)
+end
+
+function M.buffered_inoremap(lhs, rhs, opts)
+    M.buffered_noremap('i', lhs, rhs, opts)
+end
+
+function M.buffered_nnoremap(lhs, rhs, opts)
+    M.buffered_noremap('n', lhs, rhs, opts)
 end
 
 -- [filetype] --
 
-function _G.on_filetype(filetype, fn)
+function M.on_filetype(filetype, fn)
     vim.api.nvim_create_augroup(filetype, { clear = true })
-    vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    vim.api.nvim_create_autocmd({ "Filetype" }, {
         group = filetype,
-        pattern = { "*." .. filetype },
+        pattern = filetype,
         callback = fn
     })
 end
 
 -- [higroup] --
-function _G.print_higroup()
+function M.print_higroup()
     local synID = vim.fn.synID(vim.fn.line('.'), vim.fn.col('.'), 1)
     local name = vim.fn.synIDattr(synID, 'name')
     local transName = vim.fn.synIDattr(vim.fn.synIDtrans(synID), 'name')
@@ -74,7 +107,7 @@ local function split_run(command)
     vim.cmd('terminal ' .. command)
 end
 
-function _G.compile_run()
+function M.compile_run()
     vim.cmd('write')
 
     if vim.fn.filereadable('Makefile') == 1 then
@@ -112,3 +145,12 @@ function _G.compile_run()
         split_run('mit-scheme < "%"')
     end
 end
+
+-- [system interaction] --
+function M.ensure_dir_exists(dir)
+    if vim.fn.isdirectory(dir) == 0 then
+        vim.fn.mkdir(dir, 'p')
+    end
+end
+
+return M
