@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0264cbf22f241f95",
+        "id": "dc0c29408a7b5442",
         "type": "tabs",
         "children": [
           {
-            "id": "616777fbe2e537c5",
+            "id": "d0f15de3b580ed00",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academic/G1T2/discrete_math/number/辗转相除.md",
+                "file": "academic/G1T2/discrete_math/number/互质.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 372.5
+    "width": 372.5,
+    "collapsed": true
   },
   "right": {
     "id": "ba2decbca6383859",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "academic/G1T2/discrete_math/number/辗转相除.md",
+                "file": "academic/G1T2/discrete_math/number/互质.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,12 +122,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "616777fbe2e537c5",
+  "active": "d0f15de3b580ed00",
   "lastOpenFiles": [
-    "academic/G1T2/discrete_math/number/整除.md",
     "academic/G1T2/discrete_math/number/辗转相除.md",
-    "academic/G1T2/discrete_math/number/最大公因数.md",
     "academic/G1T2/discrete_math/number/最高公因数.md",
+    "academic/G1T2/discrete_math/number/最大公因数.md",
+    "academic/G1T2/discrete_math/number/整除.md",
+    "academic/G1T2/discrete_math/number/互质.md",
     "academic/G1T2/discrete_math/number/公因数.md",
     "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/0-compatibility_and_cramer/1-def/compatibility.md",
     "academic/G1T2/discrete_math/graph/Hamilton/Hamilton图.md",
@@ -157,7 +159,6 @@
     "academic/G1T2/discrete_math/graph/Hamilton",
     "academic/G1T2/discrete_math/graph/euler/img/Pasted image 20230524224721.png",
     "academic/G1T2/discrete_math/graph/euler/img",
-    "academic/G1T2/discrete_math/graph/directed/树和有向树的转化定理.md",
     "academic/G1T2/discrete_math/graph/Euler",
     "academic/G1T2/discrete_math/graph/directed",
     "academic/G1T2/discrete_math/graph/trees",
