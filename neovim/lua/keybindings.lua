@@ -1,57 +1,64 @@
 -- [[key bindings]] --
 
-local utils = require('utils')
-vim.g.mapleader = ' '
+local utils = require("utils")
+vim.g.mapleader = " "
 
 -- [basic mappings] --
 
-utils.nnoremap(';', ':')
-utils.vnoremap(';', ':')
+utils.nnoremap(";", ":")
+utils.vnoremap(";", ":")
 
-utils.nnoremap('Y', 'y$')
+utils.nnoremap("Y", "y$")
 
-utils.nnoremap('S', ':w<CR>')
-utils.nmap('Q', function()
-    local window_count = #vim.api.nvim_list_wins()
+utils.nnoremap("S", ":w<CR>")
+utils.nmap("Q", function()
+    local windows = vim.api.nvim_list_wins()
+
+    local window_count = 0
+    for _, window in pairs(windows) do
+        if vim.api.nvim_win_get_config(window).relative == "" then
+            window_count = window_count + 1
+        end
+    end
 
     if window_count > 1 then
-        return ':q<CR>'
+        return ":q<CR>"
     end
 
     local output = vim.api.nvim_exec2("ls", { output = true }).output
-    local buffer_count = #(vim.split(output, '\n'))
+    local buffer_count = #(vim.split(output, "\n"))
 
     if buffer_count > 1 then
-        return ':bd<CR>'
+        return ":bd<CR>"
     end
 
-    return ':q<CR>'
+    return ":q<CR>"
 end, { expr = true, silent = true })
 
-utils.nnoremap('<', '<<')
-utils.nnoremap('>', '>>')
+utils.nnoremap("<", "<<")
+utils.nnoremap(">", ">>")
 
-utils.nnoremap('H', '5h')
-utils.nnoremap('J', '5j')
-utils.nnoremap('K', '5k')
-utils.nnoremap('L', '5l')
+utils.nnoremap("H", "5h")
+utils.nnoremap("J", "5j")
+utils.nnoremap("K", "5k")
+utils.nnoremap("L", "5l")
 
-utils.vnoremap('H', '5h')
-utils.vnoremap('J', '5j')
-utils.vnoremap('K', '5k')
-utils.vnoremap('L', '5l')
+utils.vnoremap("H", "5h")
+utils.vnoremap("J", "5j")
+utils.vnoremap("K", "5k")
+utils.vnoremap("L", "5l")
 
-utils.nnoremap('<A-n>', '5<C-e>')
-utils.nnoremap('<A-p>', '5<C-y>')
+utils.nnoremap("<A-n>", "5<C-e>")
+utils.nnoremap("<A-p>", "5<C-y>")
 
 -- [searching] --
 
-utils.nnoremap('N', 'Nzz')
-utils.nnoremap('n', 'nzz')
-utils.nnoremap('<leader><CR>', ':nohlsearch<CR>', { silent = true })
-utils.cnoremap('<CR>', function()
+utils.nnoremap("N", "Nzz")
+utils.nnoremap("n", "nzz")
+utils.nnoremap("<leader><CR>", ":nohlsearch<CR>", { silent = true })
+utils.cnoremap("<CR>", function()
     local cmdtype = vim.fn.getcmdtype()
-    if cmdtype == '/' or cmdtype == '?' then
+    if cmdtype == "/" or cmdtype == "?" then
         return "<CR>zz"
     else
         return "<CR>"
@@ -60,77 +67,77 @@ end, { expr = true })
 
 -- [window management] --
 
-utils.nnoremap('s', '<nop>')
-utils.nnoremap('sl', ':set splitright<CR>:vsplit<CR>')
-utils.nnoremap('sh', ':set nosplitright<CR>:vsplit<CR>:set splitright<CR>')
-utils.nnoremap('sj', ':set splitbelow<CR>:split<CR>')
-utils.nnoremap('sk', ':set nosplitbelow<CR>:split<CR>:set splitbelow<CR>')
+utils.nnoremap("s", "<nop>")
+utils.nnoremap("sl", ":set splitright<CR>:vsplit<CR>")
+utils.nnoremap("sh", ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>")
+utils.nnoremap("sj", ":set splitbelow<CR>:split<CR>")
+utils.nnoremap("sk", ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>")
 
-utils.nnoremap('gj', '<C-w>j')
-utils.nnoremap('gk', '<C-w>k')
-utils.nnoremap('gh', '<C-w>h')
-utils.nnoremap('gl', '<C-w>l')
+utils.nnoremap("gj", "<C-w>j")
+utils.nnoremap("gk", "<C-w>k")
+utils.nnoremap("gh", "<C-w>h")
+utils.nnoremap("gl", "<C-w>l")
 
-utils.nnoremap('<UP>', ':resize +5<CR>')
-utils.nnoremap('<DOWN>', ':resize -5<CR>')
-utils.nnoremap('<LEFT>', ':vertical resize-5<CR>')
-utils.nnoremap('<RIGHT>', ':vertical resize+5<CR>')
+utils.nnoremap("<UP>", ":resize +5<CR>")
+utils.nnoremap("<DOWN>", ":resize -5<CR>")
+utils.nnoremap("<LEFT>", ":vertical resize-5<CR>")
+utils.nnoremap("<RIGHT>", ":vertical resize+5<CR>")
 
-utils.nnoremap('<leader>h', ':bp<CR>')
-utils.nnoremap('<leader>l', ':bn<CR>')
+utils.nnoremap("<leader>h", ":bp<CR>")
+utils.nnoremap("<leader>l", ":bn<CR>")
 
 -- [terminal behavior] --
 
-vim.api.nvim_create_autocmd('TermOpen', {
-    pattern = 'term://*',
-    command = 'startinsert'
+vim.api.nvim_create_autocmd("TermOpen", {
+    pattern = "term://*",
+    command = "startinsert"
 })
 
-utils.tnoremap('<C-q>', [[<C-\><C-n>]])
-utils.tnoremap('<C-o>', [[<C-\><C-n><C-o>]])
-utils.tnoremap('<C-h>', [[<C-\><C-n><C-w>h]])
-utils.tnoremap('<C-j>', [[<C-\><C-n><C-w>j]])
-utils.tnoremap('<C-k>', [[<C-\><C-n><C-w>k]])
-utils.tnoremap('<C-l>', [[<C-\><C-n><C-w>l]])
+utils.tnoremap("<C-q>", [[<C-\><C-n>]])
+utils.tnoremap("<C-o>", [[<C-\><C-n><C-o>]])
+utils.tnoremap("<C-h>", [[<C-\><C-n><C-w>h]])
+utils.tnoremap("<C-j>", [[<C-\><C-n><C-w>j]])
+utils.tnoremap("<C-k>", [[<C-\><C-n><C-w>k]])
+utils.tnoremap("<C-l>", [[<C-\><C-n><C-w>l]])
 
 -- open kitty in cwd
 
-utils.nnoremap('<leader>tt', function()
-    os.execute('kitty&')
+utils.nnoremap("<leader>tt", function()
+    os.execute("kitty&")
 end)
 
 -- [command mode cursor movement] --
 
-utils.cnoremap('<C-a>', '<Home>')
-utils.cnoremap('<C-e>', '<End>')
-utils.cnoremap('<C-p>', '<Left>')
-utils.cnoremap('<C-n>', '<Right>')
+utils.cnoremap("<C-a>", "<Home>")
+utils.cnoremap("<C-e>", "<End>")
+utils.cnoremap("<C-p>", "<Left>")
+utils.cnoremap("<C-n>", "<Right>")
 
 -- [other useful mappings] --
 
 -- open fold
-utils.nnoremap('<leader>o', 'za', { silent = true })
+utils.nnoremap("<leader>o", "za", { silent = true })
 
 -- select a line (no eol)
-utils.nnoremap('vv', '0v$h')
+utils.nnoremap("vv", "0v$h")
 
 -- replace next placeholder and insert
-utils.nnoremap('<leader><leader>', '<ESC>/<++><CR>:nohl<CR>ca>', { silent = true })
+utils.nnoremap("<leader><leader>", "<ESC>/<++><CR>:nohl<CR>ca>", { silent = true })
 
 -- toggle spellcheck
-utils.nnoremap('<leader>sc', ':setlocal spell!<CR>', { silent = true })
+utils.nnoremap("<leader>sc", ":setlocal spell!<CR>", { silent = true })
 
 -- toggle wrap
-utils.nnoremap('<leader>wp', ':setlocal wrap!<CR>', { silent = true })
+utils.nnoremap("<leader>wp", ":setlocal wrap!<CR>", { silent = true })
 
 -- change case
-utils.nnoremap('`', '~')
+utils.nnoremap("`", "~")
 
 -- generate ascii figlet
-utils.nnoremap('<leader>f', ':r !figlet ')
+utils.nnoremap("<leader>f", ":r !figlet ")
 
 -- show cwd
-utils.nnoremap('<leader>cd', ':echo getcwd()<CR>')
+utils.nnoremap("<leader>cd", ":echo getcwd()<CR>")
 
 -- Move Lines
 utils.nnoremap("<A-j>", "<cmd>m .+1<cr>==")
@@ -141,7 +148,7 @@ utils.vnoremap("<A-j>", ":m '>+1<cr>gv=gv")
 utils.vnoremap("<A-k>", ":m '<-2<cr>gv=gv")
 
 -- show higroup
-utils.nnoremap('<A-s>', utils.print_higroup)
+utils.nnoremap("<A-s>", utils.print_higroup)
 
 -- compile and run
 utils.nnoremap("R", utils.compile_run)
