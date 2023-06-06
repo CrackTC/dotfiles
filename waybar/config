@@ -12,18 +12,16 @@
         "cpu",
         "temperature",
         "memory",
-        "battery",
+        "battery"
     ],
     "modules-center": [
-        // "hyprland/window"
-        // "mpris",
-        "custom/cava",
+        "custom/cava"
     ],
     "modules-right": [
         "backlight",
         "pulseaudio",
         "clock",
-        "tray",
+        "tray"
     ],
     "custom/cava": {
         "exec": "~/.config/waybar/scripts/cava.sh",
@@ -68,7 +66,7 @@
         "status-icons": {
             "playing": "<span rise='1000' size='large'>󰏤 </span>",
             "paused": "<span rise='1000' size='large'>󰐊 </span>"
-        },
+        }
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -97,10 +95,7 @@
         "format": "<span rise=\"400\">󰏖 </span>{}"
     },
     "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{icon} {temperatureC}",
         "format": "{icon} {temperatureC}",
         "format-icons": [
             "",
@@ -109,7 +104,6 @@
         ]
     },
     "backlight": {
-        // "device": "acpi_video1",
         "format": "{icon} {percent}",
         "format-icons": [
             "",
@@ -125,7 +119,6 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -133,7 +126,6 @@
         "format-charging": "󰂄 {capacity}%",
         "format-plugged": "󰚥 {capacity}%",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
         "format-full": "<span rise='-18000'></span>",
         "format-icons": [
             "󰁺",
@@ -144,7 +136,6 @@
         ]
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "󰖩",
         "format-ethernet": "<span rise='-18600'></span>",
         "tooltip-format": "{ifname} via  {gwaddr}",
@@ -172,5 +163,5 @@
             ]
         },
         "on-click": "pavucontrol-qt"
-    },
+    }
 }
