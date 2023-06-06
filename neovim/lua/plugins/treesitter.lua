@@ -4,16 +4,18 @@ local extensions = {
     "c",
     "c_sharp",
     "cpp",
+    "fish",
+    "gitignore",
+    "go",
     "lua",
+    "make",
     "markdown",
     "markdown_inline",
     "python",
     "query",
+    "toml",
     "vim",
-    "vimdoc",
-    "gitignore",
-    "fish",
-    "toml"
+    "vimdoc"
 }
 
 local function setup_plugin()
