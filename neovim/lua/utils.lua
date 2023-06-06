@@ -136,7 +136,11 @@ function M.compile_run()
     elseif vim.bo.filetype == 'javascript' then
         split_run('export DEBUG="INFO,ERROR,WARNING"; node --trace-warnings .')
     elseif vim.bo.filetype == 'go' then
-        split_run('go run .')
+        if vim.fn.filereadable('go.mod') == 1 then
+            split_run('go run .')
+        else
+            split_run('go mod init && go run .')
+        end
     elseif vim.bo.filetype == 'cs' then
         split_run('dotnet run')
     elseif vim.bo.filetype == 'php' then
