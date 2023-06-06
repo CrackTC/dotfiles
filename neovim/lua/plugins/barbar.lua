@@ -29,16 +29,17 @@ local function setup_plugin()
                 changed = { enabled = true, icon = '~' },
                 deleted = { enabled = true, icon = '-' },
             },
-            filetype = { custom_colors = "Normal", enabled = true, },
+            filetype = { custom_colors = "Normal", enabled = true },
 
             separator = { left = '', right = '' },
+            separator_at_end = false,
 
-            modified = { button = '', separator = { left = '', right = '' }, },
-            pinned = { button = '', filename = true, separator = { left = '', right = '' }, },
+            modified = { button = '', separator = { left = '', right = '' } },
+            pinned   = { button = '', filename  = true, separator = { left ='', right = '' } },
 
-            current = { separator = { left = '', right = '' }, },
-            inactive = { separator = { left = '', right = '' }, },
-            visible = { separator = { left = '', right = '' }, },
+            current  = { separator = { left = '', right = '' } },
+            inactive = { separator = { left = '', right = '' } },
+            visible  = { separator = { left = '', right = '' } },
         },
         insert_at_start = false,
         insert_at_end = true,
