@@ -8,8 +8,6 @@ vim.g.mapleader = " "
 utils.nnoremap(";", ":")
 utils.vnoremap(";", ":")
 
-utils.nnoremap("Y", "y$")
-
 utils.nnoremap("S", ":w<CR>")
 utils.nmap("Q", function()
     local windows = vim.api.nvim_list_wins()
@@ -35,21 +33,10 @@ utils.nmap("Q", function()
     return ":q<CR>"
 end, { expr = true, silent = true })
 
-utils.nnoremap("<", "<<")
-utils.nnoremap(">", ">>")
-
-utils.nnoremap("H", "5h")
-utils.nnoremap("J", "5j")
-utils.nnoremap("K", "5k")
-utils.nnoremap("L", "5l")
-
-utils.vnoremap("H", "5h")
-utils.vnoremap("J", "5j")
-utils.vnoremap("K", "5k")
-utils.vnoremap("L", "5l")
-
 utils.nnoremap("<A-n>", "5<C-e>")
 utils.nnoremap("<A-p>", "5<C-y>")
+utils.xnoremap("<A-n>", "5<C-e>")
+utils.xnoremap("<A-p>", "5<C-y>")
 
 -- [searching] --
 
@@ -146,9 +133,6 @@ utils.inoremap("<A-j>", "<esc><cmd>m .+1<cr>==gi")
 utils.inoremap("<A-k>", "<esc><cmd>m .-2<cr>==gi")
 utils.vnoremap("<A-j>", ":m '>+1<cr>gv=gv")
 utils.vnoremap("<A-k>", ":m '<-2<cr>gv=gv")
-
--- show higroup
-utils.nnoremap("<A-s>", utils.print_higroup)
 
 -- compile and run
 utils.nnoremap("R", utils.compile_run)
