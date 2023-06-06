@@ -16,6 +16,7 @@ vim.opt.fileencodings = {
 
 vim.opt.number = true         -- show line numbers
 vim.opt.relativenumber = true -- show relative line numbers
+vim.opt.signcolumn = "yes:1"    -- always show sign column
 vim.opt.cursorline = true     -- highlight current line
 vim.opt.hlsearch = false      -- highlight search results
 vim.opt.ruler = true          -- show cursor position
@@ -25,9 +26,9 @@ vim.opt.shiftwidth = 4        -- indent size, number of spaces, used for >>, <<,
 vim.opt.autoindent = true     -- copy indent from current line when starting a new line
 vim.opt.list = true           -- show whitespace characters
 vim.opt.listchars = {
-    tab = "󰌒 ",
-    trail = "·",
     lead = "─",
+    tab = "<->",
+    trail = "·"
 }
 vim.opt.scrolloff = 4         -- minimum number of lines to keep above and below cursor
 vim.opt.wrap = false          -- don't wrap lines

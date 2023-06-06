@@ -14,10 +14,9 @@ local function setup_plugins()
             },
             style = { { fg = "#8fbcbb" } }
         },
-        indent = { enable = false, },
+        indent = { enable = false },
         line_num = {
             enable = true,
-            use_treesitter = true,
             style = { { fg = "#8fbcbb" } }
         },
         blank = { enable = false }
