@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "706f268dfebc8ec0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF/Web/Linux/反弹shell.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "php://filter",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -66,7 +80,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/WriteUp/23-06-02/[天使杯 2023] 题4.md",
+                "file": "CTF/Web/Linux/反弹shell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +136,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d0f15de3b580ed00",
+  "active": "46cf3bddd022a6f4",
   "lastOpenFiles": [
     "CTF/WriteUp/23-06-02/img/Pasted image 20230602153237.png",
     "CTF/WriteUp/23-06-02/img/Pasted image 20230602152103.png",
