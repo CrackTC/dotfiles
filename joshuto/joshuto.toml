@@ -1,3 +1,7 @@
+use_trash = false
+xdg_open = true
+xdg_open_fork = true
+
 [display]
 collapse_preview = false
 show_borders = false
