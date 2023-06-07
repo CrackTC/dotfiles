@@ -4,9 +4,11 @@ local extensions = {
     "c",
     "c_sharp",
     "cpp",
+    "css",
     "fish",
     "gitignore",
     "go",
+    "html",
     "lua",
     "make",
     "markdown",
@@ -35,6 +37,9 @@ local function setup_plugin()
         indent = { enable = false },
         matchup = { enable = true },
     })
+
+    -- map xml to html parser
+    vim.treesitter.language.register("html", "xml")
 end
 
 local function setup_variables()
