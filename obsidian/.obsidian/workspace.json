@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "dc0c29408a7b5442",
+        "id": "b42f820271182cb8",
         "type": "tabs",
         "children": [
           {
-            "id": "d0f15de3b580ed00",
+            "id": "c41f405b28ce32d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF/WriteUp/23-06-02/[天使杯 2023] 题4.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "706f268dfebc8ec0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF/Web/Linux/反弹shell.md",
+                "file": "academic/G1T2/discrete_math/number/互质.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,12 +66,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 372.5
+    "width": 372.5,
+    "collapsed": true
   },
   "right": {
     "id": "ba2decbca6383859",
@@ -101,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Web/Linux/反弹shell.md",
+                "file": "academic/G1T2/discrete_math/number/互质.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,21 +122,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "46cf3bddd022a6f4",
+  "active": "c41f405b28ce32d5",
   "lastOpenFiles": [
+    "academic/G1T2/discrete_math/number/辗转相除.md",
+    "academic/G1T2/discrete_math/number/互质.md",
+    "academic/G1T2/discrete_math/number/整除.md",
+    "academic/G1T2/discrete_math/number/最高公因数.md",
+    "CTF/WriteUp/23-06-02/[天使杯 2023] 题4.md",
     "CTF/WriteUp/23-06-02/img/Pasted image 20230602153237.png",
     "CTF/WriteUp/23-06-02/img/Pasted image 20230602152103.png",
     "CTF/WriteUp/23-06-02/img/Pasted image 20230602151806.png",
     "CTF/WriteUp/23-06-02/img",
     "CTF/WriteUp/23-05-01/[Mini L-CTF 2023]Signin.md",
-    "CTF/WriteUp/23-06-02/[天使杯 2023] 题4.md",
     "CTF/WriteUp/23-06-02",
     "CTF/Web/SQL/未知字段名下查询.md",
-    "academic/G1T2/discrete_math/number/互质.md",
-    "academic/G1T2/discrete_math/number/辗转相除.md",
-    "academic/G1T2/discrete_math/number/最高公因数.md",
     "academic/G1T2/discrete_math/number/最大公因数.md",
-    "academic/G1T2/discrete_math/number/整除.md",
     "academic/G1T2/discrete_math/number/公因数.md",
     "academic/G1T1/linear_algebra/3-linear_equation/0-elimation_and_compatibility/0-compatibility_and_cramer/1-def/compatibility.md",
     "academic/G1T2/discrete_math/graph/Hamilton/Hamilton图.md",
@@ -183,7 +169,6 @@
     "img/Pasted image 20230524104245.png",
     "img/Pasted image 20230524093029.png",
     "img/Pasted image 20230524092453.png",
-    "img/Pasted image 20230524092208.png",
     "未命名.canvas",
     "未命名 2.canvas",
     "未命名 1.canvas"
