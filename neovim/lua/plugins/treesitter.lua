@@ -9,6 +9,7 @@ local extensions = {
     "gitignore",
     "go",
     "html",
+    "latex",
     "lua",
     "make",
     "markdown",
