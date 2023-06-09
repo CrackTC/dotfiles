@@ -22,7 +22,7 @@ local function apply_markdown_mappings()
     utils.buffered_inoremap(",6", "######<SPACE><CR><++><ESC>kA")
 end
 
-utils.on_filetype("markdown", function(_)
+utils.on_filetype("markdown", function()
     apply_markdown_mappings()
     -- vim.opt_local.spell = true
     vim.opt_local.wrap = false

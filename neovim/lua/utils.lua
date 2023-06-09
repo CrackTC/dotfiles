@@ -82,9 +82,7 @@ end
 -- [filetype] --
 
 function M.on_filetype(filetype, fn)
-    vim.api.nvim_create_augroup(filetype, { clear = true })
     vim.api.nvim_create_autocmd({ "Filetype" }, {
-        group = filetype,
         pattern = filetype,
         callback = fn
     })
