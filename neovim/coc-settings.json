@@ -94,7 +94,7 @@
     "javascript.suggestionActions.enabled": true,
     "json.format.enable": true,
     "clangd.arguments": [
-        "--fallback-style=Microsoft"
+        "--fallback-style=Google"
     ],
     "colors.enable": true,
     "translator.proxy": "http://127.0.0.1:7890",
@@ -107,5 +107,7 @@
         "/usr/share/nvim/runtime/lua/vim/lsp"
     ],
     "Lua.hint.enable": true,
-    "Lua.codeLens.enable": false
+    "Lua.codeLens.enable": false,
+    "csharp-ls.path": "/home/chen/.dotnet/tools/csharp-ls",
+    "snippets.ultisnips.pythonPrompt": false
 }
