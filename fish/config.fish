@@ -12,6 +12,11 @@ fi'
 
 alias nnn 'nmap -T4 -A -v -Pn'
 
+set -x PATH $PATH /home/chen/.local/share/JetBrains/Toolbox/scripts
+set -x PATH $PATH /home/home/chen/.local/bin
+set -x PATH $PATH /home/home/chen/.dotnet/tools
+set -x PATH $PATH /home/home/chen/proj/go/bin
+
 # vim:ft=sh
 
 # >>> conda initialize >>>
