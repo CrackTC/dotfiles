@@ -1,6 +1,7 @@
 local M = {}
 
 local extensions = {
+    "bash",
     "c",
     "c_sharp",
     "cpp",
@@ -17,6 +18,7 @@ local extensions = {
     "python",
     "query",
     "toml",
+    "verilog",
     "vim",
     "vimdoc"
 }
