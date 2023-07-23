@@ -1,6 +1,6 @@
 {
     "coc.preferences.extensionUpdateCheck": "daily",
-    "coc.preferences.enableMessageDialog": true,
+    "coc.preferences.enableMessageDialog": false,
     "coc.preferences.messageLevel": "error",
     "coc.source.around.enable": false,
     "coc.source.buffer.enable": false,
