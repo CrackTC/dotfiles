@@ -9,7 +9,7 @@ window#waybar {
     background-color: rgba(46, 52, 64, 0.3);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #D8DEE9;
-    border-radius: 0 0 13px 13px;
+    border-radius: 0 0 10px 10px;
 }
 
 window#waybar.hidden {
@@ -95,7 +95,7 @@ button:hover {
     margin: 5px 2px;
     padding: 0 12px;
     color: #eceff4;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #window,
@@ -211,6 +211,7 @@ label:focus {
 
 #tray {
     background-color: #4c566a;
+    margin-right: 8px;
 }
 
 #tray>.passive {
