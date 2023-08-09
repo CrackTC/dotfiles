@@ -120,9 +120,9 @@ function M.compile_run()
         split_run('time ./%<')
     elseif vim.bo.filetype == 'java' then
         vim.cmd('exec "!javac %"')
-        split_run('!time java %<')
+        split_run('time java %<')
     elseif vim.bo.filetype == 'sh' then
-        split_run('!time bash %')
+        split_run('time bash %')
     elseif vim.bo.filetype == 'lisp' then
         split_run('sbcl --script %')
     elseif vim.bo.filetype == 'python' then
