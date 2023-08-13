@@ -24,7 +24,11 @@ mkfifo $pipe
 config_file="/tmp/polybar_cava_config"
 echo "
 [general]
-bars = 80
+bars = 60
+
+[input]
+method = pulse
+source = auto
 
 [output]
 method = raw
