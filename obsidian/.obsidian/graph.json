@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "path:CTF/Web",
   "showTags": true,
   "showAttachments": true,
   "hideUnresolved": true,
@@ -53,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 0.5,
   "linkDistance": 500,
-  "scale": 0.09895430218636601,
+  "scale": 0.333970769878985,
   "close": false
 }
