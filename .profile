@@ -15,6 +15,8 @@ export NODE_PATH="/home/chen/.local/lib/nodejs/node_modules"
 
 export GOPATH="/home/chen/proj/go"
 
+export CGO_LDFLAGS_ALLOW=".*"
+
 export all_proxy=http://127.0.0.1:7890
 
 export http_proxy=http://127.0.0.1:7890
