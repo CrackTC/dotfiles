@@ -17,10 +17,11 @@ local extensions = {
     "markdown_inline",
     "python",
     "query",
+    "scheme",
     "toml",
     "verilog",
     "vim",
-    "vimdoc"
+    "vimdoc",
 }
 
 local function setup_plugin()
