@@ -37,6 +37,8 @@ utils.nnoremap("<A-n>", "5<C-e>")
 utils.nnoremap("<A-p>", "5<C-y>")
 utils.xnoremap("<A-n>", "5<C-e>")
 utils.xnoremap("<A-p>", "5<C-y>")
+utils.inoremap("<A-h>", "<Left>")
+utils.inoremap("<A-l>", "<Right>")
 
 -- [searching] --
 
